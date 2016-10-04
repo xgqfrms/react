@@ -54,7 +54,7 @@ var env = process.env.NODE_ENV;
 	gulp.task('connect',function(){
 		connect.server({
 		root: [outputDir],
-		//port: 8080,
+		port: 8080,
 	    livereload: true
 		//open: { browser: 'Google Chrome'}
 		//error ?
