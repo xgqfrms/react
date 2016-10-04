@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo 01</title>
+	<script src="./js/react.js"></script>
+	<script src="./js/react-dom.js"></script>
+	<!-- <script src="./js/browser.min.js"></script> -->
+</head>
+<body>
+	<div>
+		<div id="test"></div>
+		<!-- <h1>hello, react!</h1> -->
+		<div>
+			<h1><mark>Download the React DevTools and use an HTTP server</mark></h1>
+		</div>
+		<script type="text/babel">
+			var React = require('react');
+			var ReactDOM = require('react-dom');
+			ReactDOM.rander(
+				<CommentBox />,<h1>hello, react!</h1>,
+				document.getElementById('test')
+			);
+		</script>
+	</div>
+</body>
+</html>
