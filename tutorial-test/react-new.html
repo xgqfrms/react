@@ -25,8 +25,6 @@
 	<script src="./js/browser-6.1.19.min.js"></script>
 
 	<script type="text/babel">
-		var React = require('react');
-		var ReactDOM = require('react-dom');
 		var CommentBox = React.createClass({
 		  render: function() {
 		    return (
@@ -41,6 +39,14 @@
 		  <CommentBox />,
 		  document.getElementById('content')
 		);
+		
+		var HelloMessage = React.createClass({
+		  render: function() {
+		    return <div>Hello {this.props.name}</div>;
+		  }
+		});
+
+		ReactDOM.render(<HelloMessage name="John" />, mountNode);
 	</script>
 </body>
 </html>
