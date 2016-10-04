@@ -14,11 +14,19 @@
 </head>
 <body>
 	<div id="commentBox"></div>
+	<div>
+		<pre>
+			<mark>Uncaught TypeError: Cannot read property 'keys' of undefined</mark>browser.min.js
+		</pre>
+	</div>
 	<script src="./js/react.js"></script>
 	<script src="./js/react-dom.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script> -->
+	<script src="./js/browser-6.1.19.min.js"></script>
 
 	<script type="text/babel">
+		var React = require('react');
+		var ReactDOM = require('react-dom');
 		var CommentBox = React.createClass({
 		  render: function() {
 		    return (
@@ -33,10 +41,6 @@
 		  <CommentBox />,
 		  document.getElementById('content')
 		);
-
-	    ReactDOM.render(
-	        <CommentBox/>, document.getElementById('content')
-	    );
 	</script>
 </body>
 </html>
