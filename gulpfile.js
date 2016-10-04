@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	browserify = require('gulp-browserify'),
-	uglify= require('gulp-uglify'),
-	sass= require('gulp-sass'),
-	connect= require('gulp-connect');
+	uglify = require('gulp-uglify'),
+	sass = require('gulp-sass'),
+	gulpif = require('gulp-if'),
+	connect = require('gulp-connect');
 	// requirejs= require('requirejs');
 
 var outputDir = 'builds/development';
@@ -47,15 +48,17 @@ var env = process.env.NODE_ENV;
 		gulp.watch('src/template/*.jade',['jade']);
 		gulp.watch('src/js/*.js',['js']);
 		gulp.watch('src/sass/*.scss',['sass']);
-		//all file(/**/*.?)
 	});
 
-	gulp.task('connect',connect.server({
+	// error ? function ?
+	gulp.task('connect',function(){
+		connect.server({
 		root: [outputDir],
-		port: 8080,
-	    livereload: true,
-		// open: { browser: 'Google Chrome'}
+		//port: 8080,
+	    livereload: true
+		//open: { browser: 'Google Chrome'}
 		//error ?
-	}));
+		});
+	});
 
 	gulp.task('default',['js','sass','jade','watch','connect']);

@@ -398,7 +398,6 @@ $ gulp js
 
 ## new: CMD 安装 npm install --save-dev requirejs  **???????? error?????**
 ```sh
-	$ npm install --save-dev gulp-uglify
 	$ npm install --save-dev requirejs
 ``` 
 ### [how-to-include-a-javascript-file-in-another-javascript-file](http://stackoverflow.com/questions/950087/how-to-include-a-javascript-file-in-another-javascript-file/39854041#39854041)
@@ -449,7 +448,7 @@ $ gulp js
 ### step13: 安装 gulp-if  (使用*通配符)
 
 ```sh
-$ npm install --save-dev gulp-if 
+$ npm install --save-dev **gulp-if**
 ``` 
 ### 编辑 gulpfile.js
 ```sh
