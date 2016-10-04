@@ -396,7 +396,7 @@ gulp.task('js',function(){
 $ gulp js
 ``` 
 
-## new: CMD 安装 npm install --save-dev requirejs
+## new: CMD 安装 npm install --save-dev requirejs  **???????? error?????**
 ```sh
 	$ npm install --save-dev gulp-uglify
 	$ npm install --save-dev requirejs
@@ -465,16 +465,18 @@ gulp.task('js',function(){
 	});
 ``` 
 
-### CMD 运行 NODE_ENV=development gulp js 
+### CMD 运行 set NODE_ENV=development && gulp js 
 PS:(使用开发调试模式)
 ```sh
-$ NODE_ENV=development gulp js
+$ set NODE_ENV=development 
+$ gulp js
 ``` 
 
-### CMD 运行 NODE_ENV=production gulp js 
+### CMD 运行 set NODE_ENV=production && gulp js 
 PS:(使用产品发布模式)
 ```sh
-$ NODE_ENV=production gulp js
+$ set NODE_ENV=production 
+$ gulp js
 ``` 
 
 ### 14. 手动编辑 gulpfile.js PS:(手动：开启默认的模式)
@@ -503,3 +505,188 @@ gulp.task('sass',function(){
 ```sh
 $ gulp sass
 ``` 
+
+**path 变量**  +  **if (env === 'development')**
+## 16. 编辑 gulpfile.js 
+```javascript
+	var outputDir = 'builds/development';
+	//使用 path 变量，代替 path names
+	.pipe(gulp.dest(outputDir));
+	// .pipe(gulp.dest('builds/development'));
+	.pipe(gulp.dest(outputDir + '/js'));
+	// .pipe(gulp.dest('builds/development/js'));
+	.pipe(gulp.dest(outputDir + '/css'));
+    // .pipe(gulp.dest('builds/development/css'));
+``` 
+```javascript
+	gulp.task('sass',function(){
+		var config = {};
+		if (env === 'development') {
+			config.sourceComments = 'map';
+		} 
+		if(env === 'production'){
+			config.outputStyle = 'compressed';
+		}
+		return gulp.src('src/sass/main.scss')
+			// .pipe(sass({ sourceComments: 'map'}))
+			.pipe(sass(config))
+			.pipe(gulp.dest(outputDir + '/css'));
+			// .pipe(gulp.dest('builds/development/css'));
+	});
+``` 
+## CMD 运行 set NODE_ENV=development && gulp sass PS:(使用开发调试模式)
+```sh
+	$ set NODE_ENV=development 
+	$ gulp sass
+``` 
+
+## CMD 运行 set NODE_ENV=production && gulp sass PS:(使用产品发布模式)
+```sh
+	$ set NODE_ENV=production 
+	$ gulp sass
+``` 
+
+
+## 17. 编辑 gulpfile.js  使用 gulp watch (使用*通配符)
+PS:(使用 watch 自动监测变化)
+```javascript
+	gulp.task('watch',function(){
+		gulp.watch('src/template/**/*.jade',['jade']);
+		gulp.watch('src/js/**/*.js',['js']);
+		gulp.watch('src/sass/**/*.scss',['sass']);
+	});
+``` 
+
+## CMD 运行 gulp watch 
+PS:(使用 watch 自动监测变化)
+```sh
+	$ gulp watch
+``` 
+
+## 编辑 gulpfile.js  使用 gulp.task default模式
+PS:(使用default模式,指定 tasks)
+```javascript
+	gulp.task('default',['js','sass','jade','watch']);
+	/*
+		function(){
+			gulp.watch('src/template/**/*.jade',['jade']);
+		}
+		=== ???
+		['jade']
+	*/
+``` 
+
+## CMD 运行 gulp 
+PS:(使用default模式,指定 tasks)
+```sh
+	$ gulp
+``` 
+## Ctrl + C (退出 watch / default 模式)
+
+
+## 18. 安装  gulp-connect 
+PS:(自动启动Web Server,打开browser,可以配置端口)???
+```sh
+$ npm install --save-dev gulp-connect 
+``` 
+
+### 编辑 gulpfile.js
+
+```js
+connect= require('gulp-connect');
+
+gulp.task('connect',connect.server({
+	root: [outputDir],
+	open: { browser: 'Google Chrome'}
+}));
+
+gulp.task('default',['js','sass','jade','watch','connect']);
+``` 
+
+### CMD 运行 gulp (使用default模式,指定 all-tasks)
+```sh
+$ gulp
+``` 
+
+
+## 编辑 gulpfile.js  
+PS:(自动刷新 .pipe(connect.reload());)
+
+```js
+//每个task后，都后面追加上
+.pipe(connect.reload());
+
+.pipe(connect.reload());
+
+.pipe(connect.reload());
+``` 
+
+##  CMD 运行 gulp 
+```sh
+	$ gulp
+``` 
+
+## ???. some errors
+[here some errors, what's wrong with this? #202](https://github.com/AveVlad/gulp-connect/issues/202)  
+
+[Get started with gulp Part 6: LiveReload and web server](https://www.youtube.com/watch?v=KURMrW-HsY4&index=7&list=PLRk95HPmOM6PN-G1xyKj9q6ap_dc9Yckm)  
+
+[/images/errors/](https://github.com/xgqfrms/AngularJS/tree/gh-pages/images/errors)
+[gulp-test](https://github.com/xgqfrms/AngularJS/tree/gh-pages/gulp-test)  
+
+```javascript
+	/*
+	gulp.task('connect',connect.server({
+		root: [outputDir],
+		open: { browser: 'Google Chrome'}
+	}));
+	*/
+	//https://github.com/AveVlad/gulp-connect
+
+	gulp.task('connect',function(){
+		connect.server({
+			root: [outputDir],
+			port: 8080,
+		    livereload: true,
+			// open: { browser: 'Google Chrome'}
+		});
+	});
+``` 
+
+
+
+
+
+## bugs fixed ?
+
+### 编辑 gulpfile.js 
+
+'''javascript
+	var env = process.env.NODE_ENV;
+'''
+
+> ## CMD: 手动 传入参数 
+set NODE_ENV=development
+set NODE_ENV=production
+
+'''bash
+	$ set NODE_ENV=development
+	$ gulp
+'''
+'''bash
+	$ set NODE_ENV=production
+	$ gulp
+'''
+
+???
+### why it doesn't work by using 
+// var env = process.env.NODE_ENV || 'production';
+// var env = process.env.NODE_ENV || 'development';
+
+
+
+
+
+
+
+

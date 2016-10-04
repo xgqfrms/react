@@ -1,7 +1,8 @@
 // var x = "xgqfrms";
 var subjs =require('./no-need/subjs');
-let x = "xgqfrms";
+var x = "xgqfrms";
 /*
+let **???????? error?????**
 ES-6 uglify-error
 */
 
