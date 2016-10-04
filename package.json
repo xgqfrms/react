@@ -25,5 +25,22 @@
   "bugs": {
     "url": "https://github.com/xgqfrms/React/issues"
   },
-  "homepage": "https://github.com/xgqfrms/React#readme"
+  "homepage": "https://github.com/xgqfrms/React#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "requirejs": "^2.3.2",
+    "webpack": "^1.13.2"
+  }
 }
