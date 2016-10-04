@@ -6,9 +6,19 @@
     <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
     <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
     <script src="http://static.runoob.com/assets/react/browser.min.js"></script>
+    <!-- old-version -->
   </head>
   <body>
     <div id="example"></div>
+    <div>
+      <pre>
+        react.min.js - React 的核心库
+        react-dom.min.js - 提供与 DOM 相关的功能
+        browser.min.js - 用于将 JSX 语法转为 JavaScript 语法
+
+        注意：如果我们需要使用 JSX，则 &lt;script&gt; 标签的 type 属性需要设置为 <mark>text/babel</mark>。
+      </pre>
+    </div>
     <script type="text/babel">
       ReactDOM.render(
         <h1>Hello, world!</h1>,
