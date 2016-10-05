@@ -50,6 +50,9 @@ CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just
 
 [http://livereload.com/](http://livereload.com/)
 
+```sh
+$ livereload 
+``` 
 
 ### livereload install error
 
