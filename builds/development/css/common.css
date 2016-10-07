@@ -5,4 +5,12 @@ h1 {
 
 /* line 7, G:/wwwRoot/React/src/sass/common.scss */
 body {
-  color: #00ff00; }
+  color: #00ff00;
+  font-family: cursive2;
+  color: #9e946e;
+  font-size: 120%;
+  padding-right: .1em; }
+
+@font-face {
+  font-family: cursive2;
+  src: url(assets/cursive.ttf); }

@@ -6,4 +6,12 @@ h1{
 }
 body{
 	color: $green;
+	font-family: cursive2;
+	color: #9e946e;
+	font-size: 120%;
+	padding-right: .1em;
+}
+@font-face {
+  font-family: cursive2;
+  src: url(assets/cursive.ttf);
 }
