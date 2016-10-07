@@ -1,17 +1,21 @@
 // var $red = rgba(255,0,0,0.7);
 @import "./no-need/var";
 h1{
-	color: $red;
+	color: $green;
 	background: $purple;
 }
 body{
 	color: $green;
-	font-family: cursive2;
+	// font-family: cursive;
 	color: #9e946e;
 	font-size: 120%;
 	padding-right: .1em;
 }
+p{
+	font-family: cursive;
+	font-size: 2em;
+}
 @font-face {
-  font-family: cursive2;
-  src: url(assets/cursive.ttf);
+  font-family: cursive;
+  src: url(../assets/fonts/cursive.ttf);
 }
