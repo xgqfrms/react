@@ -9,17 +9,18 @@ var gulp = require('gulp'),
 
 var outputDir = 'builds/development';
 	//path 变量
-var env = process.env.NODE_ENV;
-	// var env = process.env.NODE_ENV || 'production';
-	// var env = process.env.NODE_ENV || 'development';
+// var env = process.env.NODE_ENV;
+	var env = process.env.NODE_ENV || 'production';
+	var env = process.env.NODE_ENV || 'development';
 
 	gulp.task('jade',function(){
 		return gulp.src('src/template/*.jade')
 			.pipe(jade())
-			.pipe(gulp.dest('outputDir'))
+			.pipe(gulp.dest(outputDir))
 			.pipe(connect.reload());
 	});
-
+//.pipe(gulp.dest('outputDir')) 
+//error: (值)'outputDir' !== outputDir (变量)
 	gulp.task('js',function(){
 		return gulp.src('src/js/*.js')
 			.pipe(browserify({ debug: env === 'development'}))
