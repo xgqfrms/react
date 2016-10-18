@@ -1,3 +1,11 @@
-div.box
-  - for (var x = 0; x < 1920; x++)
-    .pixel
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title CSS3 pixel image
+        link(rel="stylesheet" href="pixel.css")
+    body
+       div.box
+           - for (var x = 0; x < 1920; x++)
+               .pixel
+       // - jade hidden comment
