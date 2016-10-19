@@ -44,6 +44,7 @@
 
 # 添加您的SSH密钥到ssh-agent
 >$ ssh-add ~/.ssh/id_rsa
+>$ ssh-add ~/.ssh/webgeeker/id_rsa
 # 添加SSH密钥到您的GitHub帐户。
 ```
 
@@ -214,3 +215,5 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDOiaQu2L2w+nP1mlLbxMAZQ7d3OHPpkt+6IouyClPc
 # webgeeker
 >$ git clone git@github.com:xgqfrms-GitHub/webgeeker.git
 ```
+
+## 空格: git add . !== git add.
