@@ -3,7 +3,10 @@
 ## open ~/.ssh check id_rsa
 
 ```sh
->$ ssh -T git@github.com
+>$ ls -al ~/.ssh
+# equal
+>$ cd ~/.ssh
+>$ ls -al
 ```
 
 
@@ -11,6 +14,8 @@
 
 ```sh
 >$ ssh-keygen -t rsa -C "xgqfrms@gmail.com"
+# -b 4096
+>$ ssh-keygen -t rsa -b 4096 -C "xgqfrms@gmail.com"
 ```
 
 ## add id_rsa.pub to github repo

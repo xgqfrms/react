@@ -22,13 +22,26 @@
 ```sh
 # Generating a new SSH key
 >$ ssh-keygen -t rsa -b 4096 -C "xgqfrms@gmail.com"
+# or simple
+>$ ssh-keygen -t rsa -C "xgqfrms@gmail.com"
+
+# id_rsa path: /c/Users/xray/.ssh/webgeeker/id_rsa
+
+# 复制SSH密钥到剪贴板。
+>$ clip < ~/.ssh/id_rsa.pub
+>$ clip < ~/.ssh/webgeeker/id_rsa.pub
+# or
+>$ cd ~/.ssh/webgeeker
+>$ clip < id_rsa.pub
 
 # Adding your SSH key to the ssh-agent
 ## 打开的ssh-agent：
+
 ### If you are using Git Bash
 >$ eval "$(ssh-agent -s)"
 ### If you are using another terminal prompt, such as Git for Windows, 
 >$ eval $(ssh-agent -s)
+
 # 添加您的SSH密钥到ssh-agent
 >$ ssh-add ~/.ssh/id_rsa
 # 添加SSH密钥到您的GitHub帐户。
@@ -186,4 +199,18 @@ Host github.com
 ```sh
 # You can test that this works by connecting once more to GitHub:
 >$ ssh -T git@github.com
+```
+
+
+## id_rsa.pub key
+
+```key
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDOiaQu2L2w+nP1mlLbxMAZQ7d3OHPpkt+6IouyClPc20Y4VDrcZqXh5S0pPNl0UaQtBPgINq1MBR3nC9cQ/vuxPBsi5kCY95ypuzd70Z6PX/+1E5p/JVdhX1UEoLuyR56ieMBHC/uM7uUqmQRG/xHhGIgk+37AMas8rZNtuF2VZIsqaPh8nloHXepdL2f73V0nIxUqfUap6In6kXQusr7VMJ7x3RZDUqurThnRRx31JgXt8JQ8OJEd034T+3XRZVxOv6NYTAT19D2kS9S0/JsooDnB2TMhr3VKIuWNLhhZVy7kFFCPHxFxvjLVKKoZEIJrVoo2k0w13kq86R5PbJogcis54AjykCaRjmhcxqeRrzhmp22zvAVbpvWl9DWpIGQMP8z0ThmWUrJrlkaJ8ir0VWstK3y+ovpJEQikiLFiGjolh7g0UrATlq1/2nZ3rnhnpPlQ+uKQUAxDdnCGGoVzNCAmAXGlXryRGaPM+QmnhSCkGjl6C9NvkNY6I+eZnr8gY2K76kai3Sadu+Q5znGjL3MjUM7ZKcQQ2e0EdIY5yA2MO65bTd6hVv6G6ainixb3X0fLCJZ0chXXf9UjSQjY01IwunqXcuRFvyWHidZm5xkV9ezyVah3dbA5ICBZhrC5nyVD+1SIn0uOIsIoZHt6p+CGIPT6D5pYqLghBtdP7Q== xgqfrms@gmail.com
+```
+
+## git clone
+
+```sh
+# webgeeker
+
 ```
