@@ -24,9 +24,11 @@ var Pistons2004 = {
 得分后卫
 控球后卫
 */
-``` 
+```
 
-# https://facebook.github.io/react/docs/jsx-in-depth-zh-CN.html
+## react/docs zh-CN
+
+[zh-CN](https://facebook.github.io/react/docs/jsx-in-depth-zh-CN.html)
 
 ## HTML 标签对比 React 组件
 
