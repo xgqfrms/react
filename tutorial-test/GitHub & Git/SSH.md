@@ -36,7 +36,8 @@
 ## clone git repo
 
 ```sh
->$ git@github.com:xgqfrms-GitHub/webgeeker.git
+# webgeeker
+>$ git clone git@github.com:xgqfrms-GitHub/webgeeker.git
 ```
 
 ## push test
