@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--  -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Google Sign-In for Websites</li>
+                <li><a href="https://developers.google.com/identity/sign-in/web/?utm_campaign=identity_series_identityblog_030916&utm_source=gdev&utm_medium=yt-annt">https://developers.google.com/identity/sign-in/web/</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Restful API</h1>
+            <a href="https://www.youtube.com/watch?v=YCcAE2SCQ6k">Intro to REST</a>
+            <br>
+            <a href="https://www.mnot.net/cache_docs/">Caching Tutorial</a>
+        </section>
+        <section>
+            <h2>Google Sign-in</h2>
+            <p>
+                <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBQCKXOfi4AUtSpMj78pX5f">Google Sign-in videos</a>
+            </p>
+            <a href="Ihttps://www.youtube.com/watch?v=Oy5F9h5JqEU&index=1&list=PLNYkxOF6rcIBQCKXOfi4AUtSpMj78pX5f">Introduction to Google Sign-In for Websites</a><br>
+            <a href="https://www.youtube.com/watch?v=j_31hJtWjlw&index=2&list=PLNYkxOF6rcIBQCKXOfi4AUtSpMj78pX5f"></a>Google Sign-In for Websites: Authentication with backends<br>
+            <a href="https://www.youtube.com/watch?v=zZt8SFivjps&list=PLNYkxOF6rcIBQCKXOfi4AUtSpMj78pX5f&index=3">Google Sign-In for Websites: Authorization</a><br>
+        </section>
+    </main>
+    <div>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    </div>
+    <!--  -->
+    <script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        };
+    </script>
+</body>
+</html>

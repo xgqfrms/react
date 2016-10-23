@@ -2,6 +2,8 @@
 
 [es6-in-depth](http://kamranahmed.info/blog/2016/04/04/es6-in-depth/)  
 
+[Javascript ES6 Cheatsheet - the best of JS ES6](https://www.youtube.com/watch?v=AfWYO8t7ed4)
+
 ## Strict mode by default
 
 ```js
