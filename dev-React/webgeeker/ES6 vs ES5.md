@@ -4,6 +4,8 @@
 
 [Javascript ES6 Cheatsheet - the best of JS ES6](https://www.youtube.com/watch?v=AfWYO8t7ed4)
 
+[JavaScript 规范 (ES6新增)](http://jixianqianduan.com/frontend-javascript/2015/10/12/es6-code-style.html)
+
 ## Strict mode by default
 
 ```js

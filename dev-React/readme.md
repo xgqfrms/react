@@ -41,7 +41,26 @@
 我们建议从NPM安装使用React ,连同一个打包器, 如browserify或WebPack。
 
 ```sh
+# 建议 --save react react-dom
 >$ npm install --save react react-dom
+
+# 建议-g react-cli
+>$ npm install -g react-cli
+
+# jsx tansform(React)
+
+>$ npm install --save-dev gulp
+>$ npm install --save-dev gulp-react
+
+// --save-dev or --save 
+// require 相对路径，
+// -g 绝对路径， 只对 ???-cli 好使，不适合local test
+
+//npm install --save-dev gulp
+//npm install --save-dev gulp-react
+
+
+
 
 # [http://browserify.org/](http://browserify.org/)  
 >$ npm install -g browserify
