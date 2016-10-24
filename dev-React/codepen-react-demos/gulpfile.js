@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var sourcemaps = require('gulp-sourcemaps');
 var react = require('gulp-react');
 
 // --save-dev or --save 
@@ -8,9 +9,12 @@ var react = require('gulp-react');
 
 //npm install --save-dev gulp
 //npm install --save-dev gulp-react
+//npm install --save-dev gulp-sourcemaps
  
 gulp.task('default', function () {
     return gulp.src('*.jsx')
+        .pipe(sourcemaps.init())
         .pipe(react())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./'));
 });
