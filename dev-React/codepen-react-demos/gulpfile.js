@@ -12,9 +12,9 @@ var react = require('gulp-react');
 //npm install --save-dev gulp-sourcemaps
  
 gulp.task('default', function () {
-    return gulp.src('*.jsx')
+    return gulp.src('ticking.jsx')
         .pipe(sourcemaps.init())
         .pipe(react())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('dest/'));
 });
