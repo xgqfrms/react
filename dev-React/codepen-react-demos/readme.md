@@ -132,14 +132,40 @@ $ babel ../../index.js -w -o ../../index-compiled.js
     "version": "1.0.1",
     "scripts": {
         "build": "babel src -d builds",
-        "babel": "babel src -d builds"
+        "babel": "babel src -d builds",
+        "react": "babel-preset-react src -d builds"
     },
     "devDependencies": {
         "babel-cli": "^6.0.0"
     }
 }
 
+# ??? "react": "babel-preset-react src -d builds"
+
+> https://jsfiddle.net/reactjs/69z2wepo/
+> https://jsfiddle.net/reactjs/5vjqabv3/
+
+> http://react2.webgeeker.xyz/docs/getting-started.html
+
+
+$ npm install babel-plugin-transform-react-jsx
+
+$ npm install babel-plugin-syntax-jsx
+
+http://babeljs.io/docs/plugins/transform-react-jsx/
+
+https://www.npmjs.com/package/babel-preset-react
+
+http://babeljs.io/docs/plugins/syntax-jsx/
+
+https://facebook.github.io/react/docs/jsx-in-depth.html
+
+
+
+# 自定义script name && 添加 options (-w ) 不好使
+
 $ npm run babel
+$ npm run babel -w 
 $ npm run build
 
 [Usage](https://babeljs.io/docs/setup/#installation)
