@@ -160,8 +160,20 @@ http://babeljs.io/docs/plugins/syntax-jsx/
 
 https://facebook.github.io/react/docs/jsx-in-depth.html
 
+=============================================
+``` 
 
+```code
+<script type="text/babel" src="need-babel.js"></script>
 
+<!-- JSX type="text/babel" -->
+<!-- http://react.xgqfrms.xyz/dev-React/codepen-react-demos/src/need-babel.html -->
+<!-- browser.js Ajax error : need HTTP Server -->
+
+=============================================
+``` 
+
+```sh
 # 自定义script name && 添加 options (-w ) 不好使
 
 $ npm run babel
