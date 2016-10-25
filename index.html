@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>React by xgqfrms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">React</h1>
+      <h2 class="project-tagline">React</h2>
+      <a href="https://github.com/xgqfrms/React" class="btn">View on GitHub</a>
+      <a href="https://github.com/xgqfrms/React/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/xgqfrms/React/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="react-tutorial" class="anchor" href="#react-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>React tutorial</h1>
+
+<h2>
+<a id="通过-npm-使用-react" class="anchor" href="#%E9%80%9A%E8%BF%87-npm-%E4%BD%BF%E7%94%A8-react" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>通过 npm 使用 React</h2>
+
+<blockquote>
+<p>CommonJS 模块系统: 
+建议在 React 中使用 CommonJS 模块系统，比如 browserify 或 webpack</p>
+
+<h3>
+<a id="安装全局包" class="anchor" href="#%E5%AE%89%E8%A3%85%E5%85%A8%E5%B1%80%E5%8C%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安装全局包</h3>
+
+<div class="highlight highlight-source-js"><pre>$ npm install babel <span class="pl-k">-</span>g
+$ npm install webpack <span class="pl-k">-</span>g
+$ npm install webpack<span class="pl-k">-</span>dev<span class="pl-k">-</span>server <span class="pl-k">-</span>g</pre></div>
+</blockquote>
+
+<h3>
+<a id="step0-根目录下-创建文件-src---buildsdevelopment--buildsproduction" class="anchor" href="#step0-%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-src---buildsdevelopment--buildsproduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step0: 根目录下, <strong>创建文件</strong> src/*  =&gt; /builds/development/* &amp;&amp; /builds/production/*</h3>
+
+<h4>
+<a id="使用通配符" class="anchor" href="#%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>使用*通配符</h4>
+
+<blockquote>
+<p>编译所有sass/*.scss到css/目录
+编译所有js/ts/isx/*.js/*.ts/*.jsx到js/目录
+编译所有template/*.jade到html/目录</p>
+</blockquote>
+
+<div class="highlight highlight-source-shell"><pre>./src/js/main.js (./src/ts/main.ts)  
+./src/js/app.jsx (./src/jsx/app.jsx)  
+./src/sass/common.scss (./src/sass/no-need/var.scss 不需要编译到css目录，使用<span class="pl-k">*</span>通配符)
+./src/template/index.jade  </pre></div>
+
+<h3>
+<a id="output" class="anchor" href="#output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>output</h3>
+
+<pre lang="code"><code>./builds/development/js/main.js  
+./builds/development/js/app.js   
+./builds/development/css/common.css  
+./builds/development/index.html  
+</code></pre>
+
+<h3>
+<a id="step1-根目录下-npm-init-初始化生成-packagejson-文件" class="anchor" href="#step1-%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B-npm-init-%E5%88%9D%E5%A7%8B%E5%8C%96%E7%94%9F%E6%88%90-packagejson-%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step1: 根目录下, npm init 初始化，生成 <strong>package.json</strong> 文件：</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ npm init</pre></div>
+
+<p>template-demo</p>
+
+<pre lang="code"><code>name: (React App) @xgqfrms/react
+private: true 
+### private  设为true这个包将不会发布到NPM平台下。
+{
+    version: (1.0.0) 
+    description: react app test
+    entry point: (main.js)
+    homepage: https://xgqfrms.github.io/react
+    author: {  
+      "name": "xgqfrms",
+      "email": "xgqfrms@email.xyz",
+      "url": "http://www.xgqfrms.xyz"
+    }
+    author: "&lt;xgqfrms@email.xyz&gt; (http://www.xgqfrms.xyz)"  
+    bugs: {  
+      "url": "https://github.com/xgqfrms/react/issues",
+      "email": "xgqfrms@email.xyz"
+    }
+    contributors, maintainers
+    files
+    "engines": {
+      "node": "&gt;=0.10.3 &lt; 0.12",
+      "npm": "~1.0.20"
+    }
+    "os": [ "darwin", "linux", "!win32" ]
+    "cpu": [ "x64", "!arm" ]
+    main : main.js
+    directories
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/xgqfrms/react.git"
+    }
+    scripts
+    "name": "foo",
+    "config": {
+      "port": "8080"
+    }
+}
+### 修改设置： npm config set foo:port 8001 
+
+{
+    version 严格匹配某个版本
+    &gt;version 必须大于某个版本
+    &gt;=version 必须大于等于某个版本
+    &lt;version 必须小于某个版本
+    &lt;=version 必须小于等于某个版本
+    ~version 大概匹配某个版本
+    ^version 兼容某个版本(**默认值**)
+    1.2.x 可以是1.2.0, 1.2.1等等
+    http://... 指定tarball的url地址
+    * 任何版本都可以
+    "" 任何版本都可以
+    version1 - version2  大于等于version1 &amp;&amp;小于等于version2
+    range1 || range2 满足range1 或range2
+    git://... git地址
+    user/repo git地址
+    tag 指定某个tag的版本
+    path/path 本地包所有文件夹
+    { "dependencies" :
+      { "foo" : "1.0.0 - 2.9999.9999"
+      , "bar" : "&gt;=1.0.2 &lt;2.1.2"
+      , "baz" : "&gt;1.0.2 &lt;=2.3.4"
+      , "boo" : "2.0.1"
+      , "qux" : "&lt;1.0.0 || &gt;=2.3.1 &lt;2.4.5 || &gt;=2.5.2 &lt;3.0.0"
+      , "asd" : "http://asdf.com/asdf.tar.gz"
+      , "til" : "~1.2"
+      , "elf" : "~1.2.3"
+      , "two" : "2.x"
+      , "thr" : "3.3.x"
+      , "lat" : "latest"
+      , "dyl" : "file:../dyl"
+      }
+    }  
+
+    git://github.com/user/project.git#commit-ish  
+    git+ssh://user@hostname:project.git#commit-ish  
+    git+ssh://user@hostname/project.git#commit-ish  
+    git+http://user@hostname/project/blah.git#commit-ish  
+    git+https://user@hostname/project/blah.git#commit-ish  
+}
+
+### NPM的一些**默认值**说明 
+"scripts": { "start": "node server.js" } 如果在项目根目录下含有server.js文件，则NPM会自动设置此值。
+keywords: react, xgqfrms, webgeeker
+author: xgqfrms
+license: (MIT) 
+</code></pre>
+
+<h3>
+<a id="step2-安装-依赖包-react-react-dom" class="anchor" href="#step2-%E5%AE%89%E8%A3%85-%E4%BE%9D%E8%B5%96%E5%8C%85-react-react-dom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step2: 安装 依赖包 react react-dom</h3>
+
+<p><strong>--save</strong> 命令用于将依赖包添加到package.json的<strong>“dependencies”</strong>中.
+<strong>--save-dev</strong> 命令用于将依赖包添加到package.json的<strong>“devDependencies”</strong>中.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save react react-dom</pre></div>
+
+<p>等于同 ===</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save react
+$ npm install --save react-dom</pre></div>
+
+<blockquote>
+<p>react.min.js - React 的核心库
+react-dom.min.js - 提供与 DOM 相关的功能
+browser.min.js - 用于将 JSX 语法转为 JavaScript 语法</p>
+</blockquote>
+
+<h3>
+<a id="step3-安装-插件" class="anchor" href="#step3-%E5%AE%89%E8%A3%85-%E6%8F%92%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step3: 安装 插件</h3>
+
+<p><strong>--save</strong> 命令用于将依赖包添加到package.json的<strong>“dependencies”</strong>中.
+<strong>--save-dev</strong> 命令用于将依赖包添加到package.json的<strong>“devDependencies”</strong>中.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save babel-core babel-loader babel-preset-react babel-preset-es2015</pre></div>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save babel-core
+$ npm install --save babel-loader
+$ npm install --save babel-preset-react
+$ npm install --save babel-preset-es2015</pre></div>
+
+<h3>
+<a id="step4-创建文件-webpackconfigjs--gulpfilejs" class="anchor" href="#step4-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-webpackconfigjs--gulpfilejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step4: 创建文件 webpack.config.js || gulpfile.js</h3>
+
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">作用解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">entry:</td>
+<td align="left">指定打包的入口文件 main.js。</td>
+</tr>
+<tr>
+<td align="left">output：</td>
+<td align="left">配置打包结果，path定义了输出的文件夹，filename则定义了打包结果文件的名称。</td>
+</tr>
+<tr>
+<td align="left">devServer：</td>
+<td align="left">设置服务器端口号为 7777，端口后你可以自己设定 。</td>
+</tr>
+<tr>
+<td align="left">module：</td>
+<td align="left">定义了对模块的处理逻辑，这里可以用loaders定义了一系列的加载器，以及一些正则。当需要加载的文件匹配test的正则时，就会调用后面的loader对文件进行处理，这正是webpack强大的原因。</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+<h3>
+<a id="path--srcjsjs-srcjsxjsx-srctsts" class="anchor" href="#path--srcjsjs-srcjsxjsx-srctsts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>path ??? ./src/js/*.js, ./src/jsx/*.jsx, ./src/ts/*.ts</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> config <span class="pl-k">=</span> {
+   entry<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>./src/js/main.js<span class="pl-pds">'</span></span>,   
+   output<span class="pl-k">:</span> {
+      path<span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">'</span>./builds/development/js/<span class="pl-pds">'</span></span>,
+      filename<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>main.js<span class="pl-pds">'</span></span>,
+   },
+   devServer<span class="pl-k">:</span> {
+      inline<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+      port<span class="pl-k">:</span> <span class="pl-c1">7777</span>
+   },   
+   module<span class="pl-k">:</span> {
+      loaders<span class="pl-k">:</span> [ {
+         test<span class="pl-k">:</span><span class="pl-sr"> <span class="pl-pds">/</span><span class="pl-cce">\.</span>jsx<span class="pl-k">?</span><span class="pl-k">$</span><span class="pl-pds">/</span></span>,
+         exclude<span class="pl-k">:</span><span class="pl-sr"> <span class="pl-pds">/</span>node_modules<span class="pl-pds">/</span></span>,
+         loader<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>babel<span class="pl-pds">'</span></span>,   
+         query<span class="pl-k">:</span> {
+            presets<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>es2015<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>]
+         }
+      }]
+   }    
+}
+<span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> config;
+</pre></div>
+
+<h3>
+<a id="step5-编辑-packagejson-文件" class="anchor" href="#step5-%E7%BC%96%E8%BE%91-packagejson-%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step5: 编辑 package.json 文件</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-s"><span class="pl-pds">"</span>scripts<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+    <span class="pl-s"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>echo <span class="pl-cce">\"</span>Error: no test specified<span class="pl-cce">\"</span> &amp;&amp; exit 1<span class="pl-pds">"</span></span>
+  },</pre></div>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-s"><span class="pl-pds">"</span>scripts<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+    <span class="pl-s"><span class="pl-pds">"</span>start<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>webpack-dev-server --hot<span class="pl-pds">"</span></span>
+  },</pre></div>
+
+<p><strong>--hot</strong>命令会在文件变化后重新载入，就不需要在代码修改后重新刷新浏览器就能看到变化</p>
+
+<h3>
+<a id="step6-npm-start-命令来启动服务" class="anchor" href="#step6-npm-start-%E5%91%BD%E4%BB%A4%E6%9D%A5%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step6: npm start 命令来启动服务。</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ npm start</pre></div>
+
+<h3>
+<a id="step7-编辑-indexjade" class="anchor" href="#step7-%E7%BC%96%E8%BE%91-indexjade" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step7: 编辑 index.jade</h3>
+
+<div class="highlight highlight-text-jade"><pre>doctype html
+html<span class="pl-c1">(</span><span class="pl-e">lang</span>=<span class="pl-s">"en"</span><span class="pl-c1">)</span>
+    head
+        meta<span class="pl-c1">(</span><span class="pl-e">charset</span>=<span class="pl-s">"UTF-8"</span><span class="pl-c1">)</span>
+        meta<span class="pl-c1">(</span><span class="pl-e">http-equiv</span>=<span class="pl-s">"X-UA-Compatible"</span> <span class="pl-e">content</span>=<span class="pl-s">"IE=edge,chrome=1"</span><span class="pl-c1">)</span>
+        meta<span class="pl-c1">(</span><span class="pl-e">name</span>=<span class="pl-s">"viewport"</span> <span class="pl-e">content</span>=<span class="pl-s">"width=device-width, initial-scale=1,user-scalable=no"</span><span class="pl-c1">)</span>
+        link<span class="pl-c1">(</span><span class="pl-e">rel</span>=<span class="pl-s">""</span> <span class="pl-e">href</span>=<span class="pl-s">""</span><span class="pl-c1">)</span>
+        title React Project
+    body
+        header
+            h1 React <span class="pl-ii">&amp;&amp;</span> React native 
+            nav
+                ul
+                    li
+<span class="pl-s">                    //emmet li*3 ??? for/each</span>
+<span class="pl-s"></span>        main
+            section
+                div<span class="pl-e">.app</span>
+<span class="pl-s">                // .app</span>
+<span class="pl-s"></span><span class="pl-c">                //- react enter port</span>
+<span class="pl-c"></span>        aside
+            ul
+                li
+        footer
+            div
+                span<span class="pl-c1">(</span><span class="pl-e">copyright</span> <span class="pl-e">@</span> <span class="pl-e">xgqfrms</span> <span class="pl-e">2016</span><span class="pl-c1">)</span>
+        script<span class="pl-c1">(</span><span class="pl-e">src</span>=<span class="pl-s">"./js/main.js"</span><span class="pl-c1">)</span>
+<span class="pl-c">        //- /builds/development/index.html</span>
+<span class="pl-c">        //- /builds/production/js/main.js</span>
+<span class="pl-c">        //- /builds/production/js/app.js</span>
+<span class="pl-c"></span></pre></div>
+
+<h3>
+<a id="step8-编辑-mainjs" class="anchor" href="#step8-%E7%BC%96%E8%BE%91-mainjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step8: 编辑 main.js</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> <span class="pl-smi">React</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> <span class="pl-smi">ReactDOM</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-dom<span class="pl-pds">'</span></span>;
+
+<span class="pl-k">import</span> <span class="pl-smi">App</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>./app.jsx<span class="pl-pds">'</span></span>;
+
+<span class="pl-c">/*</span>
+<span class="pl-c">    ./src/js/main.js </span>
+<span class="pl-c">    ./src/js/app.jsx</span>
+<span class="pl-c"></span>
+<span class="pl-c">    import App from '../jsx/app.jsx';</span>
+<span class="pl-c">    (./src/jsx/app.jsx)  </span>
+<span class="pl-c">*/</span>
+
+<span class="pl-smi">ReactDOM</span>.<span class="pl-en">render</span>(<span class="pl-k">&lt;</span>App <span class="pl-k">/</span><span class="pl-k">&gt;</span>, <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>app<span class="pl-pds">'</span></span>))</pre></div>
+
+<h3>
+<a id="注意" class="anchor" href="#%E6%B3%A8%E6%84%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>注意：</h3>
+
+<blockquote>
+<p>如果想要组件可以在任何的应用中使用，需要在创建组件后,
+使用 <strong>export</strong> 将其导出，
+在使用组件的文件使用 <strong>import</strong>将其导入。</p>
+</blockquote>
+
+<h3>
+<a id="step9-编辑-appjsx" class="anchor" href="#step9-%E7%BC%96%E8%BE%91-appjsx" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step9: 编辑 app.jsx</h3>
+
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-k">import</span><span class="pl-smi"> React</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>;
+
+<span class="pl-k">class</span> <span class="pl-en">App</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+   <span class="pl-en">render</span>() {
+<span class="pl-k">      return</span> (
+         &lt;<span class="pl-ent">div</span>&gt;
+            Hello World!&lt;<span class="pl-ent">br</span> /&gt;
+            欢迎来到&lt;<span class="pl-ent">mark</span>&gt;React&lt;/<span class="pl-ent">mark</span>&gt;教程学习!
+         &lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-c">         // jade ???</span>
+      );
+   }
+}
+
+<span class="pl-k">export default</span><span class="pl-smi"> App</span>;
+<span class="pl-c">// 我们需要引入组件并将其渲染到根元素 App 上，这样我们才可以在浏览器上看到它。</span></pre></div>
+
+<h3>
+<a id="注意-1" class="anchor" href="#%E6%B3%A8%E6%84%8F-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>注意：</h3>
+
+<blockquote>
+<p>如果想要组件可以在任何的应用中使用，需要在创建组件后,
+使用 <strong>export</strong> 将其导出，
+在使用组件的文件使用 <strong>import</strong>将其导入。</p>
+</blockquote>
+
+<h3>
+<a id="step10-安装-gulp-gulp-jade" class="anchor" href="#step10-%E5%AE%89%E8%A3%85-gulp-gulp-jade" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step10: 安装 gulp gulp-jade</h3>
+
+<p><strong>--save</strong> 命令用于将依赖包添加到package.json的<strong>“dependencies”</strong>中.
+<strong>--save-dev</strong> 命令用于将依赖包添加到package.json的<strong>“devDependencies”</strong>中.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save-dev gulp gulp-jade </pre></div>
+
+<h3>
+<a id="编辑-gulpfilejs-使用通配符" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js (使用*通配符)</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> gulp <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>gulp<span class="pl-pds">'</span></span>),
+    jade <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>gulp-jade<span class="pl-pds">'</span></span>);
+
+    <span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>jade<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-smi">gulp</span>.<span class="pl-en">src</span>(<span class="pl-s"><span class="pl-pds">'</span>src/template/**/*.jade<span class="pl-pds">'</span></span>)
+            .<span class="pl-en">pipe</span>(<span class="pl-en">jade</span>())
+            .<span class="pl-en">pipe</span>(<span class="pl-smi">gulp</span>.<span class="pl-en">dest</span>(<span class="pl-s"><span class="pl-pds">'</span>builds/development<span class="pl-pds">'</span></span>));
+    });</pre></div>
+
+<h3>
+<a id="cmd-运行-gulp-jade" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-jade" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp jade</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp jade</pre></div>
+
+<div class="highlight highlight-text-html-basic"><pre>    &lt;!DOCTYPE html&gt;
+    &lt;<span class="pl-ent">html</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">http-equiv</span>=<span class="pl-s"><span class="pl-pds">"</span>X-UA-Compatible<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>IE=edge,chrome=1<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>viewport<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>width=device-width, initial-scale=1,user-scalable=no<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">title</span>&gt;React Project&lt;/<span class="pl-ent">title</span>&gt;
+    &lt;/<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">header</span>&gt;
+    &lt;<span class="pl-ent">h1</span>&gt;React <span class="pl-ii">&amp;&amp;</span> React native &lt;/<span class="pl-ent">h1</span>&gt;
+    &lt;<span class="pl-ent">nav</span>&gt;
+    &lt;<span class="pl-ent">ul</span>&gt;
+    &lt;<span class="pl-ent">li</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;
+    <span class="pl-c">&lt;!--emmet li*3 ??? for/each--&gt;</span>
+    &lt;/<span class="pl-ent">ul</span>&gt;
+    &lt;/<span class="pl-ent">nav</span>&gt;
+    &lt;/<span class="pl-ent">header</span>&gt;
+    &lt;<span class="pl-ent">main</span>&gt;
+    &lt;<span class="pl-ent">section</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>app<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    <span class="pl-c">&lt;!-- .app--&gt;</span>
+    &lt;/<span class="pl-ent">section</span>&gt;
+    &lt;/<span class="pl-ent">main</span>&gt;
+    &lt;<span class="pl-ent">aside</span>&gt;&lt;<span class="pl-ent">ul</span>&gt;&lt;<span class="pl-ent">li</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;&lt;/<span class="pl-ent">ul</span>&gt;&lt;/<span class="pl-ent">aside</span>&gt;
+    &lt;<span class="pl-ent">footer</span>&gt;
+    &lt;<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">copyright</span> @ <span class="pl-e">xgqfrms</span> <span class="pl-e">2016</span>&gt;&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">footer</span>&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>./js/main.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;/<span class="pl-ent">body</span>&gt;
+    &lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h3>
+<a id="step11-安装-npm-install---save-dev-gulp-browserify" class="anchor" href="#step11-%E5%AE%89%E8%A3%85-npm-install---save-dev-gulp-browserify" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step11: 安装 npm install --save-dev gulp-browserify</h3>
+
+<p><strong>--save</strong> 命令用于将依赖包添加到package.json的<strong>“dependencies”</strong>中.
+<strong>--save-dev</strong> 命令用于将依赖包添加到package.json的<strong>“devDependencies”</strong>中.</p>
+
+<div class="highlight highlight-source-shell"><pre>npm install --save-dev gulp-browserify</pre></div>
+
+<h3>
+<a id="编辑-gulpfilejs-使用通配符-1" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js (使用*通配符)</h3>
+
+<div class="highlight highlight-source-js"><pre>browserify <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>gulp-browserify<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>js<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-smi">gulp</span>.<span class="pl-en">src</span>(<span class="pl-s"><span class="pl-pds">'</span>src/js/*.js<span class="pl-pds">'</span></span>)
+            .<span class="pl-en">pipe</span>(<span class="pl-en">browserify</span>({ debug<span class="pl-k">:</span> <span class="pl-c1">true</span>}))
+            .<span class="pl-en">pipe</span>(<span class="pl-smi">gulp</span>.<span class="pl-en">dest</span>(<span class="pl-s"><span class="pl-pds">'</span>builds/development/js<span class="pl-pds">'</span></span>));
+    });</pre></div>
+
+<h3>
+<a id="cmd-运行-gulp-js" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-js" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp js</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp js</pre></div>
+
+<h2>
+<a id="new-cmd-安装-npm-install---save-dev-requirejs---error" class="anchor" href="#new-cmd-%E5%AE%89%E8%A3%85-npm-install---save-dev-requirejs---error" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>new: CMD 安装 npm install --save-dev requirejs  <strong>???????? error?????</strong>
+</h2>
+
+<div class="highlight highlight-source-shell"><pre>    $ npm install --save-dev requirejs</pre></div>
+
+<h3>
+<a id="how-to-include-a-javascript-file-in-another-javascript-file" class="anchor" href="#how-to-include-a-javascript-file-in-another-javascript-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://stackoverflow.com/questions/950087/how-to-include-a-javascript-file-in-another-javascript-file/39854041#39854041">how-to-include-a-javascript-file-in-another-javascript-file</a>
+</h3>
+
+<h3>
+<a id="requirejs-in-node" class="anchor" href="#requirejs-in-node" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://requirejs.org/docs/node.html#3">REQUIREJS IN NODE</a>
+</h3>
+
+<p>sub.js (module.exports)</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> {
+  <span class="pl-en">log</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">string</span>) {
+    <span class="pl-k">if</span>(<span class="pl-en">console</span>) <span class="pl-en">console</span>.<span class="pl-c1">log</span>(string);
+  }
+  <span class="pl-en">mylog</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>just for log test!<span class="pl-pds">'</span></span>);
+  }
+}</pre></div>
+
+<p>main.js (Usage)</p>
+
+<div class="highlight highlight-source-shell"><pre>var mylog =require(<span class="pl-s"><span class="pl-pds">'</span>./sub<span class="pl-pds">'</span></span>)<span class="pl-k">;</span>
+
+mylog.log(<span class="pl-s"><span class="pl-pds">'</span>Hurray, it works! :)<span class="pl-pds">'</span></span>)<span class="pl-k">;</span>
+<span class="pl-en">mylog.mylog</span>();</pre></div>
+
+<h3>
+<a id="step12-安装-gulp-uglify" class="anchor" href="#step12-%E5%AE%89%E8%A3%85-gulp-uglify" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step12: 安装 gulp-uglify</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save-dev gulp-uglify</pre></div>
+
+<h3>
+<a id="编辑-gulpfilejs-使用通配符-2" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js (使用*通配符)</h3>
+
+<div class="highlight highlight-source-shell"><pre>uglify= require(<span class="pl-s"><span class="pl-pds">'</span>gulp-uglify<span class="pl-pds">'</span></span>)<span class="pl-k">;</span>
+
+<span class="pl-en">gulp.task('js',function</span>(){
+        <span class="pl-k">return</span> gulp.src(<span class="pl-s"><span class="pl-pds">'</span>src/js/*.js<span class="pl-pds">'</span></span>)
+            .pipe(browserify({ debug: <span class="pl-c1">true</span>}))
+            .<span class="pl-en">pipe(uglify</span>())
+            .pipe(gulp.dest(<span class="pl-s"><span class="pl-pds">'</span>builds/development/js<span class="pl-pds">'</span></span>))<span class="pl-k">;</span>
+    })<span class="pl-k">;</span></pre></div>
+
+<h3>
+<a id="cmd-运行-gulp-js-1" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-js-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp js</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp js</pre></div>
+
+<h3>
+<a id="step13-安装-gulp-if--使用通配符" class="anchor" href="#step13-%E5%AE%89%E8%A3%85-gulp-if--%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>step13: 安装 gulp-if  (使用*通配符)</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save-dev <span class="pl-k">**</span>gulp-if<span class="pl-k">**</span></pre></div>
+
+<h3>
+<a id="编辑-gulpfilejs" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js</h3>
+
+<div class="highlight highlight-source-shell"><pre>gulpif= require(<span class="pl-s"><span class="pl-pds">'</span>gulp-if<span class="pl-pds">'</span></span>)<span class="pl-k">;</span>
+
+var env = process.env.NODE_ENV<span class="pl-k">;</span>
+
+<span class="pl-en">gulp.task('js',function</span>(){
+        <span class="pl-k">return</span> gulp.src(<span class="pl-s"><span class="pl-pds">'</span>src/js/*.js<span class="pl-pds">'</span></span>)
+            .pipe(browserify({ debug: env === <span class="pl-s"><span class="pl-pds">'</span>development<span class="pl-pds">'</span></span>}))
+            .pipe(gulpif(env === <span class="pl-s"><span class="pl-pds">'</span>production<span class="pl-pds">'</span></span>, <span class="pl-en">uglify</span>()))
+            .pipe(gulp.dest(<span class="pl-s"><span class="pl-pds">'</span>builds/development/js<span class="pl-pds">'</span></span>))<span class="pl-k">;</span>
+    })<span class="pl-k">;</span></pre></div>
+
+<h3>
+<a id="cmd-运行-set-node_envdevelopment--gulp-js" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-set-node_envdevelopment--gulp-js" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 set NODE_ENV=development &amp;&amp; gulp js</h3>
+
+<p>PS:(使用开发调试模式)</p>
+
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">set</span> NODE_ENV=development 
+$ gulp js</pre></div>
+
+<h3>
+<a id="cmd-运行-set-node_envproduction--gulp-js" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-set-node_envproduction--gulp-js" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 set NODE_ENV=production &amp;&amp; gulp js</h3>
+
+<p>PS:(使用产品发布模式)</p>
+
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">set</span> NODE_ENV=production 
+$ gulp js</pre></div>
+
+<h3>
+<a id="14-手动编辑-gulpfilejs-ps手动开启默认的模式" class="anchor" href="#14-%E6%89%8B%E5%8A%A8%E7%BC%96%E8%BE%91-gulpfilejs-ps%E6%89%8B%E5%8A%A8%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4%E7%9A%84%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>14. 手动编辑 gulpfile.js PS:(手动：开启默认的模式)</h3>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-c">// var env = process.env.NODE_ENV || 'production';</span>
+    <span class="pl-k">var</span> env <span class="pl-k">=</span> <span class="pl-c1">process</span>.<span class="pl-smi">env</span>.<span class="pl-c1">NODE_ENV</span> <span class="pl-k">||</span> <span class="pl-s"><span class="pl-pds">'</span>development<span class="pl-pds">'</span></span>;</pre></div>
+
+<h2>
+<a id="15-安装--gulp-sass-使用通配符" class="anchor" href="#15-%E5%AE%89%E8%A3%85--gulp-sass-%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>15. 安装  gulp-sass (使用*通配符)</h2>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save-dev gulp-sass  </pre></div>
+
+<h3>
+<a id="编辑-gulpfilejs-1" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js</h3>
+
+<div class="highlight highlight-source-shell"><pre>sass= require(<span class="pl-s"><span class="pl-pds">'</span>gulp-sass<span class="pl-pds">'</span></span>)<span class="pl-k">;</span>
+
+<span class="pl-en">gulp.task('sass',function</span>(){
+    <span class="pl-k">return</span> gulp.src(<span class="pl-s"><span class="pl-pds">'</span>src/sass/*.scss<span class="pl-pds">'</span></span>)
+        .pipe(sass({ sourceComments: <span class="pl-s"><span class="pl-pds">'</span>map<span class="pl-pds">'</span></span>}))
+        .pipe(gulp.dest(<span class="pl-s"><span class="pl-pds">'</span>builds/development/css<span class="pl-pds">'</span></span>))<span class="pl-k">;</span>
+})<span class="pl-k">;</span></pre></div>
+
+<h3>
+<a id="cmd-运行-gulp-sass" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-sass" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp sass</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp sass</pre></div>
+
+<p><strong>path 变量</strong>  +  <strong>if (env === 'development')</strong></p>
+
+<h2>
+<a id="16-编辑-gulpfilejs" class="anchor" href="#16-%E7%BC%96%E8%BE%91-gulpfilejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>16. 编辑 gulpfile.js</h2>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-k">var</span> outputDir <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>builds/development<span class="pl-pds">'</span></span>;
+    <span class="pl-c">//使用 path 变量，代替 path names</span>
+    .<span class="pl-en">pipe</span>(<span class="pl-smi">gulp</span>.<span class="pl-en">dest</span>(outputDir));
+    <span class="pl-c">// .pipe(gulp.dest('builds/development'));</span>
+    .<span class="pl-en">pipe</span>(<span class="pl-smi">gulp</span>.<span class="pl-en">dest</span>(outputDir <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>/js<span class="pl-pds">'</span></span>));
+    <span class="pl-c">// .pipe(gulp.dest('builds/development/js'));</span>
+    .<span class="pl-en">pipe</span>(<span class="pl-smi">gulp</span>.<span class="pl-en">dest</span>(outputDir <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>/css<span class="pl-pds">'</span></span>));
+    <span class="pl-c">// .pipe(gulp.dest('builds/development/css'));</span></pre></div>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>sass<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(){
+        <span class="pl-k">var</span> config <span class="pl-k">=</span> {};
+        <span class="pl-k">if</span> (env <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">'</span>development<span class="pl-pds">'</span></span>) {
+            <span class="pl-smi">config</span>.<span class="pl-smi">sourceComments</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>map<span class="pl-pds">'</span></span>;
+        } 
+        <span class="pl-k">if</span>(env <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">'</span>production<span class="pl-pds">'</span></span>){
+            <span class="pl-smi">config</span>.<span class="pl-smi">outputStyle</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>compressed<span class="pl-pds">'</span></span>;
+        }
+        <span class="pl-k">return</span> <span class="pl-smi">gulp</span>.<span class="pl-en">src</span>(<span class="pl-s"><span class="pl-pds">'</span>src/sass/main.scss<span class="pl-pds">'</span></span>)
+            <span class="pl-c">// .pipe(sass({ sourceComments: 'map'}))</span>
+            .<span class="pl-en">pipe</span>(<span class="pl-en">sass</span>(config))
+            .<span class="pl-en">pipe</span>(<span class="pl-smi">gulp</span>.<span class="pl-en">dest</span>(outputDir <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>/css<span class="pl-pds">'</span></span>));
+            <span class="pl-c">// .pipe(gulp.dest('builds/development/css'));</span>
+    });</pre></div>
+
+<h2>
+<a id="cmd-运行-set-node_envdevelopment--gulp-sass-ps使用开发调试模式" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-set-node_envdevelopment--gulp-sass-ps%E4%BD%BF%E7%94%A8%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 set NODE_ENV=development &amp;&amp; gulp sass PS:(使用开发调试模式)</h2>
+
+<div class="highlight highlight-source-shell"><pre>    $ <span class="pl-c1">set</span> NODE_ENV=development 
+    $ gulp sass</pre></div>
+
+<h2>
+<a id="cmd-运行-set-node_envproduction--gulp-sass-ps使用产品发布模式" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-set-node_envproduction--gulp-sass-ps%E4%BD%BF%E7%94%A8%E4%BA%A7%E5%93%81%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 set NODE_ENV=production &amp;&amp; gulp sass PS:(使用产品发布模式)</h2>
+
+<div class="highlight highlight-source-shell"><pre>    $ <span class="pl-c1">set</span> NODE_ENV=production 
+    $ gulp sass</pre></div>
+
+<h2>
+<a id="17-编辑-gulpfilejs--使用-gulp-watch-使用通配符" class="anchor" href="#17-%E7%BC%96%E8%BE%91-gulpfilejs--%E4%BD%BF%E7%94%A8-gulp-watch-%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>17. 编辑 gulpfile.js  使用 gulp watch (使用*通配符)</h2>
+
+<p>PS:(使用 watch 自动监测变化)</p>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>watch<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(){
+        <span class="pl-smi">gulp</span>.<span class="pl-c1">watch</span>(<span class="pl-s"><span class="pl-pds">'</span>src/template/**/*.jade<span class="pl-pds">'</span></span>,[<span class="pl-s"><span class="pl-pds">'</span>jade<span class="pl-pds">'</span></span>]);
+        <span class="pl-smi">gulp</span>.<span class="pl-c1">watch</span>(<span class="pl-s"><span class="pl-pds">'</span>src/js/**/*.js<span class="pl-pds">'</span></span>,[<span class="pl-s"><span class="pl-pds">'</span>js<span class="pl-pds">'</span></span>]);
+        <span class="pl-smi">gulp</span>.<span class="pl-c1">watch</span>(<span class="pl-s"><span class="pl-pds">'</span>src/sass/**/*.scss<span class="pl-pds">'</span></span>,[<span class="pl-s"><span class="pl-pds">'</span>sass<span class="pl-pds">'</span></span>]);
+    });</pre></div>
+
+<h2>
+<a id="cmd-运行-gulp-watch" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-watch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp watch</h2>
+
+<p>PS:(使用 watch 自动监测变化)</p>
+
+<div class="highlight highlight-source-shell"><pre>    $ gulp watch</pre></div>
+
+<h2>
+<a id="编辑-gulpfilejs--使用-gulptask-default模式" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs--%E4%BD%BF%E7%94%A8-gulptask-default%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js  使用 gulp.task default模式</h2>
+
+<p>PS:(使用default模式,指定 tasks)</p>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>default<span class="pl-pds">'</span></span>,[<span class="pl-s"><span class="pl-pds">'</span>js<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>sass<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>jade<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>watch<span class="pl-pds">'</span></span>]);
+    <span class="pl-c">/*</span>
+<span class="pl-c">        function(){</span>
+<span class="pl-c">            gulp.watch('src/template/**/</span><span class="pl-k">*</span>.<span class="pl-smi">jade</span><span class="pl-s"><span class="pl-pds">'</span>,[<span class="pl-pds">'</span></span>jade<span class="pl-s"><span class="pl-pds">'</span><span class="pl-ii">]);</span></span>
+<span class="pl-s"><span class="pl-ii">        }</span></span>
+<span class="pl-s"><span class="pl-ii">        === ???</span></span>
+<span class="pl-s">        [<span class="pl-pds">'</span></span>jade<span class="pl-s"><span class="pl-pds">'</span><span class="pl-ii">]</span></span>
+<span class="pl-s"><span class="pl-ii">    */</span></span></pre></div>
+
+<h2>
+<a id="cmd-运行-gulp" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp</h2>
+
+<p>PS:(使用default模式,指定 tasks)</p>
+
+<div class="highlight highlight-source-shell"><pre>    $ gulp</pre></div>
+
+<h2>
+<a id="ctrl--c-退出-watch--default-模式" class="anchor" href="#ctrl--c-%E9%80%80%E5%87%BA-watch--default-%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ctrl + C (退出 watch / default 模式)</h2>
+
+<h2>
+<a id="18-安装--gulp-connect" class="anchor" href="#18-%E5%AE%89%E8%A3%85--gulp-connect" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>18. 安装  gulp-connect</h2>
+
+<p>PS:(自动启动Web Server,打开browser,可以配置端口)???</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --save-dev gulp-connect </pre></div>
+
+<h3>
+<a id="编辑-gulpfilejs-2" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js</h3>
+
+<div class="highlight highlight-source-js"><pre>connect<span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>gulp-connect<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>connect<span class="pl-pds">'</span></span>,<span class="pl-smi">connect</span>.<span class="pl-en">server</span>({
+    root<span class="pl-k">:</span> [outputDir],
+    open<span class="pl-k">:</span> { browser<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Google Chrome<span class="pl-pds">'</span></span>}
+}));
+
+<span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>default<span class="pl-pds">'</span></span>,[<span class="pl-s"><span class="pl-pds">'</span>js<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>sass<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>jade<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>watch<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>connect<span class="pl-pds">'</span></span>]);</pre></div>
+
+<h3>
+<a id="cmd-运行-gulp-使用default模式指定-all-tasks" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-%E4%BD%BF%E7%94%A8default%E6%A8%A1%E5%BC%8F%E6%8C%87%E5%AE%9A-all-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp (使用default模式,指定 all-tasks)</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp</pre></div>
+
+<h2>
+<a id="编辑-gulpfilejs-3" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js</h2>
+
+<p>PS:(自动刷新 .pipe(connect.reload());)</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//每个task后，都后面追加上</span>
+.<span class="pl-en">pipe</span>(<span class="pl-smi">connect</span>.<span class="pl-c1">reload</span>());
+
+.<span class="pl-en">pipe</span>(<span class="pl-smi">connect</span>.<span class="pl-c1">reload</span>());
+
+.<span class="pl-en">pipe</span>(<span class="pl-smi">connect</span>.<span class="pl-c1">reload</span>());</pre></div>
+
+<h2>
+<a id="cmd-运行-gulp-1" class="anchor" href="#cmd-%E8%BF%90%E8%A1%8C-gulp-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD 运行 gulp</h2>
+
+<div class="highlight highlight-source-shell"><pre>    $ gulp</pre></div>
+
+<h2>
+<a id="-some-errors" class="anchor" href="#-some-errors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>???. some errors</h2>
+
+<p><a href="https://github.com/AveVlad/gulp-connect/issues/202">here some errors, what's wrong with this? #202</a>  </p>
+
+<p><a href="https://www.youtube.com/watch?v=KURMrW-HsY4&amp;index=7&amp;list=PLRk95HPmOM6PN-G1xyKj9q6ap_dc9Yckm">Get started with gulp Part 6: LiveReload and web server</a>  </p>
+
+<p><a href="https://github.com/xgqfrms/AngularJS/tree/gh-pages/images/errors">/images/errors/</a>
+<a href="https://github.com/xgqfrms/AngularJS/tree/gh-pages/gulp-test">gulp-test</a>  </p>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-c">/*</span>
+<span class="pl-c">    gulp.task('connect',connect.server({</span>
+<span class="pl-c">        root: [outputDir],</span>
+<span class="pl-c">        open: { browser: 'Google Chrome'}</span>
+<span class="pl-c">    }));</span>
+<span class="pl-c">    */</span>
+    <span class="pl-c">//https://github.com/AveVlad/gulp-connect</span>
+
+    <span class="pl-smi">gulp</span>.<span class="pl-en">task</span>(<span class="pl-s"><span class="pl-pds">'</span>connect<span class="pl-pds">'</span></span>,<span class="pl-k">function</span>(){
+        <span class="pl-smi">connect</span>.<span class="pl-en">server</span>({
+            root<span class="pl-k">:</span> [outputDir],
+            port<span class="pl-k">:</span> <span class="pl-c1">8080</span>,
+            livereload<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+            <span class="pl-c">// open: { browser: 'Google Chrome'}</span>
+        });
+    });</pre></div>
+
+<h2>
+<a id="bugs-fixed-" class="anchor" href="#bugs-fixed-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>bugs fixed ?</h2>
+
+<h3>
+<a id="编辑-gulpfilejs-4" class="anchor" href="#%E7%BC%96%E8%BE%91-gulpfilejs-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编辑 gulpfile.js</h3>
+
+<p>'''javascript
+    var env = process.env.NODE_ENV;
+'''</p>
+
+<blockquote>
+<h2>
+<a id="cmd-手动-传入参数" class="anchor" href="#cmd-%E6%89%8B%E5%8A%A8-%E4%BC%A0%E5%85%A5%E5%8F%82%E6%95%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CMD: 手动 传入参数</h2>
+
+<p>set NODE_ENV=development
+set NODE_ENV=production</p>
+</blockquote>
+
+<p>'''bash
+    $ set NODE_ENV=development
+    $ gulp
+'''
+'''bash
+    $ set NODE_ENV=production
+    $ gulp
+'''</p>
+
+<p>???</p>
+
+<h3>
+<a id="why-it-doesnt-work-by-using" class="anchor" href="#why-it-doesnt-work-by-using" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>why it doesn't work by using</h3>
+
+<p>// var env = process.env.NODE_ENV || 'production';
+// var env = process.env.NODE_ENV || 'development';</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/xgqfrms/React">React</a> is maintained by <a href="https://github.com/xgqfrms">xgqfrms</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
