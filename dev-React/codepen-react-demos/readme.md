@@ -131,13 +131,18 @@ $ babel ../../index.js -w -o ../../index-compiled.js
     "name": "React-App",
     "version": "1.0.1",
     "scripts": {
-        "build": "babel src -d lib"
+        "build": "babel src -d builds",
+        "babel": "babel src -d builds"
     },
     "devDependencies": {
         "babel-cli": "^6.0.0"
     }
 }
 
+$ npm run babel
+$ npm run build
+
+[Usage](https://babeljs.io/docs/setup/#installation)
 ``` 
 
 ***************************************************************************************  
