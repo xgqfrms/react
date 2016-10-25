@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Follow button</title>
+    <!-- https://dev.twitter.com/web/javascript/loading -->
+    <!-- https://dev.twitter.com/web/javascript/events -->
+</head>
+<body>
+    <div>
+        <h1>Follow button</h1>
+        <a class="twitter-follow-button" href="https://twitter.com/xgqfrms" data-size="large">Follow @xgqfrms</a>
+    </div>
+    <script>
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</body>
+</html>

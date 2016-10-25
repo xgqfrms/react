@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tweet-button</title>
+    <!-- https://dev.twitter.com/web/tweet-button -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <style>
+        .t{
+            background-color: rgba(255,255,255,1);
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            border: 3px solid #000;
+            box-shadow: 5px 7px 10px black;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .t>span{
+            /*background: #000;*/
+            color: #f0f;
+        }
+        .t>span:hover{
+            transform: scale(1.5) rotate(360deg);
+            transition: all 0.25s ease-out 0s;
+        }
+        .t>a{
+            text-decoration: none;
+            display: inline-block;
+            /*only block elements can realize aniamtion effect?*/
+        }
+        .t>a:hover{
+            color: #0f0;
+            transform: rotate(360deg);
+            transition: all 0.25s ease-out 0s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>tweet-button</h1>
+        <div>
+            <a class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=Hello%20world"
+              data-size="large">
+            <i class="fa fa-twitter fa-2x"></i>Tweet</a>
+        </div>
+        <div>
+            <div class="t">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">Tweet</a>
+            </div>
+        </div>
+        <pre>
+            <h2>How to add a Tweet button to your website</h2>
+            1. Create a new anchor element with a twitter-share-button class to allow Twitter’s widgets JavaScript to discover the element and enhance the link into a Tweet button. Set a href attribute value of https://twitter.com/intent/tweet to create a link to the Twitter web intent composer.
+            <code>
+                &lt;a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet">
+                Tweet&lt;/a>
+            </code>
+            2. Pre-populate Tweet text and suggest related accounts by customizing Tweet web intent query parameters.
+            <code>
+                &lt;a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?text=Hello%20world">
+                Tweet&lt;/a>
+            </code>
+            3. Customize Tweet button parameters using data-* attributes.
+            <code>
+                &lt;a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?text=Hello%20world"
+                  data-size="large">
+                Tweet&lt;/a>
+            </code>
+            4. Asynchronously load Twitter’s widgets JavaScript using our loading snippet. The JavaScript snippet will check for an existing version of Twitter’s widgets JavaScript on the current page, initialize a function queue to be executed once the widgets JavaScript has loaded, and load the widgets JavaScript asynchronously from Twitter’s CDN.
+        </pre>
+        <hr>
+        <pre>
+            <h2>Tweet text components</h2>
+            text
+            A text parameter appears pre-selected in a Tweet composer. The Tweet author may easily remove the text with a single delete action.
+
+            The text parameter may be auto-populated from the webpage’s &lt;title> element if not explicitly set.
+
+            url
+            The url parameter contains an absolute HTTP or HTTPS URL to be shared on Twitter. The shared URL will be shortened by Twitter’s t.co service in a published Tweet. A Twitter Card may be appear for a shared URL.
+
+            The url parameter may be auto-populated from a canonical link element (&lt;link rel="canonical">) or the location.href of the page when not explicitly set.
+
+            &lt;link rel="canonical"
+              href="https://dev.twitter.com/web/tweet-button">
+            hashtags
+            Add a comma-separated list of hashtags to a Tweet using the hashtags parameter. Omit a preceding “#” from each hashtag; the Tweet composer will automatically add the proper space-separated hashtag by language.
+
+            via
+            Attribute the source of a Tweet to a Twitter username using the via parameter. The attribution will appear in a Tweet as ” via @username” translated into the language of the Tweet author.
+
+            A via parameter may be auto-populated from a link or anchor element linked to a Twitter profile page with a me relationship token.
+
+            &lt;link rel="me"
+              href="https://twitter.com/twitterdev"
+            >
+            Button customization
+            Size
+            Add a data-size attribute value of large to display a larger Tweet button.
+        </pre>
+    </div>
+</body>
+</html>

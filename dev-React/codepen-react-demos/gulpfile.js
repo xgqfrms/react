@@ -10,7 +10,16 @@ var react = require('gulp-react');
 //npm install --save-dev gulp
 //npm install --save-dev gulp-react
 //npm install --save-dev gulp-sourcemaps
- 
+
+
+// https://egghead.io/lessons/react-react-fundamentals-development-environment-setup?course=react-fundamentals#/tab-transcript
+
+// npm install --save babel-loader babel-core babel-preset-es2015 babel-preset-react
+// npm install babel webpack webpack-dev-server -g
+
+// webpack.config.js main.js app.js index.html
+
+
 gulp.task('default', function () {
     return gulp.src('ticking.jsx')
         .pipe(sourcemaps.init())
@@ -18,3 +27,12 @@ gulp.task('default', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dest/'));
 });
+
+
+
+
+
+
+
+
+
