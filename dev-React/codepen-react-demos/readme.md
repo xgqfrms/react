@@ -361,3 +361,4 @@ $ npm install webpack-dev-server --save-dev
 
 
 
+npm i -g -f  强制升级npm OK
