@@ -1,5 +1,12 @@
 //https://jsfiddle.net/reactjs/69z2wepo/
 // JSX
+// steps: components 生命周期
+/*
+getInitialState
+componentWillMount
+render
+componentDidMount
+*/
 
 var Hello = React.createClass({
   getInitialState: function(){
