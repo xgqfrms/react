@@ -2,13 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     -->
     <title>need-babel</title>
+    <style>
+        .color{
+            color: #f0f;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
         <!-- This element's contents will be replaced with your component. -->
     </div>
     <div id="container2">
+        <!-- This element's contents will be replaced with your component. -->
+    </div>
+    <div id="container3">
+        <!-- This element's contents will be replaced with your component. -->
+    </div>
+    <div id="container4">
         <!-- This element's contents will be replaced with your component. -->
     </div>
     <div>
@@ -28,5 +47,8 @@
     <!-- step1: JSX type="text/babel"    指定jsx的解析器为babel-->
     <!-- http://react.xgqfrms.xyz/dev-React/codepen-react-demos/src/need-babel.html -->
     <!-- step2: browser.js    Ajax error : need HTTP Server -->
+    <script>
+        document.getElementById('container').style.fontSize = '2em';
+    </script>
 </body>
 </html>
