@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <title>Demo</title>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css3/style.css">
+    <!-- https://github.com/soulwire/Makisu -->
+    <!-- http://soulwire.github.io/sketch.js/ -->
+    <!-- http://soulwire.github.io/Makisu/ -->
+</head>
+<body>
+    <header class="header">
+        <hgroup>
+            <!-- <h1>demos</h1> -->
+        </hgroup>
+    </header>
+    <hr>
+    <section class="demo">
+        <dl class="list nigiri">
+            <dt>Project left</dt>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/Netease">netease</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/blogchat">Blogchat</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/tuniu">Tuniu</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/account">Account</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/3d.city">3D.city</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/3d-touch">3D-touch</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/pi">  Pi</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/star-wars/">Star wars</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/noface">Noface Man</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/2048">2048 GAME</a></dd>
+            <!-- can't click open link ?-->
+        </dl>
+        <dl class="list maki">
+            <dt>Project center</dt>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/Netease">netease</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/blogchat">Blogchat</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/tuniu">Tuniu</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/account">Account</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/3d.city">3D.city</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/3d-touch">3D-touch</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/pi">  Pi</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/star-wars/">Star wars</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/noface">Noface Man</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/2048">2048 GAME</a></dd>
+        </dl>
+        <dl class="list sashimi">
+            <dt>Project right</dt>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/Netease">netease</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/blogchat">Blogchat</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/tuniu">Tuniu</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/account">Account</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/3d.city">3D.city</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/3d-touch">3D-touch</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/pi">  Pi</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/star-wars/">Star wars</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/noface">Noface Man</a></dd>
+            <dd><a target="_blank" href="http://www.webgeeker.xyz/2048">2048 GAME</a></dd>
+        </dl>
+        <a href="#" class="toggle">Toggle</a>
+    </section>
+    <div class="warning">
+        <div class="message">
+            <h1>CSS 3D Not Detected :(</h1>
+            <p>
+                I couldn't detect your browser's CSS 3D capabilities. If I'm wrong, please 
+                <a target="_blank" href="https://github.com/xgqfrms/issues" target="_blank">file an issue</a>
+                , otherwise, try a 
+                <a target="_blank" href="http://www.google.com/chrome" target="_blank">sexier browser</a>
+            </p>
+        </div>
+    </div>
+    <a target="_blank" href="https://github.com/xgqfrms" target="_blank">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+    </a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./css3/makisu.js"></script>
+    <!-- https://github.com/soulwire/Makisu -->
+    <script>
+        // The `enabled` flag will be `false` if CSS 3D isn't available
+        if ( $.fn.makisu.enabled ) {
+            var $sashimi = $( '.sashimi' );
+            var $nigiri = $( '.nigiri' );
+            var $maki = $( '.maki' );
+            // Create Makisus
+            $nigiri.makisu({
+                selector: 'dd',
+                overlap: 0.85,
+                speed: 1.7
+            });
+            $maki.makisu({
+                selector: 'dd',
+                overlap: 0.6,
+                speed: 0.85
+            });
+            $sashimi.makisu({
+                selector: 'dd',
+                overlap: 0.2,
+                speed: 0.5
+            });
+            // Open all
+            
+            $( '.list' ).makisu( 'open' );
+            // Toggle on click
+            $( '.toggle' ).on( 'click', function() {
+                $( '.list' ).makisu( 'toggle' );
+            });
+            // Disable all links
+            $( '.demo a' ).click( function( event ) {
+                // event.preventDefault();
+                // Open links
+            });
+        } else {
+            $( '.warning' ).show();
+        }
+    </script>
+</body>
+</html>
