@@ -1,4 +1,5 @@
 //https://jsfiddle.net/reactjs/69z2wepo/
+// JSX
 
 var Hello = React.createClass({
   render: function() {
