@@ -22,6 +22,8 @@ https://egghead.io/courses/manage-complex-state-in-react-apps-with-mobx
 
 ## Mocha 
 
+[https://mochajs.org/](https://mochajs.org/)
+
 ```sh
 $ npm install --save react react-dom 
 
@@ -33,8 +35,41 @@ $ npm install --save-dev babel babel-preset-es2015 babel-preset-react babel-pres
 
 ```json
 "scripts": {
-    "test": "mocha  './src/**/*.spec.js' --compilers"
+    "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register"
   },
+``` 
+
+## test js(empty.spec.js)
+```js
+import expect form 'expect';
+
+describe('empty', () => {
+    it('should work', () => {
+        expect(true).toEqual(true);
+    });
+});
+
+// $ npm test
+
+
+``` 
+
+## test
+
+```sh
+$ npm test
+
+``` 
+
+
+## cdn js
+
+```html
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.1.2/mocha.js" integrity="sha256-N5gSz/06g+3w7sbdmJsIj5yFhqIA1YTWWFSZ4emoY80=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.1.2/mocha.css" integrity="sha256-XxZgFmkmXZlR6jVPH+k+HULjy6Lc2IadEc+Ph/KINXk=" crossorigin="anonymous" />
+
 ``` 
 
 
