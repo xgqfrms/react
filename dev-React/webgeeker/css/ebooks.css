@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #F3DDB6;
+    margin:30px 100px;
+    border:1px solid red;
+}
+
+.img_diamond{
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    /*border-radius: 50px;*/
+}
+.container{
+    background-color: #33aa33;
+    clear: both;
+}
+
+.i_header{
+    float: left;
+    background-color: #000000;
+}
+.i_header a{
+    color: #ffffff;
+}
+.h_logo{
+    float: left;
+}
+.h_n_link{
+    float: left;
+    margin:50px 100px;
+    color: #00ff00;
+}
+
+
+
+.a_img{
+    width:227px;
+    height:285px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+.b_l_img1{
+    width:100px;
+    height:50px;
+}
+.b_l_img2{
+    width:20%;
+    height:20%;
+}
+
+.pu{
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin:10px 10px;
+    padding:10px;
+    /*background: url(../images/paper_bg.png);*/
+    text-decoration: none;
+    list-style-type: decimal-leading-zero;
+    /*https://developer.mozilla.org/zh-CN/docs/Web/CSS/list-style-type*/
+}
+.pages_l>div{
+    float: left;
+}
+.pages_l{
+    background: url(../images/paper_bg.png);
+    margin:10px 50px;
+    padding:10px;
+}
+.amazon_buy{
+    clear: both;
+}
+
+
+
+
+/*end*/
