@@ -8,4 +8,16 @@ Build Native Mobile Apps using JavaScript and React
 [react-native.webgeeker.xyz](http://react-native.webgeeker.xyz/docs/getting-started.html)
 
 
-npm install -g react-native-cli
+```sh
+$ npm install -g react-native-cli
+
+$ react-native init AwesomeProject
+$ cd AwesomeProject
+$ react-native run-android
+
+``` 
+
+
+React-Native
+
+https://github.com/xgqfrms/React-Native.git

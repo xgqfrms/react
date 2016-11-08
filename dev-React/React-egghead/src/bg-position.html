@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 : background-position :-700px 100px; & background-attachment：scroll;</title>
+    <!-- http://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-position_percent -->
+    <!-- 
+        http://www.w3schools.com/cssref/pr_background-position.asp
+        https://www.w3.org/TR/css3-background/bg-pos.png
+        https://www.w3.org/TR/css3-background/#the-background-position
+        https://www.w3.org/TR/css3-background/#background-attachment
+     -->
+
+    <style>
+        .contianer{
+            position: relative;
+            margin: 100px;
+        }
+        .box{
+            background-color: grba(0,0,0,0.7);
+            /*background-image: url('https://www.w3.org/TR/css3-background/bg-pos.png');*/
+            background-image: url('./img/web_heart_animation.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /*background-attachment: scroll;*/
+            background-position: 0px 100px;
+            border: 1px solid red;
+            width: 500px;
+            height: 300px;
+            float: left;
+        }
+        .box:hover{
+            background-position: -700px 100px;
+            border: 1px solid green;
+            transition: all 3s ease 0s;
+        }
+        .box1{
+            background-attachment: scroll;
+        }
+        .div{
+            clear: both;
+        }
+        h3{
+            text-align: center;
+            margin-left: -130px;
+        }
+        h3 span.s{
+            display: inline-block;
+            margin: auto  100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <h3>background-attachment: fixed; <span class="s"> VS </span> background-attachment: scroll;</h3>
+        <div class="box">
+            <!-- bg-position -->
+        </div>
+        <div class="box box1">
+            <!-- bg-position -->
+        </div>
+        <div class="div">
+            <h3>
+                <span>background-attachment: scroll;</span><mark>scroll 滚动的/ fixed 滑动的</mark><br>
+                <mark>scroll 滚动的/ fixed 滑动的(相对viewport 而言,如果超出了，背景图填充的效果不同，scroll 有背景图/fixed无背景图)</mark><br>
+                <span>background-position: -100px 0px;</span><mark>-100px 0px 必须要有两个参数</mark><br>
+                <span>background-repeat: no-repeat;</span><mark>no-repeat 避免出现重复</mark><br>
+            </h3>
+        </div>
+    </div>
+</body>
+</html>

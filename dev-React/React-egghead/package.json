@@ -1,0 +1,35 @@
+{
+  "name": "react-webpack-github-app",
+  "version": "1.0.1",
+  "description": "React Github Notetaker(user info)",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/React.git"
+  },
+  "keywords": [
+    "React",
+    "Router",
+    "webpack",
+    "balel"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/React/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/React#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0"
+  }
+}
