@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mathML</title>
+    <!-- 
+    A MathML for CSS Profile 
+    W3C Recommendation 07 June 2011
+    https://www.w3.org/TR/mathml-for-css/
+
+    Mathematical Markup Language (MathML) Version 3.0 2nd Edition
+    W3C Recommendation 10 April 2014
+    https://www.w3.org/TR/MathML3/
+    https://www.w3.org/TR/MathML/
+     -->
+</head>
+<body>
+    <div>
+        <mrow>
+          <mo> ( </mo>
+          <mrow>
+            <mi> a </mi>
+            <mo> + </mo>
+            <mi> b </mi>
+          </mrow>
+          <mo> ) </mo>
+        </mrow>
+    </div>
+    <div>
+        <mrow>
+          <mrow>  <mi>f</mi> <mo>&#x2061;<!--FUNCTION APPLICATION--></mo> <mo>(</mo> <mi>x</mi> <mo>)</mo>  </mrow>
+
+          <mo id='eq1-equals'>=</mo>
+          <mrow>
+           <msup>
+            <mrow> <mo>(</mo> <mrow> <mi>x</mi> <mo>+</mo> <mn>1</mn> </mrow> <mo>)</mo> </mrow>
+            <mn>4</mn>
+           </msup>
+           <mo linebreak='newline' linebreakstyle='before'
+                             indentalign='id' indenttarget='eq1-equals'>=</mo>
+           <mrow>
+            <msup> <mi>x</mi> <mn>4</mn> </msup>
+            <mo id='eq1-plus'>+</mo>
+            <mrow>  <mn>4</mn> <mo>&#x2062;<!--INVISIBLE TIMES--></mo> <msup> <mi>x</mi> <mn>3</mn> </msup>  </mrow>
+            <mo>+</mo>
+            <mrow>  <mn>6</mn> <mo>&#x2062;<!--INVISIBLE TIMES--></mo> <msup> <mi>x</mi> <mn>2</mn> </msup>  </mrow>
+
+            <mo linebreak='newline' linebreakstyle='before'
+                              indentalignlast='id' indenttarget='eq1-plus'>+</mo>
+            <mrow>  <mn>4</mn> <mo>&#x2062;<!--INVISIBLE TIMES--></mo> <mi>x</mi>  </mrow>
+            <mo>+</mo>
+            <mn>1</mn>
+           </mrow>
+          </mrow>
+         </mrow>
+    </div>
+</body>
+</html>
