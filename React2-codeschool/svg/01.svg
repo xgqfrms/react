@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="340" width="340" style="background-color:#F6F7F7;">
+    <!-- Bg Circle -->
+    <circle cx="170" cy="170" r="162" fill="#068C70" stroke="#FFFFFF" stroke-width="15"/>
+
+    <!-- Chimney -->
+    <rect x="98" y="127" fill="#FBF6A7" width="14" height="21"/>
+    <rect x="95" y="123" fill="#E04E27" width="20" height="4"/>
+
+    <!-- House -->
+    <rect x="90" y="198" fill="#FBF6A7" width="162" height="84"/>
+    <rect x="80" y="148" fill="#E04E27" width="184" height="56"/>
+
+    <!-- Door -->
+    <rect x="153" y="222" fill="#E04E27" width="36" height="60"/>
+    <rect x="153" y="218" fill="#E04E27" width="36" height="10" rx="5"/>
+    <rect x="183" y="252" fill="#FBF6A7" width="2" height="8"/>
+
+    <!-- Flower -->
+    <line x1="228" y1="267" x2="228" y2="282" stroke="#068C70" stroke-width="1" />
+    <circle fill="#EC7E23" cx="228" cy="267" r="6"/>
+    <circle fill="#FBCE1D" cx="231" cy="266" r="2"/>
+
+    <!-- TEXT -->
+    <text x="85" y="97" font-size="70" fill="#3E9FD8" stroke="#FFFFFF" stroke-width="2" font-family="Filmotype Major" >HOME</text>
+</svg>

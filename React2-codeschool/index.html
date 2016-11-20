@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You, Me & SVG</title>
+    <link rel="stylesheet" href="./svg/svg.css">
+    <style>
+        *{
+            border-radius-left: 4px;
+            border-radius-right: 4px;
+        }
+        .test-circle{
+            background: #000;
+            color: #0f0;
+        }
+        .test-x{
+            background: #f0f;
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <img src="./svg/01.svg" alt="svg">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="340" width="340">
+        <!-- Bg Circle -->
+        <circle class="background-circle" cx="170" cy="170" r="162"/>
+
+        <!-- Chimney -->
+        <rect class="chimney" x="98" y="127" width="14" height="21"/>
+        <rect class="chimney-topper" x="95" y="123" width="20" height="4"/>
+
+        <!-- House -->
+        <rect class="body" x="90" y="198" width="162" height="84"/>
+        <!-- <rect class="roof" x="80" y="148" width="184" height="56"/> -->
+        <polygon class="roof" points="256,148 262,203 80,203 87,148 327,148"/>
+
+        <!-- test ? timecicle ?-->
+        <circle class="test-circle" cx="256" cy="148" r="3"/>
+        <!-- top-right -->
+        <circle class="test-circle" cx="262" cy="203" r="3"/>
+        <!-- bottom-right -->
+        <circle class="test-circle" cx="80" cy="203" r="3"/>
+        <!-- bottom-left -->
+        <circle class="test-circle" cx="87" cy="148" r="3"/>
+        <!-- top-left -->
+        <circle class="test-x" cx="327" cy="148" r="3"/>
+        <!-- circle-left -->
+
+        <!-- Door -->
+        <rect class="door" x="153" y="222" width="36" height="60"/>
+        <rect class="door" x="153" y="218" width="36" height="10" rx="5" ry="5"/>
+        <rect class="door-knob" x="183" y="252" width="2" height="8"/>
+
+        <!-- Flower -->
+        <line x1="228" y1="267" x2="228" y2="282"/>
+        <circle class="flower-outer" cx="228" cy="267" r="6"/>
+        <circle class="flower-inner" cx="231" cy="266" r="2"/>
+
+        <!-- TEXT -->
+        <text x="100" y="100">HOME</text>
+      </svg>
+</body>
+</html>
