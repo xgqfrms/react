@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosplay Happenings</title>
+    <link href='level1.css' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/level1.css"> -->
+    <!-- 
+    http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/css/reset.css
+    
+     -->
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class='nav'>
+      <div class='cell'>
+        <a class='nav-logo' href='/'>
+          <div class='shing'>
+            <img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/logo.png' alt='Sweet Lands' />
+          </div>
+        </a>
+        <ul class='nav-menu'>
+          <li><a href='#retweets'>Retweets</a></li>
+          <li><a href='#pictures'>Pictures</a></li>
+          <li><a href='#event'>Upcoming</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class='header'>
+      <div class='cell well'>
+        <h1 class='header-title'>Cosplay Happenings</h1>
+        <p class='header-subtitle'>Welcome to our candy-coated community!</p>
+      </div>
+    </header>
+
+    <!-- Most Retweeted -->
+    <section class='retweets' id='retweets'>
+      <div class='cell well'>
+        <h2>Most Retweeted</h2>
+        <div class='retweet group'>
+          <img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/unicorn.jpg' alt='Unicorn' width='200' height='200' />
+          <p>
+            Sparkles the Unicorn saunters down the Lemony Brick Road and
+            prances past the Soda Pop River! Her majestic horn points the way
+            to the Frosting Fortress, as her glittery mane and tail sway in the
+            bubblegum breeze.
+          </p>
+        </div>
+        <div class='retweet group'>
+          <img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/fairy.jpg' alt='Fairy' width='200' height='200' />
+          <p>
+            Who’s that there in the Candy Corn Fields? Why, it’s Sarsaparilla
+            the Sherbet Sprite! He’s thoughtfully pondering which treat to
+            partake of next. The Lollipop Forest is in the distance, in case he
+            needs a place to rest his sweet head.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purchase -->
+    <section class='pictures' id='pictures'>
+      <div class='cell well'>
+        <h2>Pictures</h2>
+        <ul class='pictures-list group'>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/group-01.jpg' alt='Group' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/cupcake.jpg' alt='Cupcake' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/rainbow.jpg' alt='Rainbow' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/donut.jpg' alt='Donut' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/dog.jpg' alt='Dog' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/fairy.jpg' alt='Fairy' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/unicorn.jpg' alt='Unicorn' width='200' height='200' /></li>
+          <li><img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/group-02.jpg' alt='Group' width='200' height='200' /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class='event'  id='event'>
+      <div class='cell well'>
+        <h2>Upcoming Event</h2>
+        <div class='event-content'>
+          <img src='http://dhg7upb7j7jqa.cloudfront.net/adventures_in_web_animations/assets/demo/sweetlandia.png' alt='SweetLandia' width='200' />
+          <h3>SweetLandia</h3>
+          <p>
+            Once upon a time, there was a magical place called Sweet Lands — a
+            world we may now only travel to in our imaginations. But one
+            weekend every year, when the sugar cane stalks bend toward the east
+            and the cotton candy is at its swirliest, the Sweetlandia
+            convention brings this wondrous world within reach! So join
+            Sparkles, Pierre, and the rest of the gang for a meeting of the
+            sweet-minded in sunny Omaha, Nebraska! It’s sure to be your
+            sweetest adventure yet.
+          </p>
+          <div class='event-action'>
+            <a href='#' class='btn buy-button'>
+              <span class='top content'>Register Now!</span>
+              <span class='bottom content'>Hurry, Limited Space!</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register Modal -->
+    <div class='modal-overlay'></div>
+    <div class='modal'>
+      <div class='modal-header'>
+        <a class='modal-close' href='#' aria-label='Close'>&times;</a>
+        <h3>Register</h3>
+      </div>
+      <div class='modal-content'>
+        <form class='form' action=''>
+          <fieldset class='form-field'>
+            <!-- <label class='form-label' for='type'>CC Type</label> -->
+            <select class='cs-select cs-skin-elastic' name='type'>
+              <option value='visa'>Visa</option>
+              <option value='mastercard'>MasterCard</option>
+              <option value='american_express'>American Express</option>
+            </select>
+          </fieldset>
+          <fieldset class='form-field'>
+            <label class='form-label' for='number'>CC Number</label>
+            <input class='form-input' type='text' id='number' />
+          </fieldset>
+          <fieldset class='form-field'>
+            <label class='form-label' for='expiration'>CC Expiration</label>
+            <input class='form-input' type='text' id='expiration' />
+          </fieldset>
+          <div class='form-submit'>
+            <input class='btn' type='Submit' value='Submit' />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src='application.min.js'></script>
+  </body>
+</html>

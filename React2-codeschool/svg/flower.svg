@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="12px" height="21px" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+  <title>Group</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="Group" sketch:type="MSLayerGroup">
+      <line x1="6" y1="6" x2="6" y2="21" stroke="#068C70" stroke-width="1" sketch:type="MSShapeGroup"/>
+      <circle id="Oval" fill="#EC7E23" sketch:type="MSShapeGroup" cx="6" cy="6" r="6"/>
+      <circle id="Oval" fill="#FBCE1D" sketch:type="MSShapeGroup" cx="9" cy="5" r="2"/>
+    </g>
+  </g>
+</svg>

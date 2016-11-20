@@ -1,0 +1,81 @@
+
+@import './reset.css';
+@import './button.css';
+@import './modal.css';
+
+/* Overrides for level 1 */
+.btn, span.content {
+  -webkit-transition: none;
+  transition: none;
+}
+.top.content, .bottom.content,
+.btn:hover .top, .btn:hover .bottom {
+  top: auto;
+}
+
+
+
+
+.modal,
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s;
+}
+.modal.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shing {
+  position: relative;
+}
+
+.shing::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  content: '';
+
+  box-shadow: inset 0 2px #FFF;
+  background: -50px center no-repeat;
+  background-image: -webkit-linear-gradient(325deg,rgba(255,255,255,0) 30%,#FFF 30%,#FFF 50%,rgba(255,255,255,0) 50%);
+  background-image: linear-gradient(125deg,rgba(255,255,255,0) 30%,#FFF 30%,#FFF 50%,rgba(255,255,255,0) 50%);
+  background-clip: padding-box;
+  opacity: .3;
+  -webkit-transition: background-position  0.07s 0.4s;
+  transition: background-position  0.07s 0.4s;
+}
+
+.shing:hover:after {
+  background-position: 100px center;
+}
+
+
+
+
+.btn {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.top.content {
+top: 0px;
+}
+.bottom.content {
+top: 50px;
+}
+.btn:hover .top {
+top: -50px;
+}
+.btn:hover .bottom {
+ top: 0px;
+}
+.btn .content {
+   -webkit-transition: top  1s;
+   transition: top  1s;
+}

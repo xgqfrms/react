@@ -1,0 +1,62 @@
+/* ------------------------------------- */
+/*  Modal
+/* ------------------------------------- */
+
+.modal {
+  background: #fff;
+  border-radius: 20px;
+  left: 50px;
+  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  width: 400px;
+}
+
+.modal h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.modal-close {
+  font-size: 200%;
+  right: 15px;
+  top: 0;
+  position: absolute;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-header {
+  background: #EEE;
+  padding: 20px 10px;
+}
+
+.modal-overlay {
+  background: HSLA(290, 33%, 47%, 0.90);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* 1.10 */
+/* Initial State */
+.modal,
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
+}
+
+/* Active State */
+.modal.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

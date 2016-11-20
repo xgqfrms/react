@@ -1,0 +1,57 @@
+/* ------------------------------------- */
+/*  Button
+/* ------------------------------------- */
+
+.btn {
+  background: #00A0D6;
+  border: 0;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 3;
+  height: 50px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all .4s;
+  transition: all .4s; /* 1.2 */
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+  background: #007DA7;
+  color: #E3E3E3;
+}
+
+span.content {
+ display: block;
+ width: 100%;
+ text-align: center;
+ -webkit-transition: all .3s;
+ transition: all .3s; /* 1.7 */
+}
+
+.btn .content {
+  position: absolute;
+}
+
+/* 1.7 */
+.top.content {
+  top: 0px;
+}
+/* 1.7 */
+.bottom.content {
+  top: 50px;
+}
+/* 1.7 */
+.btn:hover .top {
+  top: -50px;
+}
+/* 1.7 */
+.btn:hover .bottom {
+  top: 0px;
+}

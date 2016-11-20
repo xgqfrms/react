@@ -1,5 +1,7 @@
 svg {
-  background-color:#F6F7F7;
+  width: 30%;
+  height: auto;
+  
 }
 .background-circle {
   fill: #068C70;
@@ -24,7 +26,7 @@ svg {
 .door-knob {
   fill:#FBF6A7;
 }
-line {
+.flower line {
   fill: #068C70;
   stroke: #068C70;
   stroke-width: 1px;
@@ -41,4 +43,16 @@ text {
   fill: #3E9FD8;
   stroke: #FFFFFF;
   stroke-width: 2px;
+}
+.windows rect {
+  fill: #3E9FD8;
+}
+.windows line {
+  stroke: #E04E27;
+  stroke-width: 4px;
+}
+path {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width:2px;
 }
