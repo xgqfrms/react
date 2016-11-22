@@ -246,6 +246,204 @@ dontPanic(lighthouseRock);
 
 
 
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  addRanger: function (name, skillz, station){
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+// call the addRanger method on lighthouseRock
+lighthouseRock.addRanger("Jordan Wade", "dual-wield hand crossbow", 4);
+
+
+
+
+
+
+
+
+https://www.codeschool.com/discuss/t/javascript-road-trip-part-3-level-4-challenge-14/15539
+
+
+lighthouseRock.addBulb = function(name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+};
+
+// call addBulb and pass in the correct arguments
+lighthouseRock.addBulb("Blasterbright", 5000);
+lighthouseRock.addBulb("Sight Slayer", 1800);
+lighthouseRock.addBulb("Burner of Souls", 7500);
+
+
+
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  addRanger: function(name, skillz, station) {
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+
+
+
+
+
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  ranger4: {name: "Jordan Wade", skillz: "dual-wield hand crossbow", station: 4},
+  addRanger: function(name, skillz, station) {
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+// create addBulb function property here
+
+
+lighthouseRock.addBulb = function(name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+};
+
+
+
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+// build listGuns
+var listGuns = function(guns) {
+  for (var speargun in guns) {
+    console.log(speargun);
+  }
+};
+
+// call listGuns and pass in rockSpearguns
+listGuns(rockSpearguns);
+
+
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+function listGuns(guns) {
+  for (var speargun in guns) {
+    // modify the log message here
+    console.log("Behold! " + speargun + ", with " +
+                guns[speargun]["heft"] + " heft!");
+  }
+}
+
+listGuns(rockSpearguns);
+
+
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+// convert listGuns function
+function listGuns(guns) {
+  for (var speargun in guns) {
+    console.log("Behold! " + speargun + ", with " +
+                guns[speargun]["heft"] + " heft!");
+  }
+}
+
+// call listGuns using bracket notation on rockSpearguns
+listGuns(rockSpearguns);
+
+
+
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+rockSpearguns["listGuns"] = function() {
+  for (var property in this) {
+    if (this[property]["heft"] != undefined) {
+      console.log("Behold! " + property + ", with " +
+                  this[property]["heft"] + " heft!");
+    }
+  }
+};
+
+rockSpearguns["listGuns"]();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
