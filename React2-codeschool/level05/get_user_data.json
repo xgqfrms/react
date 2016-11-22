@@ -1,0 +1,817 @@
+{
+    "user_name": "xgqfrms",
+    "email": "xgqfrms@gmail.com",
+    "visitor": false,
+    "uuid": "2751281",
+    "external_id": null,
+    "reamaze_authkey": null,
+    "gravatar": "e7b8d8946d71e52d2670e0def364997a",
+    "progress": 91,
+    "current_run_through": {
+        "id": 7612727,
+        "count": 1,
+        "last_page_viewed": "level/5/section/1/implementing-a-list-of-authors",
+        "completed_at": null,
+        "user_id": 8419415,
+        "created_at": "2016-07-02T17:08:42.673Z",
+        "updated_at": "2016-11-21T10:28:42.257Z",
+        "course_identifier_id": 28
+    },
+    "points": {
+        "total_points": 8050,
+        "possible_points": 9250
+    },
+    "pages": {
+        "required_completed": 34,
+        "total_required": 37,
+        "total": 50
+    },
+    "achievements": {
+        "unawarded": [{
+            "type": "achievement",
+            "uid": "160969b1-0ab0-4ad1-b891-64a4785a48c9",
+            "value": null,
+            "file_path": null,
+            "file_hash": "",
+            "attributes": {
+                "badge": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "badge-05.png",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "badge",
+                    "attribute_order": 0,
+                    "attributes": null
+                },
+                "name": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Level 5 Complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "name",
+                    "attribute_order": 1,
+                    "attributes": null
+                },
+                "description": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Completed all required challenges in Level 5",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "description",
+                    "attribute_order": 2,
+                    "attributes": null
+                },
+                "category": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "level",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "category",
+                    "attribute_order": 3,
+                    "attributes": null
+                },
+                "action": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "action",
+                    "attribute_order": 4,
+                    "attributes": null
+                },
+                "label": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "137214bb-709e-4c76-bc89-756bfeb85268",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "label",
+                    "attribute_order": 5,
+                    "attributes": null
+                },
+                "events": [{
+                    "type": "analytic_event",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "attributes": {
+                        "category": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "level",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "category",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "action": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "complete",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "action",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "label": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "137214bb-709e-4c76-bc89-756bfeb85268",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "label",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "data": {
+                            "type": "text",
+                            "uid": null,
+                            "value": null,
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "data",
+                            "attribute_order": null,
+                            "attributes": null
+                        }
+                    },
+                    "name": "event"
+                }],
+                "data": {
+                    "type": "text",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "data",
+                    "attribute_order": null,
+                    "attributes": null
+                }
+            },
+            "name": "achievement",
+            "attribute_order": 4
+        }, {
+            "type": "achievement",
+            "uid": "157e97c0-cbfc-4bce-8e29-2c7253272f20",
+            "value": null,
+            "file_path": null,
+            "file_hash": "",
+            "attributes": {
+                "badge": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "badge-course.png",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "badge",
+                    "attribute_order": 0,
+                    "attributes": null
+                },
+                "name": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Course Complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "name",
+                    "attribute_order": 1,
+                    "attributes": null
+                },
+                "description": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Completed all required challenges for Powering Up With React",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "description",
+                    "attribute_order": 2,
+                    "attributes": null
+                },
+                "category": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "course",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "category",
+                    "attribute_order": 3,
+                    "attributes": null
+                },
+                "action": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "action",
+                    "attribute_order": 4,
+                    "attributes": null
+                },
+                "label": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "a581abc1-18ae-4a80-baea-4bbf5d353cb1",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "label",
+                    "attribute_order": 5,
+                    "attributes": null
+                },
+                "events": [{
+                    "type": "analytic_event",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "attributes": {
+                        "category": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "course",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "category",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "action": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "complete",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "action",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "label": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "a581abc1-18ae-4a80-baea-4bbf5d353cb1",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "label",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "data": {
+                            "type": "text",
+                            "uid": null,
+                            "value": null,
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "data",
+                            "attribute_order": null,
+                            "attributes": null
+                        }
+                    },
+                    "name": "event"
+                }],
+                "data": {
+                    "type": "text",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "data",
+                    "attribute_order": null,
+                    "attributes": null
+                }
+            },
+            "name": "achievement",
+            "attribute_order": 5
+        }],
+        "awarded": [{
+            "type": "achievement",
+            "uid": "72f9a12b-c221-4d3b-a249-1f45595deac4",
+            "value": null,
+            "file_path": null,
+            "file_hash": "",
+            "attributes": {
+                "badge": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "badge-01.png",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "badge",
+                    "attribute_order": 0,
+                    "attributes": null
+                },
+                "name": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Level 1 Complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "name",
+                    "attribute_order": 1,
+                    "attributes": null
+                },
+                "description": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Completed all required challenges in Level 1",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "description",
+                    "attribute_order": 2,
+                    "attributes": null
+                },
+                "category": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "level",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "category",
+                    "attribute_order": 3,
+                    "attributes": null
+                },
+                "action": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "action",
+                    "attribute_order": 4,
+                    "attributes": null
+                },
+                "label": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "75598f61-1f7b-43d2-9835-8bf20b987420",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "label",
+                    "attribute_order": 5,
+                    "attributes": null
+                },
+                "events": [{
+                    "type": "analytic_event",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "attributes": {
+                        "category": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "level",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "category",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "action": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "complete",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "action",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "label": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "75598f61-1f7b-43d2-9835-8bf20b987420",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "label",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "data": {
+                            "type": "text",
+                            "uid": null,
+                            "value": null,
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "data",
+                            "attribute_order": null,
+                            "attributes": null
+                        }
+                    },
+                    "name": "event"
+                }],
+                "data": {
+                    "type": "text",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "data",
+                    "attribute_order": null,
+                    "attributes": null
+                }
+            },
+            "name": "achievement",
+            "attribute_order": 0
+        }, {
+            "type": "achievement",
+            "uid": "136845f7-8e17-4b88-afcd-1ab6b3926c6d",
+            "value": null,
+            "file_path": null,
+            "file_hash": "",
+            "attributes": {
+                "badge": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "badge-02.png",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "badge",
+                    "attribute_order": 0,
+                    "attributes": null
+                },
+                "name": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Level 2 Complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "name",
+                    "attribute_order": 1,
+                    "attributes": null
+                },
+                "description": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Completed all required challenges in Level 2",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "description",
+                    "attribute_order": 2,
+                    "attributes": null
+                },
+                "category": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "level",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "category",
+                    "attribute_order": 3,
+                    "attributes": null
+                },
+                "action": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "action",
+                    "attribute_order": 4,
+                    "attributes": null
+                },
+                "label": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "5a0608da-1a01-4d43-8dd6-15a4e0cd281c",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "label",
+                    "attribute_order": 5,
+                    "attributes": null
+                },
+                "events": [{
+                    "type": "analytic_event",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "attributes": {
+                        "category": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "level",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "category",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "action": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "complete",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "action",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "label": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "5a0608da-1a01-4d43-8dd6-15a4e0cd281c",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "label",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "data": {
+                            "type": "text",
+                            "uid": null,
+                            "value": null,
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "data",
+                            "attribute_order": null,
+                            "attributes": null
+                        }
+                    },
+                    "name": "event"
+                }],
+                "data": {
+                    "type": "text",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "data",
+                    "attribute_order": null,
+                    "attributes": null
+                }
+            },
+            "name": "achievement",
+            "attribute_order": 1
+        }, {
+            "type": "achievement",
+            "uid": "3e033906-776f-4496-9d48-f9df628203f6",
+            "value": null,
+            "file_path": null,
+            "file_hash": "",
+            "attributes": {
+                "badge": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "badge-03.png",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "badge",
+                    "attribute_order": 0,
+                    "attributes": null
+                },
+                "name": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Level 3 Complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "name",
+                    "attribute_order": 1,
+                    "attributes": null
+                },
+                "description": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Completed all required challenges in Level 3",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "description",
+                    "attribute_order": 2,
+                    "attributes": null
+                },
+                "category": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "level",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "category",
+                    "attribute_order": 3,
+                    "attributes": null
+                },
+                "action": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "action",
+                    "attribute_order": 4,
+                    "attributes": null
+                },
+                "label": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "63c546c7-7111-4f9b-96da-0c83f3da5246",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "label",
+                    "attribute_order": 5,
+                    "attributes": null
+                },
+                "events": [{
+                    "type": "analytic_event",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "attributes": {
+                        "category": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "level",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "category",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "action": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "complete",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "action",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "label": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "63c546c7-7111-4f9b-96da-0c83f3da5246",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "label",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "data": {
+                            "type": "text",
+                            "uid": null,
+                            "value": null,
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "data",
+                            "attribute_order": null,
+                            "attributes": null
+                        }
+                    },
+                    "name": "event"
+                }],
+                "data": {
+                    "type": "text",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "data",
+                    "attribute_order": null,
+                    "attributes": null
+                }
+            },
+            "name": "achievement",
+            "attribute_order": 2
+        }, {
+            "type": "achievement",
+            "uid": "ae5c19cb-03cf-4e8c-8353-a5fd7abdefb1",
+            "value": null,
+            "file_path": null,
+            "file_hash": "",
+            "attributes": {
+                "badge": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "badge-04.png",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "badge",
+                    "attribute_order": 0,
+                    "attributes": null
+                },
+                "name": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Level 4 Complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "name",
+                    "attribute_order": 1,
+                    "attributes": null
+                },
+                "description": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "Completed all required challenges in Level 4",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "description",
+                    "attribute_order": 2,
+                    "attributes": null
+                },
+                "category": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "level",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "category",
+                    "attribute_order": 3,
+                    "attributes": null
+                },
+                "action": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "complete",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "action",
+                    "attribute_order": 4,
+                    "attributes": null
+                },
+                "label": {
+                    "type": "text",
+                    "uid": null,
+                    "value": "9f283b33-0808-4fa5-8e7c-8d0333e0f6ec",
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "label",
+                    "attribute_order": 5,
+                    "attributes": null
+                },
+                "events": [{
+                    "type": "analytic_event",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "attributes": {
+                        "category": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "level",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "category",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "action": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "complete",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "action",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "label": {
+                            "type": "text",
+                            "uid": null,
+                            "value": "9f283b33-0808-4fa5-8e7c-8d0333e0f6ec",
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "label",
+                            "attribute_order": null,
+                            "attributes": null
+                        },
+                        "data": {
+                            "type": "text",
+                            "uid": null,
+                            "value": null,
+                            "file_path": null,
+                            "file_hash": "",
+                            "name": "data",
+                            "attribute_order": null,
+                            "attributes": null
+                        }
+                    },
+                    "name": "event"
+                }],
+                "data": {
+                    "type": "text",
+                    "uid": null,
+                    "value": null,
+                    "file_path": null,
+                    "file_hash": "",
+                    "name": "data",
+                    "attribute_order": null,
+                    "attributes": null
+                }
+            },
+            "name": "achievement",
+            "attribute_order": 3
+        }]
+    },
+    "hints": {
+        "used_count": 7
+    },
+    "features": []
+}

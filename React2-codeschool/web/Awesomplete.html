@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesomplete</title>
+    <!-- 
+    http://leaverou.github.io/awesomplete/
+    https://cdnjs.com/libraries/awesomplete
+     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.css" integrity="sha256-pMulKeKs7Hns5vhu0uluhawM68QSrKg/dFfttaXCKE8=" crossorigin="anonymous" />
+</head>
+<body>
+    <div>
+        <h1>https://cdnjs.com/libraries/awesomplete</h1>
+    </div>
+    <div>
+        <input class="awesomplete" data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" />
+        <pre>
+            &lt;input class="awesomplete" data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" /&gt;
+        </pre>
+    </div>
+    <div>
+        <input class="awesomplete" list="mylist" />
+        <datalist id="mylist">
+            <option>Ada</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>Brainfuck</option>
+            <option>LOLCODE</option>
+            <option>Node.js</option>
+            <option>Ruby on Rails</option>
+        </datalist>
+    </div>
+    <div>
+        <input class="awesomplete" data-list="#mylist" />
+        <ul id="mylist">
+            <li>Ada</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Brainfuck</li>
+            <li>LOLCODE</li>
+            <li>Node.js</li>
+            <li>Ruby on Rails</li>
+        </ul>
+    </div>
+    <div>
+        <input id="myinput" />
+        <ul id="myinputlist">
+            <li>Ada</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Brainfuck</li>
+            <li>LOLCODE</li>
+            <li>Node.js</li>
+            <li>Ruby on Rails</li>
+        </ul>
+    </div>
+    <div>
+        <input data-list="CSS, JavaScript, HTML, SVG, ARIA, MathML" class="dropdown-input" />
+    </div>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.js" integrity="sha256-hQ2PYbQiQS3xeguwt5BS+AMzn5V5JJ0P1kQnuoXdTnk=" crossorigin="anonymous"></script>
+    <script>
+        var input = document.getElementById("myinput");
+        new Awesomplete(input, {list: "#myinputlist"});
+    </script>
+    <script>
+        var comboplete = new Awesomplete('input.dropdown-input', {
+            minChars: 0,
+        });
+        Awesomplete.$('.dropdown-btn').addEventListener("click", function() {
+            if (comboplete.ul.childNodes.length === 0) {
+                comboplete.minChars = 0;
+                comboplete.evaluate();
+            }
+            else if (comboplete.ul.hasAttribute('hidden')) {
+                comboplete.open();
+            }
+            else {
+                comboplete.close();
+            }
+        });
+    </script>
+</body>
+</html>

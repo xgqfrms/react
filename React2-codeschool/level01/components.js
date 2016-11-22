@@ -1,9 +1,18 @@
-class RobotBox extends React.Component {
+class RobotItems extends React.Component {
   render() {
-    return <div>Hello From React</div>;
+    const topics = ["React", "JSX", "JavaScript", "Programming"];
+    return (
+      <div>
+        <h3>Topics I am interested in</h3>
+        <ul>
+          {topics.map( topic => <li>{topic}</li> )}
+        </ul>
+      </div>
+    );
   }
 }
 
 let target = document.getElementById('robot-app');
 
 ReactDOM.render( <RobotBox/>, target);
+
