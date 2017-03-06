@@ -67,6 +67,42 @@ A <Router> that uses the HTML5 history API (pushState, replaceState and the pops
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 1.0.4 => 1.2.1
 
 
@@ -103,6 +139,41 @@ $ yarn test
 
 $ npm run build
 $ yarn build
+
+
+
+
+
+
+
+
+
+http://codepen.io/xgqfrms/pen/QpKaGZ
+
+
+
+
+
+
+$ npm install --save react-router
+
+// using an ES6 transpiler, like babel
+import { Router, Route, Link } from 'react-router'
+
+
+The UMD build is also available on unpkg:
+
+<script src="https://unpkg.com/react-router/umd/ReactRouter.min.js"></script>
+
+You can find the library on window.ReactRouter.
+
+
+
+
+
+
+
+
 
 
 

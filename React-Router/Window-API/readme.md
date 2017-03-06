@@ -22,16 +22,25 @@ result 是一个布尔值，表示是选择确定还是取消 (true表示OK)。
 
 示例
 
+```js
+
 if (window.confirm("Do you really want to leave?")) {
     window.open("https://cdn.xgqfrms.xyz/exit.html", "Thanks for Visiting!");
 }
 
 
-confirm
-
 if (window.confirm("Do you really want to leave?")) {
-    window.open("exit.html", "Thanks for Visiting!");
+    window.open("https://cdn.xgqfrms.xyz/confirm.html", "Thanks for Visiting!");
 }
+
+
+```
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Window/confirm
+
+https://w3c.github.io/html/webappapis.html#dom-confirm
 
 
 
