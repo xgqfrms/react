@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <style>
+        .reset{
+            /**/
+        }
+        #header{
+            display: flex;
+            background-color: rgba(0,0,255,0.7);
+            min-height: 100px;
+        }
+        #header-left{
+            flex: 1;
+            min-width: 100px;
+        }
+        #header-left img{
+            flex: 1;
+            min-width: 50px;
+            min-height: 50px;
+            background-color: red;
+        }
+        #header-center{
+            /*flex: 2;*/
+            min-width: calc(100%-200px);
+            flex-direction: row;
+            flex-flow : row nowrap;
+            display: flex;
+        }
+        #header-center .item{
+            min-height: 70px;
+            min-width: 100px;
+            background-color: rgba(0,255,0,0.7);
+            /*float: left;*/
+            flex: 1;
+            margin: 3px;
+        }
+        #header-right{
+            flex: 1;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="header-left">
+            <img src="logo.png" alt="logo">
+            <span>ID: <i>888-8888</i></span>
+        </div>
+        <div id="header-center">
+            <div class="item item1">
+                <li>我要进货</li>
+            </div>
+            <div class="item item2">
+                <li>快捷购物</li>
+            </div>
+            <div class="item item3">
+                <li>进货记录</li>
+            </div>
+            <div class="item item4">
+                <li>充值</li>
+            </div>
+        </div>
+        <div id="header-right">
+            <span>红包</span>
+            <!-- <i>icon ::after/ ::before</i> -->
+            <span class="message">
+                我的信息
+            </span>
+        </div>
+    </header>
+    <main></main>
+</body>
+</html>

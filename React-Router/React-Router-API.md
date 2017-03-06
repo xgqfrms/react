@@ -7,9 +7,23 @@
 
 ```sh
 
-$ npm install react-router-dom@next
+$ npm i -S react-router-dom
+
+
+# "react-router-dom": "^4.0.0-beta.6"
+
+
+
+
+
+$ npm i -S react-router-dom@next
 # or
 $ yarn add react-router-dom@next
+
+
+# "react-router-dom": "^4.0.0-beta.7"
+
+
 
 ```
 
