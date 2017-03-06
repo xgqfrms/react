@@ -146,15 +146,6 @@ $ yarn build
 
 
 
-
-
-http://codepen.io/xgqfrms/pen/QpKaGZ
-
-
-
-
-
-
 $ npm install --save react-router
 
 // using an ES6 transpiler, like babel
@@ -179,6 +170,34 @@ You can find the library on window.ReactRouter.
 
 
 
+## Build your own React Router v4
+
+
+https://tylermcginnis.com/build-your-own-react-router-v4/
+
+http://codepen.io/anon/pen/MpexLL
+
+https://egghead.io/technologies/react
+
+
+
+
+
+
+
+## React Component Lifecycle
+
+http://www.codevoila.com/post/57/reactjs-tutorial-react-component-lifecycle
+
+http://codepen.io/xgqfrms/pen/QpKaGZ
+
+https://zhuanlan.zhihu.com/p/25557468
+
+https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/
+
+
+
+https://www.sitepoint.com/work-with-forms-in-react/
 
 
 
