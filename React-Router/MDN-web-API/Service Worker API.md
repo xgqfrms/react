@@ -22,7 +22,7 @@ Service workers 本质上充当位于Web应用程序之间的代理服务器，�
 
 
 
-
+https://w3c-html-ig-zh.github.io/notifications/whatwg/
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/notification/Using_Web_Notifications
 
