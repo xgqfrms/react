@@ -191,6 +191,38 @@ https://egghead.io/technologies/js
 
 https://egghead.io/courses/learn-es6-ecmascript-2015
 
+https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop
+
+
+https://egghead.io/courses/natural-language-processing-in-javascript-with-natural
+
+https://github.com/NaturalNode/natural
+
+https://www.npmjs.com/package/natural
+
+
+"Natural"是nodej的通用自然语言设施。目前支持标记化，词干化，分类，语音学，tf-idf，WordNet，字符串相似性和一些变形。
+
+
+Frisby教授介绍了组合函数JavaScript
+
+https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript
+
+本课程教授用于建模纯功能程序的无处不在的抽象。函数语言已经采用这些代数结构作为一种以有原则的方式构成应用程序的方式。
+
+我们可以在JavaScript中做同样的事情。虽然主题将超出函数编程基础，但是不需要以前的函数编程知识。在你知道之前，你将开始撰写功能。
+
+
+
+https://egghead.io/courses/how-to-write-an-open-source-javascript-library
+
+https://egghead.io/lessons/javascript-introducing-reduce-transforming-arrays-functionally
+
+https://egghead.io/lessons/javascript-introducing-reduce-reducing-an-array-into-an-object
+
+
+
+
 
 
 
@@ -198,6 +230,7 @@ https://egghead.io/courses/learn-es6-ecmascript-2015
 https://egghead.io/technologies/react
 
 
+https://egghead.io/courses/getting-started-with-redux
 
 
 
