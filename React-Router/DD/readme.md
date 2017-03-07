@@ -42,7 +42,7 @@ import {
 
 
 
-
+https://egghead.io/lessons/javascript-introducing-reduce-transforming-arrays-functionally
 
 
 
