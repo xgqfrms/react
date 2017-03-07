@@ -224,11 +224,11 @@ npm info ng2-seed
 
 
 
+npm.im/ng2-seed
 
 
 
-
-
+https://www.npmjs.com/package/ng2-seed
 
 
 
