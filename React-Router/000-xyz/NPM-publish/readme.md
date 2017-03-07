@@ -220,6 +220,15 @@ https://www.npmjs.com/~xgqfrms
 
 
 
+npm info ng2-seed
+
+
+
+
+
+
+
+
 
 
 
