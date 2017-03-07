@@ -94,9 +94,13 @@ https://github.com/facebookincubator/create-react-app
 
 ### Basic Starter Kits (client-side only)
 
+> React Static Boilerplate:
+
+https://github.com/iroy2000/react-redux-boilerplate
 
 
-React, TypeScript, JSPM starter-kit:
+
+> React, TypeScript, JSPM starter-kit:
 
 https://github.com/piotrwitek/react-ts-jspm-starter-kit
 
@@ -105,24 +109,123 @@ https://github.com/piotrwitek/react-ts-jspm-starter-kit
 
 
 
-###
+### Full-stack Starter Kits
+
+
+https://github.com/didierfranc/react-async-starter
+
+
+https://github.com/kiki-le-singe/react-redux-universal-boilerplate
+
+
+https://github.com/davezuko/react-redux-starter-kit
 
 
 
 
-###
-
-
-###
+### Routing
 
 
 
-###
+https://github.com/rackt/react-router
+
+https://github.com/andreypopp/react-router-component
 
 
 
 
 
+### Model Management
+
+
+
+
+### Data Fetching
+
+https://github.com/mzabriskie/axios
+
+Promise based HTTP client for the browser and node.js
+
+针对浏览器和node.js的基于Promise的HTTP客户端
+
+
+https://github.com/ufo-github/axios
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Testing
+
+
+
+
+
+
+
+
+
+### UI Components
+
+
+https://github.com/amazeui/amazeui-react
+
+
+http://amazeui.org/react/getting-started
+
+http://amazeui.org/react/components/grid
+
+https://github.com/Minwe/style-guide/blob/master/React.js.md
+
+
+
+
+
+
+
+
+https://github.com/react-bootstrap/react-bootstrap
+
+Bootstrap 3 components built with React
+
+Bootstrap 3组件用React构建
+
+
+https://github.com/react-bootstrap/react-router-bootstrap
+
+https://react-bootstrap.github.io/introduction.html
+
+
+
+
+
+
+
+
+
+
+### Miscellaneous
+
+https://github.com/naman34/react-stylePrefixr
+
+
+http://reactcss.com/
+
+Inline Styles in JS with support for React, Redux, React Native, Autoprefixing, Hover, Pseudo-Elements & Media Queries
+
+
+JS中的内联样式，支持React，Redux，React Native，Autoprefixing，Hover，Pseudo-Elements＆Media Queries
+
+
+https://github.com/casesandberg/reactcss
 
 
 
