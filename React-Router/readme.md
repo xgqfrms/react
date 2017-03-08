@@ -17,8 +17,16 @@ https://reacttraining.com/react-router/
 
 
 
-修剪结尾空格
+修剪结尾空格  
 
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = true
 
 
 
@@ -90,6 +98,23 @@ https://pub.scotch.io/@xgqfrms
 
 
 https://pub.scotch.io/@xgqfrms/the-path-of-learn-angular-2-notes-coding
+
+
+
+yarn init
+
+yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react --dev
+
+
+
+babel-preset-es2015
+
+
+
+
+
+
+
 
 
 

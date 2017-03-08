@@ -172,6 +172,29 @@ npm publish --tag stable
 
 
 
+https://github.com/axetroy
+
+https://github.com/axetroy/axetroy.github.io
+
+https://github.com/axetroy/blog/tree/master/source/_posts
+
+https://github.com/axetroy/stack-blog/tree/master/client/src/app
+
+
+https://github.com/axetroy/ng-promise
+
+
+
+
+
+https://app.pluralsight.com/profile/author/john-papa
+
+https://www.pluralsight.com/courses/play-by-play-angular-2-rxjs-http-restful-services-john-papa-dan-wahlin
+
+
+
+
+
 
 
 
