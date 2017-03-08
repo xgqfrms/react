@@ -133,3 +133,58 @@ react ,babel-standalone,error, keys
 
 
 
+https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#changelog
+
+
+
+Major changes
+Two Packages: React and React DOM
+As we look at packages like react-native, react-art, react-canvas, and react-three, it has become clear that the beauty and essence of React has nothing to do with browsers or the DOM.
+
+To make this more clear and to make it easier to build more environments that React can render to, we’re splitting the main react package into two: react and react-dom. This paves the way to writing components that can be shared between the web version of React and React Native. We don’t expect all the code in an app to be shared, but we want to be able to share the components that do behave the same across platforms.
+
+
+The react package contains React.createElement, .createClass, .Component, .PropTypes, .Children, and the other helpers related to elements and component classes. We think of these as the isomorphic or universal helpers that you need to build components.
+
+The react-dom package has ReactDOM.render, .unmountComponentAtNode, and .findDOMNode. In react-dom/server we have server-side rendering support with ReactDOMServer.renderToString and .renderToStaticMarkup.
+
+
+当我们看看react-native，react-art，react-canvas和react-three这样的软件包时，很明显React的美丽和本质与浏览器或DOM无关。
+
+为了使这个更清晰，为了更容易构建更多的React可以渲染的环境，我们将主反应包分为两个：react和react-dom。
+
+这为编写可以在React和React Native的Web版本之间共享的组件铺平了道路。
+我们不希望应用程序中的所有代码都被共享，但我们希望能够共享跨平台行为相同的组件。
+
+
+react包包含React.createElement，.createClass，.Component，.PropTypes，.Children和与元素和组件类相关的其他帮助器。
+
+我们认为这些是同构的或通用的助手，你需要构建组件。
+
+react-dom包具有ReactDOM.render，.unmountComponentAtNode和.findDOMNode。
+
+在react-dom / server中，我们有ReactDOMServer.renderToString和.renderToStaticMarkup的服务器端渲染支持。
+
+
+React v0.14 , react, react-dom
+
+
+
+https://react2.xgqfrms.xyz/blog/2015/10/07/react-v0.14.html#changelog
+
+
+https://segmentfault.com/q/1010000005876887
+
+
+
+
+
+
+
+
+
+
+
+
+
+

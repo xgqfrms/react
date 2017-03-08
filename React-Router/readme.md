@@ -37,3 +37,23 @@ https://github.com/xgqfrms/learning/
 
 
 
+
+
+## react & babel-standalone & error
+
+https://gist.github.com/xgqfrms-GitHub/462dbc5b16ed7c7cb90942ba340d3fe0
+
+
+
+
+## React Universal with Next.js: Server-side React
+
+https://scotch.io/tutorials/react-universal-with-next-js-server-side-react
+
+
+https://school.scotch.io/getting-started-with-react-and-redux
+
+
+
+
+
