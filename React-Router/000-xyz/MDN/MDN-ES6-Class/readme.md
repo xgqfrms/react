@@ -2,6 +2,16 @@
 
 
 
+G:\wwwRoot\javascript\ES6-Tutorials
+
+
+
+
+
+
+
+
+
 ## es6 spuer
 
 
