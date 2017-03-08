@@ -1,47 +1,10 @@
-# error
+# babel-standalone
+
+react ,babel-standalone,error, keys
 
 
 
 
-## cannot read property 'keys' of undefined react
-
-new version error : babel-core/6.1.19/browser.min.js
-
-
-
-old version ok : babel-core@5.8.38/browser.min.js
-
-
-> need a web server
-
-
-
-
-nothing to show with no error : react/0.13.3/JSXTransformer.js
-
-
-
-react/15.4.2/react.min.js
-
-react/15.4.2/react-dom.min.js
-
-
-
-
-
-> no match the version ???
-
-react/0.13.3/JSXTransformer.js
-
-https://cdnjs.com/libraries/react/0.13.3
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js" integrity="sha256-MkTacBvNGO5pU06MeUchxYJwIK/4JrIGyEeINOmKLkM=" crossorigin="anonymous"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js" integrity="sha256-qcq80WTo5JXChoVZHH0uTZyrlaja/xxSq/m+Ih//108=" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react-with-addons.min.js" integrity="sha256-qihJX7SHYrD43RtzvZ3QsyVicFUR9sYLK/VNabsXvzc=" crossorigin="anonymous"></script>
 
 
 
@@ -129,7 +92,11 @@ react-dom & react
 https://gist.github.com/xgqfrms-GitHub/462dbc5b16ed7c7cb90942ba340d3fe0/edit
 
 
-react ,babel-standalone,error, keys
+
+
+
+
+
 
 
 
