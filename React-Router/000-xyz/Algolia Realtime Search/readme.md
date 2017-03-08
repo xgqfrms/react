@@ -121,7 +121,33 @@ https://www.algolia.com/doc/
 
 
 
+https://www.algolia.com/getstarted#/final
 
+
+https://www.algolia.com/with/mongodb
+
+https://github.com/algolia/algoliasearch-wordpress
+https://github.com/algolia/algoliasearch-jekyll
+https://www.algolia.com/doc/guides/integrations/firebase-algolia/
+https://elements.heroku.com/addons/algoliasearch
+
+
+https://www.algolia.com/schedule-demo
+
+
+https://www.algolia.com/doc/api-client/javascript/getting-started/
+https://www.algolia.com/doc/api-client/php/getting-started/
+https://www.algolia.com/doc/api-client/android/getting-started/
+
+
+
+https://www.algolia.com/doc/guides/
+
+
+https://www.algolia.com/doc/
+
+
+https://www.algolia.com/doc/faq/
 
 
 

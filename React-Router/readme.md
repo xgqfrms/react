@@ -17,6 +17,8 @@ https://reacttraining.com/react-router/
 
 
 
+修剪结尾空格
+
 
 
 
@@ -53,7 +55,41 @@ https://scotch.io/tutorials/react-universal-with-next-js-server-side-react
 
 https://school.scotch.io/getting-started-with-react-and-redux
 
+https://github.com/scotch-io/react-redux-course
 
+
+https://school.scotch.io/getting-started-with-react-and-redux/setting-up-the-redux-store#enroll-modal
+
+
+
+
+
+https://scotch.io/tag/react
+
+
+https://scotch.io/tutorials/setup-a-react-environment-using-webpack-and-babel
+
+https://github.com/joykare/hello-world-react/tree/master
+
+
+https://github.com/andela
+
+https://pub.scotch.io/@joykare
+
+https://github.com/joykare
+
+https://github.com/joykare/react-startpack
+
+
+🤖 👥
+
+
+
+https://pub.scotch.io/@xgqfrms
+
+
+
+https://pub.scotch.io/@xgqfrms/the-path-of-learn-angular-2-notes-coding
 
 
 
