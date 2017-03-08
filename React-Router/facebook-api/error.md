@@ -3,7 +3,6 @@
 
 
 
-
 ## cannot read property 'keys' of undefined react
 
 new version error : babel-core/6.1.19/browser.min.js
@@ -80,6 +79,33 @@ https://github.com/babel/babel-standalone
 http://stackoverflow.com/questions/36672007/reactjs-cannot-read-property-keys-of-undefined
 
 
+Use `React.createClass` not `ReactDOM.createClass` and wrap multiple lines of `html` in parenthesis
+
+
+
+
+http://stackoverflow.com/questions/38194585/reactjs-browser-cannot-read-property-keys-of-undefined
+
+
+<script src="https://cdn.bootcss.com/babel-core/6.1.19/browser.min.js"></script>
+
+=>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+
+
+http://stackoverflow.com/questions/36632149/react-js-cannot-read-property-keys-of-undefined
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+
+
+ReactDOM.render(<HelloWorld/>, document.body);
+
+to
+
+React.render(<HelloWorld/>, document.body);
 
 
 
