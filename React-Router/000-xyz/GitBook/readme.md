@@ -21,6 +21,7 @@ https://github.com/integrations/gitbook/installations/new/permissions?target_id=
 
 
 
+
 https://xgqfrms-github.gitbooks.io/javascript-with-promises/content/
 
 https://www.gitbook.com/book/xgqfrms-github/javascript-with-promises/details
@@ -28,6 +29,8 @@ https://www.gitbook.com/book/xgqfrms-github/javascript-with-promises/details
 
 
 # Summary
+
+* [Summary](SUMMARY.md)
 
 * [目录](README.md)
 * [序言](chapter-00-preface.md)
@@ -51,7 +54,98 @@ https://www.gitbook.com/book/xgqfrms-github/javascript-with-promises/details
 
 
 
+https://gist.github.com/xgqfrms-GitHub/11a118ace954e40e3d2530c60cad2d95
 
+
+React Cookbook
+
+
+
+**[⬆️ 回到目录](#目录)**
+
+
+**[⏏️ 回到目录](#目录)**
+
+💻
+
+🏠
+
+🏡
+
+⬆️
+
+©️ Copyright
+®️ Registered
+
+
+🖇️ Linked Paperclips
+
+
+🔗 Link
+
+
+⚓ Anchor
+
+**[🖇️ 回到目录](SUMMARY.md)**
+
+**[🔗 回到目录](SUMMARY.md)**
+
+**[⚓ 回到目录](SUMMARY.md)**
+
+
+SUMMARY.md#目录
+
+
+*
+*[🖇️ 回到目录](README.md)**
+**[🔗 回到目录](README.md)**
+**[⚓ 回到目录](README.md)**
+
+**[⬆️ 回到目录](README.md#目录)**
+**[⏏️ 回到目录](README.md#目录)**
+
+
+
+both OK, the [default page](https://xgqfrms-github.gitbooks.io/javascript-with-promises/content/) is the readme.md
+
+=> https://xgqfrms-github.gitbooks.io/javascript-with-promises/content/index.html
+
+
+
+
+https://xgqfrms-github.gitbooks.io/javascript-with-promises/content/chapter-02-introducing-promises.html
+
+https://xgqfrms-github.gitbooks.io/javascript-with-promises/content/chapter-03-working-with-standard-promises.html
+
+
+
+
+
+## how to using markdown realize the `<p title="english">中文</p>` tips ???
+
+
+https://gist.github.com/xgqfrms-GitHub/cc5f28ba7d1353f6852f9aaef2f2e204
+
+
+markdown-tips.png
+
+
+
+
+![markdown-tips.png](markdown-tips.png)
+
+
+![markdown-tips.png](/assets/markdown-tips.png)
+
+
+
+
+
+
+
+**⏏️[回到目录](README.md#目录)**
+
+**[⏏️ 回到目录](README.md#目录)**
 
 
 
