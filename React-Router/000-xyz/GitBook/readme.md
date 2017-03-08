@@ -182,6 +182,27 @@ https://www.gitbook.com/book/xgqfrms-github/javascript-with-promises/settings
 
 
 
+## GitBook markdown-title-test-OK
+
+
+https://xgqfrms-github.gitbooks.io/javascript-with-promises/content/chapter-02-introducing-promises.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
