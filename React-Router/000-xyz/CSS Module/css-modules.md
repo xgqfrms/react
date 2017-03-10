@@ -229,9 +229,34 @@ https://css-modules.github.io/webpack-demo/
 
 
 
-
+## css-modules docs
 
 https://github.com/css-modules/css-modules/tree/master/docs
+
+
+https://github.com/css-modules/css-modules/blob/master/docs/local-scope.md
+
+https://github.com/css-modules/css-modules/blob/master/docs/pseudo-class-selectors.md
+
+https://github.com/css-modules/css-modules/blob/master/docs/values-variables.md
+
+
+https://github.com/css-modules/css-modules/blob/master/docs/composition.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
