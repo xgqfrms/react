@@ -57,6 +57,12 @@ http://stackoverflow.com/questions/38194585/reactjs-browser-cannot-read-property
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
 
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+
+
+
 
 http://stackoverflow.com/questions/36632149/react-js-cannot-read-property-keys-of-undefined
 
@@ -89,8 +95,34 @@ react-dom & react
 
 
 
-https://gist.github.com/xgqfrms-GitHub/462dbc5b16ed7c7cb90942ba340d3fe0/edit
+https://gist.github.com/xgqfrms-GitHub/462dbc5b16ed7c7cb90942ba340d3fe0 
 
+
+
+```
+<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+``` 
+http://www.runoob.com/react/react-install.html
+
+
+
+
+https://cdnjs.com/libraries/babel-standalone
+
+
+
+babel-standalone
+
+Standalone build of Babel for use in non-Node.js environments. Similar to the (now deprecacted) babel-browser
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.23.1/babel.min.js"></script>
+babili-standalone
+
+Standalone build of Babili (babel-minify) for use in non-Node.js environments
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babili-standalone/0.0.10/babili.min.js"></script>
 
 
 
