@@ -58,14 +58,36 @@ ReactDOM.render(React.createElement(App), document.getElementById('root'))
 
 
 
+## CSS Modules with React
 
 https://gist.github.com/xgqfrms-GitHub/16967b1b62afc156bae5162ca459be7e
 
 
 
 
+> import CSSModules & import styles & export default CSSModules(components)
+
+```jsx
+
+import CSSModules from 'react-css-modules'
+/* import your css modules styles for the component */
+import styles from './Demo.css' 
+
+{/*...*/}
+
+``` 
+
+
+> export default CSSModules(Demo, styles, {allowMultiple: true} )
 
 
 
+```jsx
+
+import components
+
+import Demo from './components/Demo'
+
+``` 
 
 
