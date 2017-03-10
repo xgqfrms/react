@@ -224,7 +224,7 @@ https://css-modules.github.io/webpack-demo/
 
 
 
-
+https://github.com/css-modules/css-modules/tree/master/docs
 
 
 

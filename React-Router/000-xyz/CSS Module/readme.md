@@ -120,3 +120,38 @@ element.innerHTML = '<div class="' + styles.className + '">';
 
 
 
+
+
+
+
+
+
+https://github.com/css-modules/css-modules/tree/master/docs
+
+
+
+## CSS Modules & Webpack 
+
+
+https://github.com/css-modules/webpack-demo
+
+
+https://css-modules.github.io/webpack-demo/
+
+
+
+## CSS Modules with Angular
+
+https://github.com/css-modules/css-modules/blob/master/docs/css-modules-with-angular.md
+
+
+## CSS Modules with React
+
+
+https://github.com/css-modules/css-modules/blob/master/docs/css-modules-with-react.md
+
+
+
+
+
+
