@@ -4,59 +4,92 @@
 https://gist.github.com/xgqfrms-GitHub/bcd7b957a6d581c644abda07fcf79473/ 
 
 
+## 安装 React CSS Module & React
+
+
+https://github.com/facebook/react  
+https://facebook.github.io/react/docs/installation.html#creating-a-single-page-application  
+https://facebook.github.io/react/docs/installation.html#adding-react-to-an-existing-application  
+
+
+
+```sh
+$ npm i -g create-react-app
+> create-react-app xyz-react-app & cd xyz-react-app & npm start
+
+> create-react-app xyz-react-app
+> cd xyz-react-app & npm start
+
+$ yarn init
+$ yarn add react react-dom
+
+$ npm init
+$ npm i -S react react-dom
+
+``` 
+
+
+
+https://webpack.js.org/guides/get-started/  
+https://webpack.js.org/guides/installation/  
+https://www.npmjs.com/package/webpack  
+https://github.com/webpack/webpack  
+
+
+
+https://lodash.com/  
+https://www.npmjs.com/package/lodash  
+https://github.com/lodash/lodash  
+
+
+http://redux.js.org/  
+https://www.npmjs.com/package/redux  
+https://github.com/reactjs/redux/  
+
 
 ```sh
 
 $ npm i -D style-loader css-loader sass-loader node-sass webpack
+$ npm i -S react react-dom redux react-router lodash
 
 
-$ npm i -S react react-dom redux react-router ...
-
+$ npm install --save-dev webpack
+$ npm install --save lodash
+$ npm install --save redux
 
 ``` 
 
 ## 安装 babel for ES6-to-ES5 
 
 ```sh
+# babel-preset-es2015
 
 $ yarn init
-
 $ yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react --dev
 
 
-# babel-preset-es2015
-
 $ npm init
-
 $ npm i -D babel-loader babel-core babel-preset-es2015 babel-preset-react
-
-
 
 ``` 
 
 
 ## Web 安装 react-router-dom
 
-https://reacttraining.com/react-router/
-
-https://www.npmjs.com/package/react-router
-
-https://www.npmjs.com/package/react-router-dom
+https://reacttraining.com/react-router/  
+https://www.npmjs.com/package/react-router  
+https://www.npmjs.com/package/react-router-dom  
 
 
-https://github.com/ReactTraining/react-router/tree/master/packages/react-router
-
-https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom
+https://github.com/ReactTraining/react-router/tree/master/packages/react-router  
+https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom  
 
 
 
 ```sh
 
 $ npm install --save react-router
-
 $ npm install --save react-router-dom
-
-
 
 
 $ npm i -S react-router-dom@next
@@ -64,8 +97,6 @@ $ npm i -S react-router-dom@next
 # or
 
 $ yarn add react-router-dom@next
-
-# "react-router-dom": "^4.0.0-beta.7"
 
 ``` 
 
