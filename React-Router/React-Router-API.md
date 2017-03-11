@@ -3,29 +3,51 @@
 
 
 
+
+## react-router
+
+https://github.com/ReactTraining/react-router
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs
+
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-config
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux
+
+
+
+
+
+
+
+
+
+
 ## Web 安装
 
 ```sh
 
 $ npm i -S react-router-dom
 
-
 # "react-router-dom": "^4.0.0-beta.6"
 
 
 
-
-
 $ npm i -S react-router-dom@next
+
 # or
+
 $ yarn add react-router-dom@next
 
 
 # "react-router-dom": "^4.0.0-beta.7"
 
+``` 
 
 
-```
 
 
 ## 导入模块

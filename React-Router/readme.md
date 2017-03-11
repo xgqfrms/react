@@ -17,6 +17,32 @@ https://reacttraining.com/react-router/
 
 
 
+
+## react-router
+
+https://github.com/ReactTraining/react-router
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs
+
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-config
+
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux
+
+
+
+
+
+
+
+
+
+
+
+
+
 修剪结尾空格  
 
 root = true
@@ -36,6 +62,7 @@ insert_final_newline = true
 ## disk > 2GB (stop push)
 
 
+
 G:\wwwRoot\learning\Front-End\Redux\Redux-App\readme.md
 
 
@@ -44,6 +71,21 @@ G:\wwwRoot\learning\000projects\commenting-engine\src\components\Component-based
 
 
 https://github.com/xgqfrms/learning/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,6 +114,18 @@ https://school.scotch.io/getting-started-with-react-and-redux/setting-up-the-red
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 https://scotch.io/tag/react
 
 
@@ -95,19 +149,26 @@ https://github.com/joykare/react-startpack
 
 https://pub.scotch.io/@xgqfrms
 
-
-
 https://pub.scotch.io/@xgqfrms/the-path-of-learn-angular-2-notes-coding
 
 
 
-yarn init
-
-yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react --dev
 
 
+```sh
 
-babel-preset-es2015
+$ yarn init
+
+$ yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react --dev
+
+
+
+# babel-preset-es2015
+
+``` 
+
+
+
 
 
 

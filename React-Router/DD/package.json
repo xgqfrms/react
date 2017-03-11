@@ -1,0 +1,9 @@
+{
+  "name": "dd",
+  "version": "1.2.3",
+  "description": "react-app-eb",
+  "main": "index.js",
+  "repository": "https://github.com/xgqfrms/react.git",
+  "author": "xgqfrms",
+  "license": "MIT"
+}

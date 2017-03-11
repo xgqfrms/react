@@ -1,106 +1,47 @@
-# CSS Modules with React
-
-
-
-https://github.com/css-modules/css-modules/blob/master/docs/css-modules-with-react.md
-
-
-https://github.com/gajus/react-css-modules
-
-https://github.com/gajus/babel-plugin-react-css-modules#performance
+# React CSS Modules
 
 
 
 
+$ npm i style-loader -S
+
+$ npm i css-loader -S
+
+$ npm i node-sass -S
+
+$ npm i sass-loader -S
+
+$ npm i style-loader css-loader sass-loader node-sass webpack -S
+
+$ npm i -D style-loader css-loader sass-loader node-sass webpack
+
+
+$ npm install style-loader --save-dev
+$ npm install --save-dev css-loader
+$ npm install sass-loader node-sass webpack --save-dev
+$ npm install node-sass
+$ npm install --save-dev webpack
 
 
 
+https://www.npmjs.com/package/style-loader
+
+https://www.npmjs.com/package/css-loader
+
+https://www.npmjs.com/package/sass-loader
+
+https://www.npmjs.com/package/node-sass
+
+https://www.npmjs.com/package/webpack
 
 
 
+https://github.com/webpack-contrib/sass-loader
 
-```Demo.js
-
-import React from 'react'
-import CSSModules from 'react-css-modules'
-/* import your css modules styles for the component */
-import styles from './Demo.css' 
-
-function Demo( props) {
-
-    const { route } = props
-
-    return (
-        <div styleName='demo'>
-            <button styleName='button blue'>press me</button>
-        </div>
-    )
-}
-
-export default CSSModules(Demo, styles, {allowMultiple: true} )
-
-// 避免使用多个CSS模块来描述单个元素。阅读关于 Class Composition。
-
-// 也就是说，如果您需要使用多个CSS模块来描述元素，请启用 allowMultiple选项。
-
-
-``` 
+https://github.com/sass/node-sass
 
 
 
-```index.js
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Demo from './components/Demo'
-
-function App(props) {
-    return (
-        <main>
-            <Demo />
-        </main>
-    )
-}
-
-ReactDOM.render(React.createElement(App), document.getElementById('root'))
-
-
-``` 
-
-
-
-
-## CSS Modules with React
-
-https://gist.github.com/xgqfrms-GitHub/16967b1b62afc156bae5162ca459be7e
-
-
-
-
-> import CSSModules & import styles & export default CSSModules(components)
-
-```jsx
-
-import CSSModules from 'react-css-modules'
-/* import your css modules styles for the component */
-import styles from './Demo.css' 
-
-{/*...*/}
-
-``` 
-
-
-> export default CSSModules(Demo, styles, {allowMultiple: true} )
-
-
-
-```jsx
-
-import components
-
-import Demo from './components/Demo'
-
-``` 
 
 
 
@@ -305,10 +246,7 @@ https://gist.github.com/xgqfrms-GitHub/462dbc5b16ed7c7cb90942ba340d3fe0
 
 
 
-
-
-
-
+https://gist.github.com/xgqfrms-GitHub/
 
 
 
