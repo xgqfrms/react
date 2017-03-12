@@ -23,6 +23,13 @@ https://github.com/ReactTraining/react-router/releases/tag/v3.0.2
 
 
 
+# Style Guide
+
+https://gist.github.com/xgqfrms-GitHub/b95f1824f2ea5a2e28b09dff6fd191bc
+
+https://github.com/ufo-github/javascript/blob/master/react/zh-CN.md
+
+https://gist.github.com/xgqfrms-GitHub/bcd7b957a6d581c644abda07fcf79473/
 
 
 

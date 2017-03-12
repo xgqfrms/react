@@ -1,7 +1,11 @@
-import React from 'react';
+// import React from 'react';
+import React, {Component} from 'react';
 import { Router, Route, Link, hashHistory } from 'react-router';
 
-
+/*
+// rrc tab es5
+// rcc tab es6 
+*/
 
 const Home = () => {
     <div>
@@ -35,12 +39,7 @@ const Links = () => {
 
 
 
-/*
-// rrc tab es5
-// rcc tab es6 
-*/
-
-class RouterRouteLink extends React.Component {
+class RouterRouteLink extends Component {
     render() {
         return (
             <Router history={hashHistory}>
@@ -54,6 +53,5 @@ class RouterRouteLink extends React.Component {
 
 export default RouterRouteLink;
 
-
-
+export {Home, About, Contact };
 
