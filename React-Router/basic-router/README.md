@@ -1,27 +1,14 @@
-class App extends Component {
-    render() {
-        return (
-        <div className="App">
-            <div className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h2>Welcome to React</h2>
-            </div>
-            <p className="App-intro">
-                To get started, edit <code>src/App.js</code> and save to reload.
-            </p>
-            <div>
-                {/*<RouterRouteLink />*/}
-                <RouterRoute />
-            </div>
-        </div>
-        );
-    }
-}
 ## react router error ???
 
 https://egghead.io/courses/getting-started-with-react-router
 
 https://gist.github.com/xgqfrms-GitHub/bcd7b957a6d581c644abda07fcf79473/
+
+
+
+## Setup a React Environment
+
+https://gist.github.com/xgqfrms-GitHub/5862f5885acd10a956a72b14ee1c5f96
 
 
 
@@ -48,6 +35,50 @@ $ npm i -D babel-loader babel-core babel-preset-es2015 babel-preset-react
 
 
 
+
+
+## generator-react-webpack 
+
+
+$ yo react-webpack
+
+
+G:\wwwRoot\learning\000projects\commenting-engine
+
+
+G:\wwwRoot\React\dev-React\codepen-react-demos
+
+
+
+gulp 
+
+
+webpack 
+
+
+https://github.com/react-webpack-generators/generator-react-webpack#readme
+
+
+
+http://newtriks.com/2013/12/31/automating-react-with-yeoman-and-grunt/
+
+
+http://stackoverflow.com/questions/33956201/how-to-import-and-export-components-using-react-es6-webpack
+
+
+
+https://github.com/xgqfrms/learning/blob/gh-pages/000projects/commenting-engine/webpack.config.js
+
+
+
+
+https://fakefish.github.io/react-webpack-cookbook/Configuring-react-js.html
+
+
+
+
+
+https://gist.github.com/xgqfrms-GitHub/5862f5885acd10a956a72b14ee1c5f96
 
 
 
@@ -113,7 +144,25 @@ class App extends Component {
 
 
 
-
+class App extends Component {
+    render() {
+        return (
+        <div className="App">
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h2>Welcome to React</h2>
+            </div>
+            <p className="App-intro">
+                To get started, edit <code>src/App.js</code> and save to reload.
+            </p>
+            <div>
+                {/*<RouterRouteLink />*/}
+                <RouterRoute />
+            </div>
+        </div>
+        );
+    }
+}
 
 
 
