@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Router</title>
+</head>
+<body>
+    <div id="root">
+        <!--  -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js" integrity="sha256-Rtnfi1MVZAj3v+eDeFjh/iAXo8//D0zVKql8fjVLCiM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js" integrity="sha256-uzKwYuH50DHzDYr3h/Bnpv7C5QJNUjHEpVmT3Xuq3ww=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.0.0/react-router.min.js" integrity="sha256-kbVOLqui/hIccCRQGaIsEBjYtQMAnYAZqyHY/Ser0rY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.23.1/babel.min.js" integrity="sha256-P4iWY/KSl5XHhUZAGSLJlTk/qAMvnvktqwZjEuDGMf8=" crossorigin="anonymous"></script>
+    <script type="text/babel">
+        const Home = () => <div><h1>Home</h1></div>;
+        const About = () => <div><h1>About</h1></div>;
+        const Contact = () => <div><h1>Contact</h1></div>;
+        class App extends React.Component{
+            render() {
+                return (
+                    <div>
+                        <div>
+                           <ul>
+                               <li> <Home /></li>
+                               <li> <About /></li>
+                               <li> <Contact /></li>
+                           </ul>
+                        </div>
+                        {/*<Router history={hashHistory}>
+                            <Route path="/" component={Home}></Route>
+                            <Route path="/about" component={About}></Route>
+                            <Route path="/contact" component={Contact}></Route>
+                        </Router>*/}
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(
+            <App />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>

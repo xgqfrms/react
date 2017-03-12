@@ -1,9 +1,58 @@
-
+class App extends Component {
+    render() {
+        return (
+        <div className="App">
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h2>Welcome to React</h2>
+            </div>
+            <p className="App-intro">
+                To get started, edit <code>src/App.js</code> and save to reload.
+            </p>
+            <div>
+                {/*<RouterRouteLink />*/}
+                <RouterRoute />
+            </div>
+        </div>
+        );
+    }
+}
 ## react router error ???
 
 https://egghead.io/courses/getting-started-with-react-router
 
 https://gist.github.com/xgqfrms-GitHub/bcd7b957a6d581c644abda07fcf79473/
+
+
+
+
+
+??? es6 bable transpiler ???
+
+
+webpack.config.js
+
+
+
+$ npm i -D webpack
+
+$ bable
+
+
+
+# react-seed 
+
+G:\wwwRoot\React\react-seed
+
+$ npm i -D babel-loader babel-core babel-preset-es2015 babel-preset-react 
+
+
+
+
+
+
+
+
 
 
 
@@ -40,7 +89,25 @@ G:\wwwRoot\React\React-Router\basic-router\src\index.js
 
 
 
-
+class App extends Component {
+    render() {
+        return (
+        <div className="App">
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h2>Welcome to React</h2>
+            </div>
+            <p className="App-intro">
+                To get started, edit <code>src/App.js</code> and save to reload.
+            </p>
+            <div>
+                {/*<RouterRouteLink />*/}
+                <RouterRoute />
+            </div>
+        </div>
+        );
+    }
+}
 
 
 
