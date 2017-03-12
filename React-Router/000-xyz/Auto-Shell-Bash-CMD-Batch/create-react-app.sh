@@ -1,4 +1,4 @@
-
+#!/bin/bash --utf8
 
 
 # test

@@ -45,8 +45,39 @@ F:\Books\CSS
 @charset "UTF-8";
 
 
+#!/bin/bash --utf8
 
 
+
+
+
+
+## Open Source, Distributed, RESTful Search Engine
+
+
+https://www.elastic.co/products/elasticsearch
+
+https://github.com/elastic/elasticsearch
+
+Elasticsearch至少需要Java 8.特别是在撰写本文时，建议您使用Oracle JDK版本1.8.0_121。
+
+
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+
+
+#!/bin/bash --utf8
+
+
+
+https://abc.xgqfrms.xyz/Python/
 
 
 

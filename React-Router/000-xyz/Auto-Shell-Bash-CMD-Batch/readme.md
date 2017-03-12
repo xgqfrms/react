@@ -9,19 +9,49 @@ http://yofineliu.com/san-nian-duo-quan-zhan-jing-li/
 
 
 
-## Open Source, Distributed, RESTful Search Engine
-
-
-https://www.elastic.co/products/elasticsearch
-
-https://github.com/elastic/elasticsearch
-
-Elasticsearch至少需要Java 8.特别是在撰写本文时，建议您使用Oracle JDK版本1.8.0_121。
 
 
 
 ## 自动化 automation
 
+
+
+
+
+
+How to Convert Files to UTF-8 Encoding in Linux
+
+http://stackoverflow.com/questions/2038733/how-do-i-change-a-shell-scripts-character-encoding
+
+C:\Users\xray>locale
+LANG=
+LC_CTYPE="C.UTF-8"
+LC_NUMERIC="C.UTF-8"
+LC_TIME="C.UTF-8"
+LC_COLLATE="C.UTF-8"
+LC_MONETARY="C.UTF-8"
+LC_MESSAGES="C.UTF-8"
+LC_ALL=
+
+C:\Users\xray>
+
+
+export LANG=C.UTF-8
+
+
+
+
+
+
+#!/bin/bash --utf8
+
+# coding: utf8
+
+G:\wwwRoot\Python27\python35-tutorial-MOOC
+
+https://abc.xgqfrms.xyz/Python/
+
+https://github.com/xgqfrms/Python/graphs/contributors
 
 
 
