@@ -6,6 +6,7 @@ https://facebook.github.io/react/docs/error-decoder.html
 
 
 ## Mobile-Detect
+设备检测（手机，平板电脑，桌面，手机等级，操作系统，版本）。
 
 https://github.com/hgoebl/mobile-detect.js
 
@@ -26,10 +27,9 @@ https://github.com/JedWatson/react-select
 
 
 ## Classnames
+一个简单的javascript实用程序，有条件地加入classNames。
 
 https://jedwatson.github.io/classnames/
-
-一个简单的javascript实用程序，有条件地加入classNames。
 
 https://github.com/JedWatson/classnames
 
