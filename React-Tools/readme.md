@@ -10,6 +10,8 @@ https://facebook.github.io/react/docs/error-decoder.html
 
 https://github.com/hgoebl/mobile-detect.js
 
+https://hgoebl.github.io/mobile-detect.js/doc/MobileDetect.html
+
 https://github.com/serbanghita/Mobile-Detect
 
 https://zeno.github.io/mobile-detect-demo/
