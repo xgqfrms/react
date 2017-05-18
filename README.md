@@ -70,7 +70,7 @@ $ npm init
 ``` 
 template-demo
 
-### private  设为true这个包将不会发布到NPM平台下。
+### `private`  设为true这个包将不会发布到NPM平台下。
 
 ```js
 name: (React App) @xgqfrms/react
@@ -78,45 +78,85 @@ private: true
 ```
 
 ```json
-{
-	version: (1.0.0) 
-	description: react app test
-	entry point: (main.js)
-	homepage: https://xgqfrms.github.io/react
-	author: {  
-	  "name": "xgqfrms",
-	  "email": "xgqfrms@email.xyz",
-	  "url": "http://www.xgqfrms.xyz"
-	}
-	author: "<xgqfrms@email.xyz> (http://www.xgqfrms.xyz)"  
-	bugs: {  
-	  "url": "https://github.com/xgqfrms/react/issues",
-	  "email": "xgqfrms@email.xyz"
-	}
-	contributors, maintainers
-	files
-	"engines": {
-	  "node": ">=0.10.3 < 0.12",
-	  "npm": "~1.0.20"
-	}
-	"os": [ "darwin", "linux", "!win32" ]
-	"cpu": [ "x64", "!arm" ]
-	main : main.js
-	directories
-	"repository": {
-	  "type": "git",
-	  "url": "http://github.com/xgqfrms/react.git"
-	}
-	scripts
-	"name": "foo",
-	"config": {
-	  "port": "8080"
-	}
-}
-```
-### 修改设置： npm config set foo:port 8001 
 
-```js
+{
+  "name": "react app test",
+  "version": "15.5.4",
+  "description": "This is a react project created by xgqfrms & webgeeker 2016.10.04",
+  "main": "gulpfile.js",
+  "private": true , 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "echo \"building development version ...\" && webpack",
+    "prop": "echo \"building production version....\" && webpack -p"
+  },
+  "engines": {
+    "node": ">=6.10.1",
+    "npm": "~4.6.1"
+  },
+  "config": {
+    "port": "8080"
+  },
+  "os": [ "darwin", "linux", "!win32" ],
+  "cpu": [ "x64", "!arm" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/React.git"
+  },
+  "keywords": [
+    "react",
+    "xgqfrms",
+    "webgeeker",
+    "js",
+    "node",
+    "ES6",
+    "gulp",
+    "..."
+  ],
+  "author": {
+    "name": "xgqfrms",
+    "email": "xgqfrms@email.xyz",
+    "url": "https://www.xgqfrms.xyz"
+  },
+  "contributors": {
+    "xgqfrms": "<xgqfrms@email.xyz> (https://www.xgqfrms.xyz)",
+    "webgeeker": "<webgeeker@email.xyz> (https://www.webgeeker.xyz)"
+  },
+  " maintainers": {
+    "xgqfrms": "<xgqfrms@email.xyz> (https://www.xgqfrms.xyz)",
+    "webgeeker": "<webgeeker@email.xyz> (https://www.webgeeker.xyz)"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/React/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/React#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router-dom": "^4.0.0-beta.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "webpack": "^1.13.2"
+  }
+}
+
+
+```
+### 修改设置： `npm config set foo:port 8001 `
+
+```code
 {
 	version 严格匹配某个版本
 	>version 必须大于某个版本
