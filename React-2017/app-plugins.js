@@ -28,3 +28,11 @@ class MarkdownEditor extends React.Component {
 ReactDOM.render(<MarkdownEditor />, mountNode);
 
 
+
+
+function(param1 || 2){
+    // do something
+    log(2);
+}
+
+
