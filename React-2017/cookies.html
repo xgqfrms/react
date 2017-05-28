@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies</title>
+</head>
+<body>
+    <header>
+        <h1>Cookies</h1>
+    </header>
+    <!-- js -->
+    <script src="https://cdn.xgqfrms.xyz/plugins/cookies.js" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function(){
+            docCookies.setItem("test0", "Hello world!");
+            docCookies.setItem("test1", "Unicode test: \u00E0\u00E8\u00EC\u00F2\u00F9", Infinity);
+            docCookies.setItem("test2", "Hello world!", new Date(2020, 5, 12));
+            docCookies.setItem("test3", "Hello world!", new Date(2027, 2, 3), "/blog");
+            docCookies.setItem("test4", "Hello world!", "Wed, 19 Feb 2127 01:04:55 GMT");
+            docCookies.setItem("test5", "Hello world!", "Fri, 20 Aug 88354 14:07:15 GMT", "/home");
+            docCookies.setItem("test6", "Hello world!", 150);
+            docCookies.setItem("test7", "Hello world!", 245, "/content");
+            docCookies.setItem("test8", "Hello world!", null, null, "example.com");
+            docCookies.setItem("test9", "Hello world!", null, null, null, true);
+            docCookies.setItem("test1;=", "Safe character test;=", Infinity);;
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery ready</title>
+    <!-- https://img.shields.io/badge/clipboard-stable-brightgreen.svg -->
+</head>
+<body>
+    <h1 id="loading_indicator">Loading ...</h1>
+    <p>
+        <h2 id="loading">#loading...</h2>
+    </p>
+    <iframe src="https://cdn.xgqfrms.xyz" height="320" width="480"></iframe>
+    <script src="https://cdn.xgqfrms.xyz/jquery/jquery-3.2.1.min.js"></script>
+    <!-- async defer -->
+    <script>
+        $(document).ready(function(){
+            console.log("document loaded");
+        });
+        $(window).on("load", function(){
+            console.log("window loaded");
+        });
+        // shorthand
+        $(function(){
+            console.log("document loaded shorthand");
+        });
+    </script>
+    <script>
+        $.ajax({
+            url: "http://query.yahooapis.com/v1/public/yql",
+            // The name of the callback parameter, as specified by the YQL service
+            jsonp: "callback",
+            // Tell jQuery we're expecting JSONP
+            dataType: "jsonp",
+            // Tell YQL what we want and that we want JSON
+            data: {
+                q: "select title,abstract,url from search.news where query=\"cat\"",
+                format: "json"
+            },
+            // Work with the response
+            success: function( response ) {
+                console.log( response ); // server response
+            }
+        });
+        // error
+        $("#loading_indicator")
+        .ajaxStart(function() {
+            console.log(`$(this) = `, $(this));
+            $(this).show();
+        })
+        .ajaxStop(function() {
+            console.log(`$(this) = `, $(this));
+            $(this).hide();
+        });
+        // ok
+        $(document).bind("ajaxSend", function(){
+            $("#loading").show();
+        }).bind("ajaxComplete", function(){
+            $("#loading").hide();
+        });
+    </script>
+</body>
+</html>
