@@ -46,7 +46,23 @@ $ npm i -g swagger
 
 $ swagger project create node-api
 
-express
+# express
+
+$ swagger project start node-api
+
+# curl
+
+$ curl http://127.0.0.1:10010/hello?name=xgqfrms
+
+>node-api>$ swagger project edit
+
+http://127.0.0.1:13746/#/edit
+
+# redirect
+
+http://127.0.0.1:13746/#!/
+
+
 
 ```
 
