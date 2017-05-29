@@ -211,3 +211,48 @@ console.log(target.a);
 console.log(proxy.c === undefined);
 // true
 
+
+
+
+
+
+<!-- https://scriptoj.com/ -->
+
+const extname = (filename) => {
+    let str = filename.toString(),
+        begin = str.lastindexOf(`.`),
+        end = str.length,
+        result = begin > 0 ? str.slice(begin, end) : ``;
+    return result;
+}
+
+
+const extname = (filename) => filename.lastIndexOf('.') > 0 ? filename.slice(filename.lastIndexOf('.')) : '';
+
+extname(`emoji.png`);
+// ".png"
+
+<!-- split() -->
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+
+
+
+
+const where = () => {
+    let that = this;
+    console.log(that);
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>firefox-CSS3-animation</title>
+    <style>
+        .foxtail{
+            background: url("https://cdn.xgqfrms.xyz/images/foxtail.png") #000 0 0 no-repeat;
+            width: 156px;
+            height: 156px;
+            border-radius: 7px;
+            border: 3px solid #f0f;
+        }
+        @keyframes animate-foxtail{
+            0% {
+                background-position: -6864px 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+        .foxtail{
+            animation: animate-foxtail 3.75s steps(44) infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>firefox-CSS3-animation</h1>
+    <section>
+        <div class="foxtail"></div>
+    </section>
+    <!-- js -->
+</body>
+</html>

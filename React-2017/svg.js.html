@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>svg.js</title>
+    <!-- 
+    https://www.w3schools.com/graphics/svg_circle.asp
+    https://developer.mozilla.org/zh-CN/docs/Web/SVG/Element/circle
+    https://svgwg.org/svg2-draft/shapes.html#CircleElement
+    http://www.w3cplus.com/html5/svg-coordinate-systems.html
+    https://developer.mozilla.org/zh-CN/docs/Web/API/Element/setAttributeNS
+    https://developer.mozilla.org/zh-CN/docs/Web/API/Element/setAttribute
+     -->
+    <style>
+        body {
+            --primary: #7F583F;
+            --secondary: #F7EFD2;
+        }
+        a {
+            color: var(--primary);
+            text-decoration-color: var(--secondary);
+        }
+        h1{
+            color: var(--primary, #7F583F);
+        }
+        p {
+            color: #7F583F;
+            color: var(--primary);
+        }
+
+        /* http://www.webhek.com/post/css-variables-and-sass-variables.html */
+    </style>
+</head>
+<body>
+    <div id="svg_box">
+        <!--  -->
+    </div>
+    <div id="svg_box1">
+        <!--  -->
+    </div>
+    <div id="svg_box2">
+        <!--  -->
+    </div>
+    <div class="x">
+        x
+    </div>
+    <div name="hock">
+        anchor
+    </div>
+    <script>
+        document.getElementsByTagName('div');
+        document.getElementsByClassName('x')[0].innerText;
+        document.getElementsByName('hock');
+        // document.getElementsByTagNameNS('svg');
+        // document.getSelection();
+        // document.getRootNode();
+        // document.getElementById('#abc');
+        /*
+        html named anchor
+        https://www.w3.org/TR/html4/struct/links.html
+        https://www.w3.org/MarkUp/1995-archive/Elements/A.html
+        https://www.w3schools.com/tags/att_a_name.asp
+        // The <a> name attribute is not supported in HTML5. Use the id attribute instead.
+        */
+    </script>
+    <script>
+        let div1 = document.getElementById('svg_box1'),
+            div2 = document.getElementById('svg_box2');
+        div1.setAttribute('width', `400px`);
+        div1.setAttribute('height', `400px`);
+        div1.innerText = `div1`;
+
+        div2.setAttribute('width', 400);
+        div2.setAttribute('height', 400);
+        div2.innerText = `div2`;
+    </script>
+    <script>
+        let ns = 'http://www.w3.org/2000/svg',
+            div = document.getElementById('svg_box'),
+            svg = document.createElementNS(ns, 'svg'),
+            rect = document.createElementNS(ns, 'rect'),
+            circle = document.createElementNS(ns, 'circle');
+
+        div.setAttribute('width', 400);
+        div.setAttribute('height', 400);
+
+        svg.setAttributeNS(null, 'width', '100%');
+        svg.setAttributeNS(null, 'height', '100%');
+
+        rect.setAttributeNS(null, 'width', 200);
+        rect.setAttributeNS(null, 'height', 200);
+        rect.setAttributeNS(null, 'fill', '#f06');
+
+        circle.setAttributeNS(null, 'cx', 100);
+        circle.setAttributeNS(null, 'cy', 100);
+        circle.setAttributeNS(null, 'r', 100);
+        circle.setAttributeNS(null, 'stroke', `#000`);
+        circle.setAttributeNS(null, 'stroke-width', 3);
+        circle.setAttributeNS(null, 'fill', '#0f0');
+
+        svg.appendChild(rect);
+        svg.appendChild(circle);
+        div.appendChild(svg);
+    </script>
+    <script>
+    /*
+        http://www.webhek.com/post/ditching-jquery.html
+        https://developer.mozilla.org/en-US/Add-ons/Code_snippets/QuerySelector
+        https://www.w3.org/TR/selectors-api/#interface-definitions
+        https://www.w3.org/TR/selectors-api/#resolving
+        https://www.w3.org/TR/css3-selectors/#attrnmsp
+        https://www.w3.org/TR/css3-selectors/
+        https://www.w3.org/TR/css3-selectors/#id-selectors
+        https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+        https://developer.mozilla.org/zh-CN/Add-ons/Code_snippets/QuerySelector
+    */
+        HTMLDocument.prototype.$ = function (selector) { // Only for HTML
+            return this.querySelector(selector);
+        };
+        $(`div`);
+        HTMLDocument.prototype.$S = function (selector) { // Only for HTML
+            return this.querySelectorAll(selector);
+        };
+        $$(`div`);
+    </script>
+</body>
+</html>
