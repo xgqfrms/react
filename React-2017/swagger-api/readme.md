@@ -54,7 +54,11 @@ $ swagger project start node-api
 
 $ curl http://127.0.0.1:10010/hello?name=xgqfrms
 
->node-api>$ swagger project edit
+#cd node-api
+
+$ swagger project edit
+
+
 
 http://127.0.0.1:13746/#/edit
 
@@ -70,6 +74,50 @@ http://127.0.0.1:10010/hello?name=xgqfrms
 ```
 
 
+https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#operation-object-example
+
+
+"parameters": [
+    {
+      "name": "petId",
+      "in": "path",
+      "description": "ID of pet that needs to be updated",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "in": "formData",
+      "description": "Updated name of the pet",
+      "required": false,
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "in": "formData",
+      "description": "Updated status of the pet",
+      "required": false,
+      "type": "string"
+    }
+  ],
+
+
+parameters:
+- name: petId
+  in: path
+  description: ID of pet that needs to be updated
+  required: true
+  type: string
+- name: name
+  in: formData
+  description: Updated name of the pet
+  required: false
+  type: string
+- name: status
+  in: formData
+  description: Updated status of the pet
+  required: false
+  type: string
 
 
 
