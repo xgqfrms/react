@@ -63,6 +63,9 @@ http://127.0.0.1:13746/#/edit
 http://127.0.0.1:13746/#!/
 
 
+# localhost:10010 Error
+
+http://127.0.0.1:10010/hello?name=xgqfrms
 
 ```
 
