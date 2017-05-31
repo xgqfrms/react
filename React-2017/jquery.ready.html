@@ -59,5 +59,23 @@
             $("#loading").hide();
         });
     </script>
+    <script>
+        $(() => {
+            $.get("https://api.github.com/users/xgqfrms-github/gists", (data) => {
+                console.log(`data description = ${data[0].description}`);
+            })
+            .done(function() {
+                console.log(`success!`);
+            })
+
+            $.get("https://api.github.com/users/xgqfrms-github/gists", {user: "xgqfrms", public: "false"} )
+                .done((data) => {
+                    console.log(`data[0] description = ${data[0].description}`);
+                    console.log(`data = ${data}`);
+                    console.log(`success!`);
+                }
+            );
+        });
+    </script>
 </body>
 </html>

@@ -204,3 +204,61 @@ parameters:
     font-family: Titillium Web,sans-serif;
     color: #3b4151;
 }
+
+
+
+
+
+
+
+
+
+
+
+# `JavaScript function` === `stateless functional component`
+
+如果你有一个只有一个render功能的组件类，那么你可以用一个非常不同的方式重写这个组件类。
+代替使用React.createClass，你可以将其编写为JavaScript函数！
+
+
+你可以把它写成JavaScript函数！
+
+https://www.codecademy.com/courses/react-102/lessons/stateless-functional-components/exercises/stateless-functional-component-intro?action=lesson_resume
+
+
+
+
+```jsx
+// Normal way to display a prop:
+var MyComponentClass = React.createClass({
+  render: function () {
+    return <h1>{this.props.title}</h1>;
+  }
+});
+
+// Stateless functional component way to display a prop:
+function MyComponentClass (props) {
+  return <h1>{props.title}</h1>;
+}
+
+// Normal way to display a prop using a variable:
+var MyComponentClass = React.createClass({
+  render: function () {
+    var title = this.props.title;
+    return <h1>{title}</h1>;
+  }
+});
+
+// Stateless functional component way to display a prop using a variable:
+function MyComponentClass (props) {
+    var title = props.title;
+  return <h1>{title}</h1>;
+}
+```
+
+
+
+
+
+
+
