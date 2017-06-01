@@ -24,7 +24,7 @@
             return {money:200};
           },
           handleSonChange:function(event){
-            this.setState({money:event.target.value});
+            this.setState({money:event.target.value}).bind(this);
           },
           render:function(){
               <div>

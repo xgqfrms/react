@@ -112,3 +112,128 @@ $(() => {
         z-index 0s linear 0.25s, 
         left 0s linear 0.25s;
 }
+
+
+
+
+
+
+
+
+
+
+```js
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+
+if(userChoice !== "rock" || userChoice !== "paper" || userChoice !== "scissors"){
+    userChoice = prompt("you can just choose on of rock, paper or scissors!");
+}
+
+// repeate
+
+if(userChoice !== "rock" || userChoice !== "paper" || userChoice !== "scissors"){
+    userChoice = prompt("you can just choose on of rock, paper or scissors!");
+}
+
+
+
+
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+    computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+    computerChoice = "paper";
+} else {
+    computerChoice = "scissors";
+} 
+console.log("Computer: " + computerChoice);
+
+
+
+var compare = function(choice1,choice2){
+    if(choice1 === choice2){
+        return "The result is a tie!";
+    }else if(choice1 === "rock"){
+        if(choice2 === "scissors"){
+            return "rock wins";
+        }
+        if(choice2 === "paper"){
+            return "paper wins";
+        }
+    }else if(choice1 === "scissors"){
+        if(choice2 === "rock"){
+            return "rock wins";
+        }
+        if(choice2 === "paper"){
+            return "scissors wins";
+        }
+    }
+    else if(choice1 === "paper"){
+        if(choice2 === "scissors"){
+            return "scissors wins";
+        }
+        if(choice2 === "rock"){
+            return "paper wins";
+        }
+    }
+    
+};
+
+compare(userChoice, computerChoice);
+
+```
+
+
+无损转换（kindle）亚马逊电纸书格式 azw3转换成ePub
+
+http://calibre-ebook.com/download
+
+https://github.com/apprenticeharper/DeDRM_tools
+
+
+
+https://www.tumblr.com/blog/xgqfrms
+
+
+https://react2.webgeeker.xyz/docs/getting-started.html
+
+
+https://www.udemy.com/nodejs-codeless-api-creation-up-and-running-with-swagger/learn/v4/t/lecture/6369188?start=0
+
+https://egghead.io/lessons/css-add-type-safety-to-css-using-typestyle
+
+
+https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
+
+
+
+deduped
+
+
+https://laod.cn/hosts/2017-google-hosts.html
+
+https://iiio.io/download/20170528/
+
+
+https://iiio.io/download/20170528/Windows%E7%B3%BB%E5%88%97%E8%B7%9F%E8%8B%B9%E6%9E%9C%E7%B3%BB%E5%88%9720170528.zip
+
+
+提取码：laod 
+解压密码：laod.cn
+
+Windows 系统hosts位于 C:\Windows\System32\drivers\etc\hosts
+
+
+Windows
+开始 -> 运行 -> 输入cmd -> 在CMD窗口输入
+
+
+ipconfig /flushdns
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
+
+
+
