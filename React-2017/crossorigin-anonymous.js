@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * https://cdn.xgqfrms.xyz/es6-modules/crossorigin.js
+ * xgqfrms
+ * 2017.06.02
+ */
 
 // check & add crossorigin="anonymous"
 
@@ -35,7 +40,7 @@ const X_COA = () => {
 };
 
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", (event) => {
     console.log(`%c DOM fully loaded and parsed`, `${this_style}`, this);
     setTimeout(X_COA, 1000);
 });
