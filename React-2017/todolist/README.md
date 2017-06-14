@@ -42,8 +42,57 @@ $ serve -s build
 
 > browser-sync
 
-```js
+https://www.npmjs.com/package/browser-sync
 
+```sh
+
+$
+
+$
+
+
+```
+
+
+
+> express server
+
+https://stackoverflow.com/a/40844201/5934465
+
+https://gist.github.com/xgqfrms-GitHub/7697d5975bdffe8d474ac19ef906e906
+
+
+```js
+    // simple express server for HTML pages!
+    // ES6 style
+
+    const express = require('express');
+    const fs = require('fs');
+    const hostname = '127.0.0.1';
+    const port = 3000;
+    const app = express();
+
+    let cache = [];// Array is OK!
+
+    cache[0] = fs.readFileSync( __dirname + '/index.html');
+    cache[1] = fs.readFileSync( __dirname + '/views/testview.html');
+
+    app.get('/', (req, res) => {
+        res.setHeader('Content-Type', 'text/html');
+        res.send( cache[0] );
+    });
+
+    app.get('/test', (req, res) => {
+        res.setHeader('Content-Type', 'text/html');
+        res.send( cache[1] );
+    });
+
+    app.listen(port, () => {
+        console.log(`
+            Server is running at http://${hostname}:${port}/ 
+            Server hostname ${hostname} is listening on port ${port}!
+        `);
+    });
 
 ```
 
