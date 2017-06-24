@@ -1,27 +1,20 @@
-// https://jscomplete.com/repl
 
+import './styles.css';
 
-
-
-
-const BTN = (props) => {
-    return (
-        <div>
-            btn name is <button>{props.name}</button>
-        </div>
-    );
-};
-
-ReactDOM.render(<BTN name="btn" />, mountNode);
-
-
-
+/*
+.classname-color{
+    color: "red";
+    background: "#0f0";
+}
+*/
 
 
 const BTN = (props) => {
     return (
         <div>
             My name is <button>{props.name}</button>
+            <hr/>
+            I'm <span className="classname-color">{props.age}</span> yeas old!
         </div>
     );
 };
@@ -32,20 +25,6 @@ const infos = {
 };
 
 ReactDOM.render(<BTN {...infos} />, mountNode);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
