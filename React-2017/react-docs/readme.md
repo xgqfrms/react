@@ -1,15 +1,4 @@
-# plurasight raect
-
-https://gist.github.com/xgqfrms-gildata/0080e188a6921504717220fdae5eddb9
-
-
-https://jscomplete.com/repl
-
-> JavaScript REPL and Playground for React.js
-
-
-
-http://editorconfig.org/
+# react docs
 
 
 
@@ -78,18 +67,6 @@ https://facebook.github.io/react/docs/context.html#passing-info-automatically-th
 
 
 ##
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
