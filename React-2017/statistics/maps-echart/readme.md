@@ -17,7 +17,14 @@ http://blog.parryqiu.com/2017/06/16/webpack2-Statistics/
 
 
 
-
+<style>
+    ul>li{
+        list-style-type: none;
+        color: #0f0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+</style>
 
 
 
