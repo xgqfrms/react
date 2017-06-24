@@ -6,6 +6,10 @@
 
 https://facebook.github.io/react/docs/context.html
 
+
+https://gist.github.com/xgqfrms-GitHub/c9b5ed1c2d07b1419c17314a3c775280
+
+
 ```jsx
 
 // contextTypes = {}
