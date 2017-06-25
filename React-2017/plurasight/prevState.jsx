@@ -109,9 +109,9 @@ class PropsTest extends React.Component{
     }
     clickReseter(){
         this.setState(
-          () => {
+            () => {
                 return {counter: 0};
-          }
+            }
         );
     }
     render() {
