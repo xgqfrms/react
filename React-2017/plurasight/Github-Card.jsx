@@ -65,3 +65,11 @@ export default CardList;
 
 
 // https://gist.github.com/xgqfrms-GitHub/a36b56ac3c0b4a7fe948f2defccf95ea#gistcomment-2136125
+
+
+/*
+https://app.pluralsight.com/library/courses/react-js-getting-started/exercise-files
+
+http://s.pluralsight.com/course-materials/react-js-getting-started/14FA9B251F/20150612195050/react-js-getting-started.zip?userHandle=979d028f-fb22-4b52-a073-ba740fabc50a
+
+*/
