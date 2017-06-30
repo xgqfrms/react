@@ -19,7 +19,6 @@ const Card = (props) =>{
     );
 };
 
-
 const CardList = (props) =>{
     return (
         <div>
@@ -34,8 +33,27 @@ const CardList = (props) =>{
     );
 };
 
-// ??? fetch datas & loop array/object
-// 
+const FormCard = (props) =>{
+    return (
+        <div>
+            <form onSubmit={props.clickHandler}>
+                <input
+                    type="text"
+                    placeholder="gitub username"
+                    ref=""
+                    id=""
+                    required
+                    />
+                <button type="submit">
+                    Add a New Card!
+                </button>
+            </form>
+        </div>
+    );
+};
+
+
+// fetch datas & map/loop array/object
 const datas = [
     {
         name: "xgqfrms",
@@ -54,14 +72,40 @@ const datas = [
 ];
 
 
+class App extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+              counter: 1,
+              cards: datas
+        };
+        // this.clickHandler = this.clickHandler.bind(this);
+    }
+    clickHandler = (e) => {
+        // event.preventDefault();
+        e.preventDefault();
+        console.log(`clicked e = `, e);
+        // return xxx;
+    }
+    render() {
+        return (
+            <div>
+                <FormCard {...props} clickHandler={this.props.clickHandler} />
+                <AppCardList cards={this.state.cards} />
+            </div>
+        );
+    };
+};
+
+
 ReactDOM.render(
     <div>
-        <CardList cards={datas}/>
+        <App />
     </div>
     , mountNode
 );
 
-export default CardList;
+export default App;
 
 
 // https://gist.github.com/xgqfrms-GitHub/a36b56ac3c0b4a7fe948f2defccf95ea#gistcomment-2136125
@@ -71,5 +115,14 @@ export default CardList;
 https://app.pluralsight.com/library/courses/react-js-getting-started/exercise-files
 
 http://s.pluralsight.com/course-materials/react-js-getting-started/14FA9B251F/20150612195050/react-js-getting-started.zip?userHandle=979d028f-fb22-4b52-a073-ba740fabc50a
+
+*/
+
+
+/*
+
+Invariant Violation: Stateless function components cannot have refs.
+
+
 
 */
