@@ -95,12 +95,14 @@ const addNewCard = (card) => {
 
 
 
+state = {
+    cards: []
+};
 
 
 
 
-
-
+// concat
 
 
 
