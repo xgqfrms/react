@@ -100,6 +100,17 @@ state = {
 };
 
 
+// id = key (list unique key )
+
+
+<div>
+    {
+        props.cards.map(
+            (card) => <Card key ={card.id} {...card} />
+        )
+    }
+</div>
+
 
 
 // concat
