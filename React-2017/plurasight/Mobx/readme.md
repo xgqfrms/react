@@ -40,6 +40,17 @@ https://www.gitbook.com/login?next=%2F%40xgqfrms-github%2Fdashboard
 
 
 
+http://pepa.holla.cz/wp-content/uploads/2015/10/ng-book-The-Complete-Book-on-AngularJS.pdf
+
+
+https://github.com/papapin/Ng-book-2-
+
+
+
+https://github.com/RxJS-CN/RxJS-Docs-CN
+
+http://reactivex.io/rxjs/
+
 
 
 
