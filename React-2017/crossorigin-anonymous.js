@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     setTimeout(X_COA, 1000);
 });
 
+export {X_COA};
 
 export default X_COA;
 
