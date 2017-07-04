@@ -1,4 +1,28 @@
-# class-properties
+# class-properties & instance-properties
+
+
+
+## class-properties
+
+
+> prop-type & defaultProps & init state
+
+
+https://facebook.github.io/react/docs/lifting-state-up.html
+
+
+```jsx
+
+constructor(props) {
+    super(props);
+    this.state = {
+        color: props.initialColor
+    };
+}
+
+```
+
+
 
 
 
@@ -35,7 +59,9 @@ https://facebook.github.io/react/docs/jsx-in-depth.html
 
 
 
-# instance-properties
+## instance-properties
+
+
 
 https://facebook.github.io/react/docs/react-component.html#instance-properties
 
