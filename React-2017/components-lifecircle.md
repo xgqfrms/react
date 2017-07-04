@@ -1,6 +1,7 @@
-// 
+# components life-circle
 
-
+```jsx
+    
 class UserGist extends React.Component {
     constructor(props) {
         super(props);
@@ -48,9 +49,9 @@ ReactDOM.render(
     <div id="example"></div>
 }
 
+```
 
-
-
+```js
 
 $(function(){
     $.get("https://api.github.com/users/xgqfrms-github/gists", function(data) {
@@ -72,7 +73,7 @@ $(function(){
 
 
 
-https://api.github.com/users/xgqfrms-github/gists
+// https://api.github.com/users/xgqfrms-github/gists
 
 
 $(() => {
@@ -92,8 +93,10 @@ $(() => {
     );
 });
 
+```
 
 
+```md
 
 .lesson__state--failed {
     background: rgba(53,69,81,0.9) url(/assets/diag-red.png);
@@ -118,7 +121,7 @@ $(() => {
 
 
 
-
+```
 
 
 
@@ -187,7 +190,7 @@ compare(userChoice, computerChoice);
 ```
 
 
-无损转换（kindle）亚马逊电纸书格式 azw3转换成ePub
+# 无损转换（kindle）亚马逊电纸书格式 azw3转换成ePub
 
 http://calibre-ebook.com/download
 
@@ -210,8 +213,10 @@ https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/w
 
 
 
-deduped
+> deduped & 重复数据删除
 
+
+# laod.cn
 
 https://laod.cn/hosts/2017-google-hosts.html
 
@@ -220,20 +225,20 @@ https://iiio.io/download/20170528/
 
 https://iiio.io/download/20170528/Windows%E7%B3%BB%E5%88%97%E8%B7%9F%E8%8B%B9%E6%9E%9C%E7%B3%BB%E5%88%9720170528.zip
 
+```sh
 
-提取码：laod 
-解压密码：laod.cn
+# 提取码：laod 
+# 解压密码：laod.cn
 
-Windows 系统hosts位于 C:\Windows\System32\drivers\etc\hosts
+# Windows 系统hosts位于 C:\Windows\System32\drivers\etc\hosts
 
-
-Windows
-开始 -> 运行 -> 输入cmd -> 在CMD窗口输入
-
-
-ipconfig /flushdns
+# Windows
+# 开始 -> 运行 -> 输入cmd -> 在CMD窗口输入
 
 
+$ ipconfig /flushdns
+
+```
 
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
