@@ -28,6 +28,25 @@ constructor(props) {
 我们建议将共享状态提升到最近的共同祖先。
 
 
+# props-are-read-only
+
+> 道具是只读的
+
+https://facebook.github.io/react/docs/components-and-props.html#props-are-read-only
+
+
+# The Data Flows Down
+
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html#the-data-flows-down
+
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html#using-state-correctly
+
+
+https://facebook.github.io/react/docs/state-and-lifecycle.html#converting-a-function-to-a-class
+
+
 
 https://facebook.github.io/react/docs/react-component.html#class-properties
 
@@ -111,6 +130,46 @@ https://facebook.github.io/react/docs/state-and-lifecycle.html
 
 不要直接变异 this.state，因为调用setState() 之后可能会取代你所做的突变。
 对待这个状态，好像它是不可变的。
+
+
+
+
+# 单一责任原则
+
+
+https://en.wikipedia.org/wiki/Single_responsibility_principle
+
+https://zh.wikipedia.org/wiki/单一功能原则
+
+
+> The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. 
+
+
+
+https://facebook.github.io/react/docs/thinking-in-react.html
+
+
+
+# ant design
+
+
+https://ant.design/components/modal-cn/
+
+https://ant.design/components/message-cn/
+
+
+https://ant.design/components/tree-cn/
+
+https://ant.design/components/menu-cn/
+
+
+
+
+
+
+
+
+
 
 
 
