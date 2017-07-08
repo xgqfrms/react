@@ -24,3 +24,17 @@ https://app.pluralsight.com/library/courses/better-css/table-of-contents
 
 
 
+v6.11.0 LTS
+Recommended For Most Users
+
+
+v8.1.3 Current
+Latest Features
+
+
+
+
+
+
+
+
