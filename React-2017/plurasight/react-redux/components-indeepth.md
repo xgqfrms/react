@@ -27,4 +27,6 @@ https://app.pluralsight.com/player?course=react-redux-react-router-es6&author=co
 
 
 
+https://app.pluralsight.com/library/courses/
 
+https://app.pluralsight.com/profile/xgqfrms
