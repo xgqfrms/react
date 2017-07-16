@@ -4,7 +4,7 @@
 // https://app.pluralsight.com/player?course=react-redux-react-router-es6&author=cory-house&name=react-redux-react-router-es6-m6&clip=3&mode=live
 
 
-state = {
+let state = {
     name: 'xgqfrms',
     age: 23,
     role: 'admin'
@@ -34,10 +34,11 @@ return state = {
 Object.assign(target, ...sources);
 
 
+// Good: new copy
 Object.assign({}, state, {role: 'root'});
 
-
-
+// Bad: mutating
+Object.assign({state, {role: 'root'});
 
 
 
