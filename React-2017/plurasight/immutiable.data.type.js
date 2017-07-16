@@ -43,7 +43,21 @@ Object.assign({state, {role: 'root'});
 
 
 
+/*
 
+
+redux-immutable-state-invariant
+
+
+
+https://github.com/leoasis/redux-immutable-state-invariant
+
+https://www.npmjs.com/package/@types/redux-immutable-state-invariant
+
+
+开发模式
+
+*/
 
 
 
