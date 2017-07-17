@@ -20,7 +20,7 @@ bindActionCreators(action, dispatch);
 https://app.pluralsight.com/player?course=react-redux-react-router-es6&author=cory-house&name=react-redux-react-router-es6-m7&clip=5&mode=live
 
 
-
+# flux-standard-action
 
 An action MUST
 
@@ -38,5 +38,8 @@ https://gist.github.com/xgqfrms-GitHub/33b08ef2fe4705020af8a8d827775380#gistcomm
 
 
 
+Object.assing({}, state, {key: value});
 
+
+https://gist.github.com/xgqfrms-GitHub/33b08ef2fe4705020af8a8d827775380#gistcomment-2149843
 
