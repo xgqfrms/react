@@ -11,7 +11,7 @@ const Link = ({active, children, onClick}) => {
     }
     return (
         <a
-            href="#"
+            href="https://github.com/xgqfrms"
             onClick={
                 (e) => {
                     e.preventDefault();
