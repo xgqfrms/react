@@ -61,7 +61,10 @@ import {bindActionCreators} from 'redux';
 
 // actions: propTypes.array.isRequired,
 
-actions: propTypes.object.isRequired,
+{
+    courses: propTypes.array.isRequired,
+    actions: propTypes.object.isRequired
+}
 
 {
     actions: bindActionCreators(courseAction, dispatch)
@@ -74,16 +77,48 @@ actions: propTypes.object.isRequired,
 }
 
 
+import * as types from './actionTypes';
+import * as types from './actionTypes.js';
+import * as types from './actionTypes.jsx';
+
+
+export const CREATE_COURSE = 'CREATE_COURSE';
+
+const CREATE_COURSE = 'CREATE_COURSE';
+
+export CREATE_COURSE;
+
 ```
 
 
+# asynchronous flow
+
+> redux-thunk
+
+
+# Mock APi
+
+fake.js
+
+json server
 
 
 
 
+# redux-thunk
 
+> Thunk middleware for Redux
 
+咚
 
+> Star `5,855` & Fork `250`
 
+https://github.com/gaearon/redux-thunk
+
+https://www.npmjs.com/package/redux-thunk
+
+81,565 downloads in the last day
+404,671 downloads in the last week
+1,656,027 downloads in the last month
 
 
