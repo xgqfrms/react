@@ -52,6 +52,14 @@ export default returnedFunction(ComponentName);
 
 
 
+# bindActionCreators
+
+```jsx
+
+import {bindActionCreators} from 'redux';
+
+```
+
 
 
 
