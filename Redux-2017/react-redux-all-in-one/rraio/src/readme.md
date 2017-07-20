@@ -19,6 +19,16 @@ const mapDispatchToProps = () => {
     //
 }
 
+
+const mapStateToProps = (state, ownProps) => {
+    //
+}
+
+const mapDispatchToProps = (dispatch) => {
+    //
+}
+
+
 export default connect(
     mapStateToProps,
     mapDispatchToProps
@@ -34,7 +44,22 @@ const returnedFunction = connect(
 export default returnedFunction(ComponentName);
 
 
-// connect() return a function, with params = componentName
+// connect() return a function, with params = containerComponentName
+
+
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
