@@ -58,6 +58,22 @@ export default returnedFunction(ComponentName);
 
 import {bindActionCreators} from 'redux';
 
+
+// actions: propTypes.array.isRequired,
+
+actions: propTypes.object.isRequired,
+
+{
+    actions: bindActionCreators(courseAction, dispatch)
+}
+
+// OR
+
+{
+    createCourse: bindActionCreators(courseActions.createCourse dispatch)
+}
+
+
 ```
 
 
