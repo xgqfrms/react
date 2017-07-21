@@ -122,3 +122,17 @@ https://www.npmjs.com/package/redux-thunk
 1,656,027 downloads in the last month
 
 
+# CS术语 
+
+> thunk 
+
+一个函数，包裹一个表达式 以延缓其评估！
+
+
+# CS term
+
+> thunk
+
+a function , wraps an expression
+
+in order to delay its evaluation!
