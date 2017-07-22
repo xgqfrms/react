@@ -154,6 +154,18 @@ https://github.com/coryhouse/pluralsight-redux-starter/tree/master/src/api
 import thunk from 'redux-thunk'
 
 
+
+
+const generateId = (author) => {
+    let f = author.firstName.toLowerCase(),
+        l = author.lastName.toLowerCase();
+    return(
+         `${f}-${l}`
+    );
+};
+
+
+
 ```
 
 
