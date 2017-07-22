@@ -144,6 +144,23 @@ in order to delay its evaluation!
 https://github.com/coryhouse/pluralsight-redux-starter/tree/master/src/api
 
 
+# store
+
+>  configureStore.js
+
+
+```js
+
+import thunk from 'redux-thunk'
+
+
+```
+
+
+
+
+
+
 
 
 
