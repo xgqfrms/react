@@ -1,6 +1,11 @@
 # react-redux & redux
 
 
+G:\wwwRoot\React\React-2017
+
+
+
+
 ```sh
 
 $ npm i -S react-redux redux
@@ -165,6 +170,7 @@ const generateId = (author) => {
 };
 
 
+applyMiddleWare(thunk, reduxImmutableStateInvariant());
 
 ```
 

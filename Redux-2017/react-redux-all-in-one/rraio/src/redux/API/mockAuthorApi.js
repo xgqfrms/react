@@ -22,6 +22,17 @@ const authors = [
 ];
 
 //This would be performed on the server in a real app. Just stubbing in.
+
+const generateId = (author) => {
+    let firstName = author.firstName.toLowerCase(),
+        lastName = author.lastName.toLowerCase();
+    return `${firstName}-${lastName}`;
+};
+
+/*
+
+
+
 const generateId = (author) => {
     let f = author.firstName.toLowerCase(),
         l = author.lastName.toLowerCase();
@@ -29,6 +40,8 @@ const generateId = (author) => {
          `${f}-${l}`
     );
 };
+
+*/
 
 class AuthorApi {
     static getAllAuthors() {
