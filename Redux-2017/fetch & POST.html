@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POST</title>
+    <style>
+        .textarea {
+            min-width: 300px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>fetch test</h1>
+        <hr>
+        <div>
+            <span>post result</span>
+            <button id="click_post">
+                click post
+            </button>
+            <br>
+            <pre id="pre_post">
+                <!-- post -->
+            </pre>
+            <textarea id="textarea_post" class="textarea">
+                <!-- post -->
+            </textarea>
+        </div>
+        <div>
+            <span>put result</span>
+            <button id="click_put">
+                click put
+            </button>
+            <br><br>
+            <textarea id="textarea_put" class="textarea">
+                <!-- put -->
+            </textarea>
+        </div>
+        <div>
+            <span>delete result</span>
+            <button id="click_delete">
+                click delete
+            </button>
+            <br><br>
+            <textarea id="textarea_delete" class="textarea">
+                <!-- delete -->
+            </textarea>
+        </div>
+    </div>
+    <script>
+        const url = `http://localhost:7777/datas`;
+        const color = `
+            color: green;
+            background: rgba(125, 125, 125, 0.7);
+            font-size: 23px;
+        `;
+        const err_color = `
+            color: red;
+            background: rgba(125, 125, 125, 0.7);
+            font-size: 23px;
+        `;
+        // Uncaught ReferenceError: postdata is not defined
+        // const function, not auto hoisting
+        const postdata = () => {
+            let id = 0;
+            fetch(url, {
+                method: 'GET'
+            }).then(
+                (response) => response.json()
+            ).then(
+                (json) => {
+                    console.log(`json.length = \n`, json.length);
+                    json.map(
+                        (data, index) => {
+                            // exist = array.some();
+                            let testArray = [];
+                            for (let i = 0; i < json.length; i++) {
+                                testArray.push(i + 1);
+                            }
+                            console.log(`new testArray`, testArray);
+                            const isEqual = (element, index, array) => {
+                                return element !== (index + 1);
+                            };
+                            // testArray.some(isEqual);
+                            // element in array 
+                            const isFind = (element, index, array) => {
+                                return array.indexOf(element);
+                            };
+                            let exist = false;
+                            exist = testArray.indexOf(data.id) !== -1;
+                            // -1
+                            console.log(`index`, index);
+                            console.log(`index + 1 `, (index + 1));
+                            console.log(`exist value`, exist);
+                            // testArray.find(isFind);
+                            // map keys ???
+                            // no for, auto map 1,2,3 
+                            // Array.of(1, 2, 3); // [1, 2, 3]
+                            // Array.from('foo'); // ["f", "o", "o"]
+                            // for push
+                            if (data.id !== (index + 1) && !exist) {
+                                console.log(`data.id = \n`, data.id);
+                                console.log(`index = \n`, index);
+                                id = index + 1;
+                            } else {
+                                id = json.length + 1;
+                            }
+                        }
+                    );
+                    console.log(`inner new id`, id);
+                    // return id;
+                }
+            );
+            setTimeout(() => {
+                console.log(`outer new id`, id);
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        id: id,
+                        name: "new-name",
+                        password: "xyz&123"
+                    })
+                });
+            }, 1000);
+            console.log(`%c fetch post data!`, color);
+        };
+        const putdata = (id = 1) => {
+            fetch(`${url}/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    // id: id,
+                    name: "put-new-name",
+                    password: "xyz&123"
+                })
+            });
+            console.log(`%c fetch put data!`, color);
+        };
+        const deletedata = (id = 1) => {
+            fetch(`${url}/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({})
+            });
+            console.log(`%c fetch delete data!`, color);
+        };
+        const getdata = (id) => {
+            fetch(url, {
+                method: 'GET'
+            }).then(
+                (response) => response.json()
+            ).then(
+                (json) => {
+                    console.log(`%c fetch json \n`, color, json);
+                    let data = JSON.stringify(json);
+                    let format_data = json.map(
+                        (data) => {
+                            return (
+                                data + "<br/>"
+                            );
+                        }
+                    );
+                    // regex format
+                    // CodeMirror js lib
+                    document.querySelector(id).innerText = `loading...`;
+                    // mock async
+                    setTimeout(() => {
+                        document.querySelector(id).innerText = format_data;
+                        console.log(`%c fetch format_data \n`, color, format_data);
+                        document.querySelector(id).innerText = data;
+                        console.log(`%c fetch stringify data \n`, color, data);
+                    }, 1000);
+                    return data;
+                }
+            ).catch(
+                (err) => {
+                    console.log(`%c Whoops, An Error occurred!`, err_color, err);
+                    throw new Error("Whoops, An Error occurred!");
+                }
+            );
+        };
+        const btn_post = document.querySelector("#click_post");
+        btn_post.addEventListener("click", () => {
+            postdata();
+            getdata("#textarea_post");
+            console.log(`finish post!`);
+        });
+        const btn_put = document.querySelector("#click_put");
+        btn_put.addEventListener("click", () => {
+            putdata(2);
+            getdata("#textarea_put");
+            console.log(`finish put!`);
+        });
+        const btn_delete = document.querySelector("#click_delete");
+        btn_delete.addEventListener("click", () => {
+            deletedata(2);
+            getdata("#textarea_delete");
+            console.log(`finish delete!`);
+        });
+        // mode: "no-cors"
+        /* 
+            {
+                "datas": [
+                {
+                        "id": 1,
+                        "name": "typicode",
+                        "password": "abc123"
+                    },
+                    {
+                        "id": 2,
+                        "name": "xgqfrms",
+                        "password": "xyz123"
+                    },
+                    {
+                        "id": 3,
+                        "name": "gildata",
+                        "password": "ufo123"
+                    }
+                ]
+            }
+        */
+    </script>
+</body>
+
+</html>
