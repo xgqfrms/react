@@ -1,0 +1,286 @@
+{
+  "datas": [
+    {
+      "key": "1",
+      "uname": "xray",
+      "utype": "内部用户",
+      "uid": 17,
+      "lname": "西湖区",
+      "pnum": "18123456789",
+      "email": "xray@example.com",
+      "vdate": "2017-02-01~2017-10-31",
+      "activation": "是"
+    },
+    {
+      "key": "2",
+      "uname": "abc",
+      "utype": "外部用户",
+      "uid": 23,
+      "lname": "湖底公园",
+      "pnum": "18177778888",
+      "email": "abc@example.com",
+      "vdate": "2017-06-21~2017-12-21",
+      "activation": "否"
+    },
+    {
+      "key": "3",
+      "uname": "black",
+      "utype": "内部用户",
+      "uid": 32,
+      "lname": "Sidney No. 1 Lake Park",
+      "pnum": "18966668888",
+      "email": "black@example.com",
+      "vdate": "2017-07-07~2017-11-11",
+      "activation": "是"
+    },
+    {
+      "id": 3,
+      "key": "111",
+      "uname": "admin",
+      "utype": "内部用户",
+      "uid": 3,
+      "lname": "西湖区001",
+      "pnum": "18123456789",
+      "email": "admin@gildata.com",
+      "vdate": "2017-08-01~2017-12-31",
+      "activation": "是"
+    }
+  ],
+  "Info": {
+    "Info": [
+      {
+        "name": "fund.topic.performance_evaluation.fund_performance.AInvestmentValueAnalysisDetail",
+        "description": "基金--> 基金专题统计--> 业绩评价--> 分级基金业绩表现--> 分级基金子基金（A份额）投资价值分析明细",
+        "dependtables": [
+          "SecuMain",
+          "MF_NetValue"
+        ]
+      },
+      {
+        "name": "fund.topic.performance_evaluation.fund_rating.TianXiang.Filter",
+        "description": "基金 -> 专题统计 -> 业绩评价 -> 基金评级 -> 天相基金评级(筛选条件)",
+        "dependtables": [
+          "MF_TXSECFundRating"
+        ]
+      },
+      {
+        "name": "JYTopic.StockSecondaryMarket.StockMarketPeform",
+        "description": "主板->专题统计->二级市场->市场表现->个股行情表现",
+        "dependtables": [
+          "LC_DIndicesForValuation",
+          "LC_ExgIndustry",
+          "QT_Performance",
+          "SecuMain",
+          "BaseCode",
+          "Sector",
+          "SectorComponent"
+        ]
+      },
+      {
+        "name": "fund.topic.agency_study.consignment_agency.FundType",
+        "description": "基金--> 基金专题统计--> 机构研究--> 代销机构--> 代销机构统计(按基金类型)",
+        "dependtables": [
+          "MF_FundArchives",
+          "LC_IssueAndListAgent",
+          "LC_InstiArchive"
+        ]
+      }
+    ]
+  },
+  "input": {
+    "Success": true,
+    "Info": {
+      "schema": {
+        "type": "object",
+        "Properties": {
+          "ApiName": {
+            "type": "string",
+            "Required": true,
+            "Description": "报表名称"
+          },
+          "SecuCode": {
+            "type": "string",
+            "Required": true,
+            "Description": "【必须】证券类型"
+          },
+          "ExtParams": {
+            "type": "object",
+            "Description": "扩展参数",
+            "DefaultValue": "null",
+            "AdditionalProperties": {
+              "type": "string"
+            }
+          },
+          "Sorts": {
+            "type": "array",
+            "Description": "排序字段，支持排序组合",
+            "DefaultValue": "null",
+            "Items": {
+              "type": "object",
+              "Properties": {
+                "Field": {
+                  "type": "string",
+                  "Description": "排序的字段名称，多Table的排序，需要指定Table前缀，如Table1.Field"
+                },
+                "Sort": {
+                  "type": "string",
+                  "Description": "排序方式，升序或者降序",
+                  "enum": [
+                    "asc(升序)",
+                    "desc(降序)",
+                    "no(无序)"
+                  ]
+                }
+              }
+            }
+          },
+          "Page": {
+            "type": "object",
+            "Description": "分页参数",
+            "DefaultValue": "null",
+            "Properties": {
+              "PageNo": {
+                "type": "integer",
+                "Description": "请求的页数"
+              },
+              "PageSize": {
+                "type": "integer",
+                "Description": "每页大小"
+              }
+            }
+          },
+          "Compress": {
+            "type": "boolean",
+            "Description": "数据返回是否强制压缩",
+            "DefaultValue": "true"
+          },
+          "WriteType": {
+            "type": "string",
+            "Description": "返回的数据协议格式",
+            "DefaultValue": "binary",
+            "enum": [
+              "json(json文本格式)",
+              "binary(二维表二进制格式)"
+            ]
+          },
+          "OutField": {
+            "type": "array",
+            "Description": "数据输出的字段，用于输出字段过滤，当输出字段数量小于不输出字段数量时采用",
+            "DefaultValue": "null",
+            "Items": {
+              "type": "string"
+            }
+          },
+          "IgnoreField": {
+            "type": "array",
+            "Description": "数据输出的字段，用于输出字段过滤，当输出字段数量大于不输出字段数量时采用",
+            "DefaultValue": "null",
+            "Items": {
+              "type": "string"
+            }
+          },
+          "Group": {
+            "type": "string",
+            "Description": "分组字段，当选择分组时，pageInfo同样针对组分页",
+            "DefaultValue": "null"
+          },
+          "Filters": {
+            "type": "array",
+            "Description": "数据过滤，支持In、Between、Like、==、quarter(季报) 过滤器，参见具体过滤器的使用",
+            "DefaultValue": "null",
+            "Items": {
+              "type": "object"
+            }
+          },
+          "FastDateFilterType": {
+            "type": "string",
+            "Description": "数据快速过滤类型",
+            "DefaultValue": "null",
+            "enum": [
+              "LatestTime(最新日期)",
+              "CurrentYear(今年以来)",
+              "Latest1Month(近一月)",
+              "Latest3Month(近三月)",
+              "Latest6Month(近六月)",
+              "Latest1Year(近一年)",
+              "Latest2Year(近二年)",
+              "Latest3Year(近三年)",
+              "Latest5Year(近五年)",
+              "AllYear(全部)",
+              "ListedBefore(上市以前)",
+              "ListedAfter(上市以后)",
+              "Customer(自定义)"
+            ]
+          },
+          "CallBack": {
+            "type": "string",
+            "Description": "JSONP",
+            "DefaultValue": "null"
+          },
+          "FastQuarterReportType": {
+            "type": "array",
+            "Description": "快速季报过滤类型",
+            "DefaultValue": "null",
+            "Items": {
+              "type": "string",
+              "enum": [
+                "Q1th(一季报)",
+                "Q2nd(中报)",
+                "Q3rd(三季报)",
+                "Q4th(年报)"
+              ]
+            }
+          }
+        }
+      },
+      "name": "IndexF10IndexFund",
+      "description": "指数--> F10--> 非股票指数--> 指数基金",
+      "dependtable": [
+        "SecuMain",
+        "MF_InvestTargetCriterion",
+        "MF_FundArchives",
+        "MF_NetValuePerformance"
+      ]
+    }
+  },
+  "output": {
+    "Success": true,
+    "Info": {
+      "schema": {
+        "type": "object",
+        "Properties": {
+          "A0": {
+            "type": "string",
+            "Description": "基金代码"
+          },
+          "A1": {
+            "type": "string",
+            "Description": "基金名称"
+          },
+          "A2": {
+            "type": "string",
+            "Description": "成立日期",
+            "Format": "date-time"
+          },
+          "A3": {
+            "type": "string",
+            "Description": "业绩基准"
+          },
+          "A4": {
+            "type": "number",
+            "Description": "基金最新单位净值"
+          },
+          "A5": {
+            "type": "number",
+            "Description": "年初至今收益"
+          },
+          "A6": {
+            "type": "number",
+            "Description": "成立以来收益"
+          }
+        }
+      },
+      "name": "IndexF10IndexFund"
+    }
+  }
+}

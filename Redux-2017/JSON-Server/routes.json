@@ -1,0 +1,10 @@
+{
+    "/api/*": "/$1",
+    "/datas/": "/datas/",
+    "/datas/:uid": "/datas?uid=:uid",
+    "/datas/:key": "/datas?key=:key",
+    "/info/": "/info/",
+    "/info/:name": "/info?name=:name",
+    "/input/": "/input/",
+    "/output/": "/output/"
+}
