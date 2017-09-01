@@ -1,0 +1,136 @@
+{
+    "Properties": {
+        "A0": {
+            "Description": "交易日期",
+            "type": "DATE"
+        },
+        "A1": {
+            "Description": "证券代码",
+            "type": "STRING"
+        },
+        "A2": {
+            "Description": "证券简称",
+            "type": "STRING"
+        },
+        "A3": {
+            "Description": "总市值(亿元)",
+            "type": "DOUBLE"
+        },
+        "A4": {
+            "Description": "流通市值(亿元)",
+            "type": "DOUBLE"
+        },
+        "A5": {
+            "Description": "市盈率",
+            "type": "DOUBLE"
+        },
+        "A6": {
+            "Description": "市净率",
+            "type": "DOUBLE"
+        },
+        "A7": {
+            "Description": "申万行业",
+            "type": "STRING"
+        },
+        "A8": {
+            "Description": "证监会行业",
+            "type": "STRING"
+        },
+        "日表现": {
+            "ClosePrice": {
+                "Description": "收盘价",
+                "type": "DOUBLE"
+            },
+            "ChangePCT": {
+                "Description": "涨跌幅(%)",
+                "type": "DOUBLE"
+            },
+            "RangePCT": {
+                "Description": "振幅(%)",
+                "type": "DOUBLE"
+            },
+            "TurnoverRate": {
+                "Description": "换手率(%)",
+                "type": "DOUBLE"
+            },
+            "TurnoverVolume": {
+                "Description": "成交量(万股)",
+                "type": "DOUBLE"
+            },
+            "TurnoverValue": {
+                "Description": "成交额(万元)",
+                "type": "DOUBLE"
+            },
+            "PrevClosePrice": {
+                "Description": "前收盘价",
+                "type": "DOUBLE"
+            },
+            "OpenPrice": {
+                "Description": "开盘价",
+                "type": "DOUBLE"
+            },
+            "HighPrice": {
+                "Description": "最高价",
+                "type": "DOUBLE"
+            },
+            "LowPrice": {
+                "Description": "最低价",
+                "type": "DOUBLE"
+            },
+            "AvgPrice": {
+                "Description": "均价",
+                "type": "DOUBLE"
+            }
+        },
+        "近一周表现": {
+            "ChangePCTRW": {
+                "Description": "涨跌幅(%)",
+                "type": "DOUBLE"
+            },
+            "RangePCTRW": {
+                "Description": "振幅(%)",
+                "type": "DOUBLE"
+            },
+            "TurnoverRateRW": {
+                "Description": "换手率(%)",
+                "type": "DOUBLE"
+            },
+            "TurnoverRatePerDayRW": {
+                "Description": "日均换手率(%)",
+                "type": "DOUBLE"
+            },
+            "TurnoverVolumeRW": {
+                "Description": "成交量(万股)",
+                "type": "DOUBLE"
+            },
+            "TurnoverValueRW": {
+                "Description": "成交额(万元)",
+                "type": "DOUBLE"
+            },
+            "TurnoverValuePerDayRW": {
+                "Description": "日均成交额(万元)",
+                "type": "DOUBLE"
+            },
+            "HighPriceRW": {
+                "Description": "最高价",
+                "type": "DOUBLE"
+            },
+            "LowPriceRW": {
+                "Description": "最低价",
+                "type": "DOUBLE"
+            },
+            "HighestClosePriceRW": {
+                "Description": "收盘最高价",
+                "type": "DOUBLE"
+            },
+            "LowestClosePriceRW": {
+                "Description": "收盘最低价",
+                "type": "DOUBLE"
+            },
+            "AvgPriceRW": {
+                "Description": "均价",
+                "type": "DOUBLE"
+            }
+        }
+    }
+}

@@ -1,0 +1,264 @@
+test tables = [{
+        "title": "基金经理详细信息(基本资料)",
+        "tablenamle": "BasicInformationRow",
+        "datas": [{
+                "type": "string",
+                "Description": "性别",
+                "name": "A0",
+                "key": "k0000"
+            },
+            {
+                "type": "string",
+                "Description": "出生日期",
+                "Format": "date-time",
+                "name": "A1",
+                "key": "k0001"
+            },
+            {
+                "type": "string",
+                "Description": "学历",
+                "name": "A2",
+                "key": "k0002"
+            },
+            {
+                "type": "number",
+                "Description": "证券从业年限",
+                "name": "A3",
+                "key": "k0003"
+            },
+            {
+                "type": "integer",
+                "Description": "历任管理基金数",
+                "name": "A4",
+                "key": "k0004"
+            },
+            {
+                "type": "integer",
+                "Description": "历任基金经理公司数",
+                "name": "A5",
+                "key": "k0005"
+            },
+            {
+                "type": "string",
+                "Description": "简历",
+                "name": "A6",
+                "key": "k0006"
+            },
+            {
+                "type": "string",
+                "Description": "照片",
+                "name": "A7",
+                "key": "k0007"
+            },
+            {
+                "type": "integer",
+                "Description": "PersonalCode（参数）",
+                "name": "A8",
+                "key": "k0008"
+            }
+        ]
+    },
+    {
+        "title": "基金经理详细信息(历任管理基金)",
+        "tablenamle": "AnyManagedFundsRow",
+        "datas": [{
+                "type": "string",
+                "Description": "管理公司",
+                "name": "A0",
+                "key": "k0000"
+            },
+            {
+                "type": "string",
+                "Description": "基金简称",
+                "name": "A1",
+                "key": "k0001"
+            },
+            {
+                "type": "string",
+                "Description": "投资类型",
+                "name": "A2",
+                "key": "k0002"
+            },
+            {
+                "type": "string",
+                "Description": "到任日期(传参)",
+                "Format": "date-time",
+                "name": "A3",
+                "key": "k0003"
+            },
+            {
+                "type": "string",
+                "Description": "离职日期(传参)",
+                "Format": "date-time",
+                "name": "A4",
+                "key": "k0004"
+            },
+            {
+                "type": "number",
+                "Description": "任职年化回报",
+                "name": "A5",
+                "key": "k0005"
+            },
+            {
+                "type": "integer",
+                "Description": "基金编码(不显示)",
+                "name": "A6",
+                "key": "k0006"
+            }
+        ]
+    },
+    {
+        "title": "基金经理详细信息(历史回报)",
+        "tablenamle": "HistoricalReturnsRow",
+        "datas": [{
+                "type": "string",
+                "Description": "历史回报",
+                "name": "A0",
+                "key": "k0000"
+            },
+            {
+                "type": "number",
+                "Description": "3月",
+                "name": "A1",
+                "key": "k0001"
+            },
+            {
+                "type": "number",
+                "Description": "6月",
+                "name": "A2",
+                "key": "k0002"
+            },
+            {
+                "type": "number",
+                "Description": "YTD",
+                "name": "A3",
+                "key": "k0003"
+            },
+            {
+                "type": "number",
+                "Description": "1年",
+                "name": "A4",
+                "key": "k0004"
+            },
+            {
+                "type": "number",
+                "Description": "2年",
+                "name": "A5",
+                "key": "k0005"
+            },
+            {
+                "type": "number",
+                "Description": "3年",
+                "name": "A6",
+                "key": "k0006"
+            },
+            {
+                "type": "number",
+                "Description": "5年",
+                "name": "A7",
+                "key": "k0007"
+            }
+        ]
+    },
+    {
+        "title": "基金经理详细信息(风险分析)",
+        "tablenamle": "RiskAnalysisRow",
+        "datas": [{
+                "type": "string",
+                "Description": "类型",
+                "name": "A0",
+                "key": "k0000"
+            },
+            {
+                "type": "number",
+                "Description": "ɑ",
+                "name": "A1",
+                "key": "k0001"
+            },
+            {
+                "type": "number",
+                "Description": "β",
+                "name": "A2",
+                "key": "k0002"
+            },
+            {
+                "type": "number",
+                "Description": "SharpeRatio",
+                "name": "A3",
+                "key": "k0003"
+            },
+            {
+                "type": "number",
+                "Description": "收益标准差",
+                "name": "A4",
+                "key": "k0004"
+            },
+            {
+                "type": "string",
+                "Description": "风险度",
+                "name": "A5",
+                "key": "k0005"
+            }
+        ]
+    },
+    {
+        "title": "基金经理详细信息(折线图基金值)",
+        "tablenamle": "lineChartRow",
+        "datas": [{
+                "type": "string",
+                "Description": "时间",
+                "Format": "date-time",
+                "name": "A0",
+                "key": "k0000"
+            },
+            {
+                "type": "number",
+                "Description": "基金值",
+                "name": "A1",
+                "key": "k0001"
+            },
+            {
+                "type": "number",
+                "Description": "同类平均",
+                "name": "A2",
+                "key": "k0002"
+            },
+            {
+                "type": "number",
+                "Description": "沪深300",
+                "name": "A3",
+                "key": "k0003"
+            }
+        ]
+    },
+    {
+        "title": "基金经理详细信息(折线图同类平均)",
+        "tablenamle": "lineChartRows",
+        "datas": [{
+                "type": "string",
+                "Description": "时间",
+                "Format": "date-time",
+                "name": "A0",
+                "key": "k0000"
+            },
+            {
+                "type": "number",
+                "Description": "基金值",
+                "name": "A1",
+                "key": "k0001"
+            },
+            {
+                "type": "number",
+                "Description": "同类平均",
+                "name": "A2",
+                "key": "k0002"
+            },
+            {
+                "type": "number",
+                "Description": "沪深300",
+                "name": "A3",
+                "key": "k0003"
+            }
+        ]
+    }
+]

@@ -1,0 +1,187 @@
+{
+    "title": "",
+    "datas": [{
+            "type": "string",
+            "Description": "基金简称",
+            "name": "A0",
+            "key": "k0000"
+        },
+        {
+            "type": "string",
+            "Description": "基金全称",
+            "name": "A1",
+            "key": "k0001"
+        },
+        {
+            "type": "string",
+            "Description": "前端申购代码",
+            "name": "A2",
+            "key": "k0002"
+        },
+        {
+            "type": "string",
+            "Description": "后端申购代码",
+            "name": "A3",
+            "key": "k0003"
+        },
+        {
+            "type": "string",
+            "Description": "基金管理人",
+            "name": "A4",
+            "key": "k0004"
+        },
+        {
+            "type": "string",
+            "Description": "基金托管人",
+            "name": "A5",
+            "key": "k0005"
+        },
+        {
+            "type": "string",
+            "Description": "基金经理",
+            "name": "A6",
+            "key": "k0006"
+        },
+        {
+            "type": "string",
+            "Description": "保本担保机构",
+            "name": "A7",
+            "key": "k0007"
+        },
+        {
+            "type": "string",
+            "Description": "设立日期",
+            "Format": "date-time",
+            "name": "A8",
+            "key": "k0008"
+        },
+        {
+            "type": "string",
+            "Description": "终止日期",
+            "Format": "date-time",
+            "name": "A9",
+            "key": "k0009"
+        },
+        {
+            "type": "string",
+            "Description": "上市日期",
+            "Format": "date-time",
+            "name": "B0",
+            "key": "k00010"
+        },
+        {
+            "type": "string",
+            "Description": "上市地点",
+            "name": "B1",
+            "key": "k00011"
+        },
+        {
+            "type": "number",
+            "Description": "发行规模",
+            "name": "B2",
+            "key": "k00012"
+        },
+        {
+            "type": "string",
+            "Description": "发售方式",
+            "name": "B3",
+            "key": "k00013"
+        },
+        {
+            "type": "string",
+            "Description": "投资类型",
+            "name": "B4",
+            "key": "k00014"
+        },
+        {
+            "type": "string",
+            "Description": "运作方式",
+            "name": "B5",
+            "key": "k00015"
+        },
+        {
+            "type": "string",
+            "Description": "投资定位",
+            "name": "B6",
+            "key": "k00016"
+        },
+        {
+            "type": "string",
+            "Description": "投资风格",
+            "name": "B7",
+            "key": "k00017"
+        },
+        {
+            "type": "number",
+            "Description": "单笔认购金额下限(元)",
+            "name": "B8",
+            "key": "k00018"
+        },
+        {
+            "type": "number",
+            "Description": "单笔申购金额下限(元)",
+            "name": "B9",
+            "key": "k00019"
+        },
+        {
+            "type": "integer",
+            "Description": "单笔赎回份额下限(份)",
+            "name": "C0",
+            "key": "k00020"
+        },
+        {
+            "type": "integer",
+            "Description": "单一投资者持有份额下限(份)",
+            "name": "C1",
+            "key": "k00021"
+        },
+        {
+            "type": "string",
+            "Description": "业绩比较基准",
+            "name": "C2",
+            "key": "k00022"
+        },
+        {
+            "type": "string",
+            "Description": "投资目标",
+            "name": "C3",
+            "key": "k00023"
+        },
+        {
+            "type": "string",
+            "Description": "投资方向",
+            "name": "C4",
+            "key": "k00024"
+        },
+        {
+            "type": "string",
+            "Description": "投资范围",
+            "name": "C5",
+            "key": "k00025"
+        },
+        {
+            "type": "string",
+            "Description": "收益分配原则",
+            "name": "C6",
+            "key": "k00026"
+        },
+        {
+            "type": "string",
+            "Description": "风险收益特征",
+            "name": "C7",
+            "key": "k00027"
+        },
+        {
+            "type": "string",
+            "Description": "基金简介",
+            "name": "C8",
+            "key": "k00028"
+        },
+        {
+            "type": "string",
+            "Description": "基金获奖情况",
+            "name": "C9",
+            "key": "k00029"
+        }
+    ]
+}

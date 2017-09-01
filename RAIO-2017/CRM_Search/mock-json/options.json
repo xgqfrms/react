@@ -1,0 +1,34 @@
+{
+    "OutField": [
+        "a0",
+        "a1",
+        "a2",
+        "a3"
+    ],
+    "FastQuarterReportType": [
+        "Q1th",
+        "Q2nd",
+        "Q3rd",
+        "Q4th"
+    ],
+    "FastDateFilterType": "AllYear",
+    "Filters": [{
+        "FilterType": "between",
+        "Field": "a0",
+        "MaxValue": "2017-08-04",
+        "MinValue": "2012-01-01"
+    }],
+    "BeginDate": "2015-08-07",
+    "EndDate": "2017-08-07",
+    "LX": "6",
+    "Sorts": [{
+        "Field": "a0",
+        "Sort": "desc"
+    }],
+    "Page": {
+        "PageNo": "1",
+        "PageSize": "20"
+    },
+    "ApiName": "JY.Topic.Market_profile.Investors_data_statistics.AccountStatistics",
+    "WriteType": "json"
+}

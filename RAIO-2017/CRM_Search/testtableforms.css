@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.title-color {
+    margin-left: 10px;
+    /*     padding-left: 20px;
+    text-indent: 10px; */
+    font-size: 18px;
+    color: #108ee9;
+}
+
+.title-color::before {
+    height: 100%;
+    width: 0px;
+    border: 2px solid orangered;
+    content: "";
+    margin-right: 10px;
+}
+
+.options-space {
+    margin-bottom: 30px;
+}
+
+.options-panal {
+    margin-left: 30px;
+}
+
+
+/* 
+
+border-left: 4px orangered solid;
+.bc{
+    padding: 0px 10px;
+    border-left: 4px orangered solid;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 5px 2px;
+    width: 100px;
+    color: #3388FF;
+    font-weight: bold;
+}
+
+*/

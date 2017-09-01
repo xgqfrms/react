@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tree Menus</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- browser-sync start --server --files 'index.html' -->
+    </div>
+    <script src="./tree.js">
+        /* TreeMenus */
+    </script>
+    <script>
+        "use strict";
+        /* import {
+            Tree
+        } from './tree.js'; */
+        // Tree(array, true);
+        // const data = fetch(url);
+        const url = `https://cdn.xgqfrms.xyz/json/crm/tree-menus.json`;
+        // const url = `http://10.1.5.203/http-manage/admin?{%27Admin%27:%27report%27,%27Action%27:%27GetTreeSchema%27,%27WriteType%27:%27json%27}`
+        let data = {};
+        fetch(url)
+            .then((res) => res.json())
+            .then(
+                (json) => {
+                    console.log(`fetched json`, json);
+                    // data
+                    // return data = json;
+                    // get PromiseValue & assign it to data
+                    /* 
+                        return json;
+                        // get Promise {[[PromiseStatus]]: "resolved", [[PromiseValue]]: {…}}
+                    */
+                    data = json.Info.children;
+                    // do something in here!
+                    return data;
+                }
+            );
+        // promise ???
+        let tree = ``;
+        setTimeout(() => {
+            // create links
+            tree = TreeMenus(data, true);
+            document.querySelector("#app").innerHTML = tree;
+        }, 1000);
+    </script>
+</body>
+
+</html>

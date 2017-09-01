@@ -1,0 +1,22 @@
+.a-link-color {
+    color: #fff !important;
+}
+
+a {
+    color: #fff !important;
+}
+
+.li-width {
+    max-width: 200px !important;
+    width: 200px !important;
+}
+
+.submit-btn {
+    color: #fff !important;
+    background-color: #108ee9 !important;
+    border-color: #108ee9 !important;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 32px;
+}

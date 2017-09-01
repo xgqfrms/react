@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.treebox {
+    width: 300px !important;
+    height: calc(100% -67px);
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    /* float: left; */
+    position: fixed;
+    /* position: absolute; */
+    z-index: 99999;
+}
+
+.treebox::-webkit-scrollbar {
+    width: 12px;
+    /* overflow: hidden; */
+    background-color: #777;
+    /* #108ee9  #ccc */
+}
+
+.treebox::-webkit-scrollbar-thumb {
+    background-color: #108ee9;
+    border-radius: 10px;
+}
+
+
+/* app-content ant-content*/
+
+.ant-content {
+    height: 100%;
+    /* overflow-y: scroll; */
+    /*  */
+    position: absolute;
+    /* float: left; */
+    width: 100%;
+    /* overflow-x: hidden; */
+    /* width: calc(100% - 300px); */
+    margin-left: 300px;
+}
+
+#treebox {
+    /* max-width: 300px !important; */
+    /* min-height: 500px !important; */
+    max-height: 600px !important;
+    /*
+        media_query
+    */
+    max-height: calc(100% - 67px) !important;
+    height: calc(100% - 67px) !important;
+    /* max-height: calc(100% - 100px) !important; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background: #0f0; */
+    background-color: rgba(33, 37, 43, 1);
+}
+
+
+/*
+    media_query
+*/
+
+@media(max-width: 1366px) {
+    #treebox {
+        /* max-width: 300px !important; */
+        /* min-height: 500px !important; */
+        max-height: 600px !important;
+        /* max-height: calc(100% - 67px) !important; */
+        height: calc(100% - 67px) !important;
+        /* max-height: calc(100% - 100px) !important; */
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* background: #0f0; */
+        background-color: rgba(33, 37, 43, 1);
+    }
+}
+
+
+/* @media(min-width: 1980px) {
+    #treebox {
+        max-height: 900px !important;
+        height: calc(100% - 67px) !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: rgba(33, 37, 43, 1);
+    }
+} */
+
+
+/* overwrite css */
+
+.data-radium-ul {
+    list-style: none;
+    background-color: rgb(33, 37, 43);
+    margin: 0px;
+    padding: 0px;
+    color: rgb(157, 165, 171);
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 14px;
+}
+
+#treebox ul {
+    list-style: none;
+    background-color: rgb(33, 37, 43);
+    /* background-color: rgba(33, 37, 43, 0.7); */
+    margin: 0px;
+    padding: 0px;
+    color: rgb(157, 165, 171);
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 14px;
+    width: 300px;
+    overflow-x: hidden;
+    /* min-width: 260px; */
+    /* min-width: 200px; */
+}
+
+#submit-btn {
+    margin: 0 auto 10px 10px;
+    /* width: 50px; */
+    text-align: center;
+    font-size: 12px;
+    width: 80px;
+    /* border-radius: 5px; */
+}
+
+#submit-btn:hover {
+    font-size: 14px;
+    border: 1px solid #fff;
+    /* border-radius:  */
+    /* color: #11F345; */
+    /* transform: scale(1.1); */
+    /*     -webkit-transition: color 0.5s ease 0s, font-size 0.5s ease 0s;
+    -moz-transition: color 0.5s ease 0s, font-size 0.5s ease 0s;
+    transition: color 0.5s ease 0s, font-size 0.5s ease 0s; */
+    -webkit-transition: all 0.5s ease 0.1s;
+    -moz-transition: all 0.5s ease 0.1s;
+    transition: all 0.5s ease-in-out 0.1s;
+}
