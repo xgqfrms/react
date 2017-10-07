@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>es6-modules & chrome</title>
+    <!-- https://github.com/gildata/RAIO/issues/178#issuecomment-333373464 -->
+    <style>
+        .sbico {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            cursor: pointer;
+            vertical-align: middle;
+            color: #4285f4;
+        }
+        ._wtf {
+            display: inline-block;
+            fill: currentColor;
+            height: 24px;
+            line-height: 24px;
+            position: relative;
+            width: 24px;
+        }
+    </style>
+    <style>
+        .hl-comments{
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>es6-modules & chrome</h1>
+        <section>
+            <span class="sbico _wtf _Qtf">
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
+        </section>
+        <section>
+            <div id="uid" data-uid="uid-es6-iife">
+                <!-- placeholder -->
+            </div>
+        </section>
+        <section>
+            <div>
+                <a href="https://github.com/xgqfrms/cdn/new/gh-pages/es6-modules/chrome">es6-modules/chrome</a>
+            </div>
+            <div id="uid_es6_modules" data-uid="uid-es6-modules">
+                <!-- placeholder -->
+            </div>
+             <div id="uid_es6_iife" data-uid-iife="uid-es6-iife">
+                <!-- placeholder -->
+            </div>
+            <script>
+                let div = document.querySelector(`#uid_es6_modules`);
+                // div.dataset[`uid-es6-modules`];
+                let uid = div.dataset.uid;
+                // let uid = div.dataset[`uid`];
+                // "uid-es6-modules"
+                // let div = document.querySelector(`#uid_es6_iife`);
+                // let iife = div.dataset[`uidIife`];
+                // let iife = div.dataset.uidIife;
+                // ES6  & IIFE
+                (() => {
+                   try {
+                       console.log(`😃 🙌 🎉 Hooray!`);
+                       // https://emojipedia.org/search/?q=tada
+                       div.insertAdjacentHTML(`beforeend`, '<div id="two">`😃 🙌 🎉 Hooray!`</div>');
+                   } catch(error) {
+                       // Fail quietly
+                       console.log(`😭 😢 😂 😿 😞 💩 Holy Shit!`);
+                       // https://emojipedia.org/pile-of-poo/
+                       // https://emojipedia.org/search/?q=cry
+                       // throw new Error(`meesage`, error);
+                   }
+                })();
+                // 😃 🙌 🎉 Hooray!
+            </script>
+            <script>
+                const codes_str = `
+                    // Supported:
+                    import {foo} from 'https://jakearchibald.com/utils/bar.js';
+                `;
+
+                // comments
+                codes_str.indexOf(`//`);
+                // 5
+
+                // import
+                codes_str.indexOf(`import`);
+                // 23
+
+                // no white spaces
+                codes_str.substr(5, 23-5).trim();
+                // "// Supported:"
+
+                let c_begin = codes_str.indexOf(`//`),
+                    c_end = codes_str.indexOf(`import`),
+                    comments = codes_str.substr(c_begin, c_end - c_begin).trim();
+
+                // const div = document.createElement(type, props, children);
+
+                // div.appendChild();
+                // insertAdjacentHTML();
+
+                let div = document.querySelector(`#uid_es6_modules`);
+
+                div.insertAdjacentHTML(`beforeend`, `<div id="two">😃 🙌 🎉 Hooray!</div>`);
+
+
+                let pre = document.createElement(`pre`);
+                // <pre>​</pre>​
+                let span= document.createElement(`span`);
+                // <span>​</span>​
+                span.append(`${comments}`);
+                pre.appendChild(span);
+                // div.insertAdjacentHTML(`beforeend`, `${pre}`);
+                // [object HTMLPreElement]
+
+                div.appendChild(pre);
+                // <pre>​<span class=​"hl-comments">​// Supported:​</span>​</pre>​
+            </script>
+            <!-- <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script> -->
+        </section>
+        <script type="module">
+            import {addTextToBody} from './utils.js';
+            addTextToBody();
+            addTextToBody('Modules are pretty cool.');
+        </script>
+    </section>
+</body>
+</html>
+<!--
+// utils.js
+export function addTextToBody(text = `some default text!`) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    document.body.appendChild(div);
+}
+-->
