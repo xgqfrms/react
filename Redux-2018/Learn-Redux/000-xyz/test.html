@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>React Ajax 教程实例</title>
+    <!-- https://gist.github.com/xgqfrms-GitHub/8baf3c49ca472ebd8b281a5dbb5ccc53 -->
+</head>
+
+<body>
+    <div id="example"></div>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <!-- babel-standalone -->
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/babel" src="./test.js"></script>
+    <!-- <script type="text/babel">
+        class UserGist extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state= { username: '', lastGistUrl: '' };
+            }
+            componentDidMount() {
+                this.serverRequest = $.get(this.props.source, function (result) {
+                    var lastGist = result[0];
+                    this.setState({
+                        username: lastGist.owner.login,
+                        lastGistUrl: lastGist.html_url
+                    });
+                }.bind(this));
+            }
+            componentWillUnmount() {
+                this.serverRequest.abort();
+            }
+            render() {
+                return (
+                    <div>
+                        <h3>
+                            用户{this.state.username},最新的 Gist 共享地址:
+                        </h3>
+                        <hr />
+                        <a href={this.state.lastGistUrl}>
+                            {this.state.lastGistUrl}
+                        </a>
+                        <br />
+                        <a href="https://react2.xgqfrms.xyz/tips/initial-ajax.html">
+                            https://react2.xgqfrms.xyz/tips/initial-ajax.html
+                        </a>
+                    </div>
+                );
+            }
+        }
+        const dom_root_uid = document.querySelector(`#example`);
+        // const dom_root_uid = document.getElementById('example');
+        ReactDOM.render(
+            <UserGist source="https://api.github.com/users/xgqfrms-github/gists" />,
+            dom_root_uid,
+        );
+    </script> -->
+</body>
+
+</html>
