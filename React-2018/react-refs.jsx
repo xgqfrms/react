@@ -16,11 +16,23 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
 
+class ReactInputDOM extends React.Component {
+    render(props) {
+        return (
+            <div data-text="test">
+                <input type="text" onChange={this.props.handleInputDOM} />
+                {/* <input type="text" ref="c" onChange={this.props.handleInputDOM} /> */}
+                <code>{this.props.message}</code>
+            </div>
+        );
+    }
+}
+
 class ReactInput extends React.Component {
     render(props) {
         return (
             <div>
-                <input type="text" ref="c" onChange={this.props.handleInput} />
+                <input type="text" ref="d" onChange={this.props.handleInput} />
                 {/* <input type="text" ref="input" onChange={this.props.handleInput} /> */}
                 <code>{this.props.message}</code>
             </div>
@@ -35,9 +47,11 @@ class ReactRefs extends React.Component {
             inputA: "aaa",
             inputB: "bbb",
             inputC: "ccc",
+            inputD: "ddd",
         };
         this.updateValueA = this.updateValueA.bind(this);
         this.updateValueB = this.updateValueB.bind(this);
+        this.handleInputDOM = this.handleInputDOM.bind(this);
         this.handleInput = this.handleInput.bind(this);
     }
     updateValueA(e) {
@@ -53,12 +67,21 @@ class ReactRefs extends React.Component {
             // this.refs.b
         });
     }
+    handleInputDOM() {
+        let value = ReactDOM.findDOMNode(this.c).firstChild.value;
+        // let value = ReactDOM.findDOMNode(this.c).dataset.text;
+        this.setState({
+            inputC: value,
+            // inputC: this.refs.c.value,
+            // this.refs.c
+        });
+    }
     handleInput() {
         this.setState({
-            inputC: this.c.refs.c.value,
-            // inputC: this.c.refs.input.value,
-            // this.c === components (ReactInput)
-            // c === refs.c
+            inputD: this.d.refs.d.value,
+            // inputD: this.d.refs.input.value,
+            // this.d === components (ReactInput)
+            // d === refs.d
         });
     }
     render() {
@@ -72,10 +95,15 @@ class ReactRefs extends React.Component {
                     <input type="text" ref="b" onChange={this.updateValueB} />
                     <code>{this.state.inputB}</code>
                 </div>
-                <ReactInput
-                    ref={component => this.c = component}
-                    handleInput={this.handleInput}
+                <ReactInputDOM
+                    ref={dom_node => this.c = dom_node}
+                    handleInputDOM={this.handleInputDOM}
                     message={this.state.inputC}
+                />
+                <ReactInput
+                    ref={component => this.d = component}
+                    handleInput={this.handleInput}
+                    message={this.state.inputD}
                 />
                 {/* onChange={this.handleInput} */}
             </section>
