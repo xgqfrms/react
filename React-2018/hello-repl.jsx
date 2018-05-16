@@ -1,3 +1,15 @@
+"use strict";
+
+/**
+ *
+ * @author xgqfrms
+ * @license MIT
+ * @copyright REPL
+ * @description
+ * @augments
+ * @example
+ *
+ */
 
 class SayHello extends React.Component {
     constructor(props) {
@@ -37,7 +49,6 @@ class SayHello extends React.Component {
 
 const app = `mountNode`;
 
-// ReactDOM.render(component, app_container[, callback])
 const callback_func = () => {
     alert(`If the optional callback is provided, it will be executed after the component is rendered or updated.`);
     // console.log(`e = `, e);
@@ -45,6 +56,7 @@ const callback_func = () => {
     // box.innerHTML = `e.target.dataset: ${e.target.dataset}`;
 };
 
+// ReactDOM.render(component, app_container[, callback])
 ReactDOM.render(<SayHello />, mountNode, callback_func);
 
 
